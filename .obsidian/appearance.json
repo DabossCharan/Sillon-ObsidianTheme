@@ -1,0 +1,19 @@
+{
+  "theme": "obsidian",
+  "cssTheme": "Obsidianite",
+  "accentColor": "",
+  "interfaceFontFamily": "JetBrains Mono",
+  "textFontFamily": "JetBrains Mono",
+  "enabledCssSnippets": [
+    "coloredSidebar",
+    "CyanVoxel's General Tweaks",
+    "Daily Note Themes",
+    "gradient",
+    "Notebook Backgrounds"
+  ],
+  "baseFontSize": 18,
+  "baseFontSizeAction": true,
+  "showViewHeader": true,
+  "monospaceFontFamily": "JetBrains Mono",
+  "showRibbon": true
+}
