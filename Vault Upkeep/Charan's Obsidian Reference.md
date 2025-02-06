@@ -33,7 +33,6 @@ This is useful for indexing with the property search. Note that properties can a
 
 ##### Tables
 Create Table: `Ctrl + Alt + T`
-You can actually use Excel-like functions in Obsidian with a plugin. Try finding it! (and telling me how it works cause I never experimented with it yet). 
 
 ##### Miscellaneous Hotkeys
 Switch between Editing View and Reading: `Ctrl + E`

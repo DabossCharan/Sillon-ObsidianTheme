@@ -28,8 +28,10 @@
   ],
   "trashOption": "none",
   "showUnsupportedFiles": false,
-  "promptDelete": false,
+  "promptDelete": true,
   "showInlineTitle": true,
   "readableLineLength": true,
-  "propertiesInDocument": "visible"
+  "propertiesInDocument": "visible",
+  "showIndentGuide": true,
+  "newFileLocation": "current"
 }

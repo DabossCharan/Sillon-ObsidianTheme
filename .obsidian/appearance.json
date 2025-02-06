@@ -1,19 +1,15 @@
 {
   "theme": "obsidian",
-  "cssTheme": "Obsidianite",
-  "accentColor": "",
-  "interfaceFontFamily": "JetBrains Mono",
+  "cssTheme": "Chairinite",
+  "accentColor": "#502ca5",
+  "interfaceFontFamily": "",
   "textFontFamily": "JetBrains Mono",
   "enabledCssSnippets": [
-    "coloredSidebar",
-    "CyanVoxel's General Tweaks",
-    "Daily Note Themes",
-    "gradient",
-    "Notebook Backgrounds"
+    "CyanVoxel's General Tweaks"
   ],
-  "baseFontSize": 18,
+  "baseFontSize": 17,
   "baseFontSizeAction": true,
   "showViewHeader": true,
-  "monospaceFontFamily": "JetBrains Mono",
+  "monospaceFontFamily": "",
   "showRibbon": true
 }

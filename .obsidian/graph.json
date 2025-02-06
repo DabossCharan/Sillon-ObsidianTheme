@@ -1,76 +1,12 @@
 {
   "collapse-filter": false,
-  "search": "-path:\"Daily Notes\" -tag:#excalidraw -path:\"Vault Upkeep\" -tag:#tags  ",
+  "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [
-    {
-      "query": "path:\"01 AP Lit\"  ",
-      "color": {
-        "a": 1,
-        "rgb": 8183527
-      }
-    },
-    {
-      "query": "path:\"02 AP Physics C\"  ",
-      "color": {
-        "a": 1,
-        "rgb": 7255282
-      }
-    },
-    {
-      "query": "path:\"03 AP Stats\"  ",
-      "color": {
-        "a": 1,
-        "rgb": 5340139
-      }
-    },
-    {
-      "query": "path:\"04 Competitive Programming\"  ",
-      "color": {
-        "a": 1,
-        "rgb": 9063151
-      }
-    },
-    {
-      "query": "path:\"05 Game Development\"  ",
-      "color": {
-        "a": 1,
-        "rgb": 11884511
-      }
-    },
-    {
-      "query": "path:\"06 Graphic Design\"  ",
-      "color": {
-        "a": 1,
-        "rgb": 13851032
-      }
-    },
-    {
-      "query": "path:\"99 Sound Design\"  ",
-      "color": {
-        "a": 1,
-        "rgb": 5330277
-      }
-    },
-    {
-      "query": "tag:#tags",
-      "color": {
-        "a": 1,
-        "rgb": 16711680
-      }
-    },
-    {
-      "query": "path:\"00 AP Chem\"  ",
-      "color": {
-        "a": 1,
-        "rgb": 5111700
-      }
-    }
-  ],
+  "colorGroups": [],
   "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": -0.8,
@@ -81,6 +17,6 @@
   "repelStrength": 12.3284823284823,
   "linkStrength": 0.895010395010395,
   "linkDistance": 95,
-  "scale": 0.1483604791532595,
+  "scale": 0.5849162052294758,
   "close": true
 }
