@@ -3,8 +3,6 @@ aliases:
 cssclasses:
   - center-images
   - center-titles
-  - page-grid
-  - pen-purple
 tags:
 ---
 

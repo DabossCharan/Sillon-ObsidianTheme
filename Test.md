@@ -45,10 +45,6 @@ ooooo
 import java.utils.*;
 ```
 
-`the frick` 
-
-#fail
-
 [[ThisExists]]
 [[Charan's Obsidian Reference]]
 
@@ -64,5 +60,3 @@ YOOo this is pretty crazy
 fadk;sfkljas;ldkfja
 asdfl;ajsdfkljas;df
 a;sdklfj;askldfja
-
-![[goofy.jpg|400]]
