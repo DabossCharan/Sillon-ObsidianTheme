@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 Guide/00 Guide.md",
-                "mode": "preview",
-                "source": false,
+                "file": "Test.md",
+                "mode": "source",
+                "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "00 Guide"
+              "title": "Test"
             }
           }
         ],
@@ -335,15 +335,15 @@
   },
   "active": "84a0c8ff853161ab",
   "lastOpenFiles": [
-    "01 Sample/01 Sample.md",
-    "02 Sample/Ctrl + Click on the Folder Itself to See Table of Contents.md",
     "Untitled.canvas",
     "Daily Notes/IDEAS MASTER LIST.md",
+    "02 Sample/This is a Note.md",
+    "02 Sample/Ctrl + Click on the Folder Itself to See Table of Contents.md",
+    "01 Sample/01 Sample.md",
+    "02 Sample/02 Sample.md",
     "Test.md",
     "00 Guide/00 Guide.md",
     "02 Sample/This is another Note.md",
-    "02 Sample/This is a Note.md",
-    "02 Sample/02 Sample.md",
     "00 Guide/Untitled Kanban.md",
     "Vault Upkeep/Templates/(TEMPLATE) Unique.md",
     "Vault Upkeep/Homepage.md",

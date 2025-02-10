@@ -3,15 +3,9 @@
   "cssTheme": "Sillon",
   "accentColor": "#502ca5",
   "interfaceFontFamily": "",
-  "textFontFamily": "JetBrains Mono",
-  "enabledCssSnippets": [
-    "CyanVoxel's General Tweaks",
-    "Daily Note Themes",
-    "coloredSidebar",
-    "gradient",
-    "Notebook Backgrounds"
-  ],
-  "baseFontSize": 17,
+  "textFontFamily": "",
+  "enabledCssSnippets": [],
+  "baseFontSize": 20,
   "baseFontSizeAction": true,
   "showViewHeader": true,
   "monospaceFontFamily": "",
