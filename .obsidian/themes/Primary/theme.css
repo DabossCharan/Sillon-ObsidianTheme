@@ -684,12 +684,6 @@ svg.vault {
 /* #endregion */
 
 body {
-  /* Global Animation */
-  --anim-popup: 0.3s slideUp forwards;
-  --anim-popup-alt: 0.335s slideUpAlt forwards;
-  --anim-popdown: 0.4s slideDown forwards;
-  --background-anim: background var(--anim-duration-fast) var(--anim-motion-smooth);
- 
   /*────────── Window ──────────*/
   
   /* Ribbon */

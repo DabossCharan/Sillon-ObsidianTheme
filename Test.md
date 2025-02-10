@@ -37,7 +37,7 @@ ooooo
 
 [[Charan's Obsidian Reference]]
 
-> 
+> FIYIN FIYIN FIYIN FIYIN FIYIN FIYIN
 
 #impact
 
@@ -47,16 +47,25 @@ import java.utils.*;
 
 [[ThisExists]]
 [[Charan's Obsidian Reference]]
-
-
-
 YOOo this is pretty crazy 
 - someapja o
 - asdfjaskldfjask;ldfj
 - asfdj;alkdfja;f
-
 ***
-
 fadk;sfkljas;ldkfja
 asdfl;ajsdfkljas;df
 a;sdklfj;askldfja
+
+- [x] Idea 
+- [x] Idea
+- [0] Crazy Work Fellas 
+
+[[00 Guide]] 
+
+> [!note] This is a Note
+> This is a NOte
+
+> [!success] Answer 
+> Answer
+- [formula] Test 
+- 

@@ -33,7 +33,7 @@ automation
 
 - [x] Do Something
 - [x] Do something 
-- [ ] Do something
+- [x] Do something
 
 #impact #impact 
 *impact*
@@ -52,3 +52,13 @@ ddddd
 `What is a kilometer`
 
 #todo#working-draft
+
+- [b] Bookmark 
+- [I] Idea 
+- [p] Pro 
+- [c] Con 
+- [f] FIRE GRAAAA 
+- [k] Key 
+- [l] Location 
+- [n] Pin 
+- [-] Incomplete/Cancel 
