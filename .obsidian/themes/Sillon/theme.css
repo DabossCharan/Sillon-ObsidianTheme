@@ -15,6 +15,7 @@ References (read the usage, license, and contribution pages)
 
 ----------------------------------------------------- */
 
+
 /* #region Font Imports */
 
 @font-face {
@@ -943,6 +944,29 @@ input[type=checkbox] {
   cursor: pointer;
 }
 
+/* #region Pointer Events (to disable on Custom Checkboxes) */
+.markdown-source-view.mod-cm6 .task-list-label, .markdown-preview-view .task-list-item-checkbox
+{
+  pointer-events: none;
+}
+
+.markdown-source-view.mod-cm6 .task-list-label .task-list-item-checkbox[data-task=x], .markdown-preview-view .task-list-item[data-task=x] > input, .markdown-preview-view .task-list-item[data-task=x] > p > input
+{
+  pointer-events: auto;
+}
+
+.markdown-source-view.mod-cm6 .task-list-label .task-list-item-checkbox[data-task=" "], .markdown-preview-view .task-list-item[data-task=" "] > input, .markdown-preview-view .task-list-item[data-task=" "] > p > input, .markdown-preview-view .task-list-item[data-task=""] > input, .markdown-preview-view .task-list-item[data-task=""] > p > input
+{
+  pointer-events: auto;
+}
+
+.markdown-source-view.mod-cm6 .task-list-label .task-list-item-checkbox[data-task="-"], .markdown-preview-view .task-list-item[data-task="-"] > input, .markdown-preview-view .task-list-item[data-task="-"] > p > input
+{
+  pointer-events: auto;
+}
+
+/* #endregion */
+
 /* #endregion */
 
 /* Checkbox Animations Based on https://codepen.io/dylanraga/pen/Qwqbab */ 
@@ -1008,6 +1032,7 @@ input[type=checkbox] {
   --checkbox-color: transparent;
   /*border-width: 0;*/
 }
+
 .task-list-item-checkbox[data-task="b"][type=checkbox]:checked:after, .task-list-item[data-task="b"] > input[type=checkbox]:checked:after, .task-list-item[data-task="b"] > p > input[type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--!  --%3E%3Cpath d='M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z'/%3E%3C/svg%3E");
   -webkit-mask-size: contain;
