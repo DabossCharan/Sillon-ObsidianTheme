@@ -4192,6 +4192,7 @@ places
 polarizes
 parallel
 please
+paragraph
 only
 or
 of
@@ -5486,6 +5487,7 @@ Files
 Folder
 Fellas
 FIRE
+FIYIN
 WHat
 WHAT
 WEB
@@ -5600,6 +5602,7 @@ Wednesday
 Whether
 WOWOWOWOWOOWOWOWOWOWOOWOOWOWOWOWOWOWOWOWOWOOWOWOWOWOWOWOOWOW
 WOWZERS
+WOwiz
 Switch
 Saving
 Switcher

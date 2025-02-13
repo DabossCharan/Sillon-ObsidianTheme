@@ -61,7 +61,7 @@ ddddd
 - [k] Key 
 - [l] Location 
 - [n] Pin 
-- [ ] Incomplete/Cancel 
+- [x] Incomplete/Cancel 
 
 Testing a paragraph 
 WOwiz a new paragraph 

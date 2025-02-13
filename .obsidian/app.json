@@ -33,5 +33,6 @@
   "readableLineLength": true,
   "propertiesInDocument": "visible",
   "showIndentGuide": true,
-  "newFileLocation": "current"
+  "newFileLocation": "current",
+  "foldIndent": true
 }

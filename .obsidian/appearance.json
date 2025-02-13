@@ -1,11 +1,11 @@
 {
   "theme": "obsidian",
   "cssTheme": "Sillon",
-  "accentColor": "",
+  "accentColor": "#2da00d",
   "interfaceFontFamily": "",
   "textFontFamily": "JetBrains Mono",
   "enabledCssSnippets": [],
-  "baseFontSize": 23,
+  "baseFontSize": 24,
   "baseFontSizeAction": true,
   "showViewHeader": true,
   "monospaceFontFamily": "",

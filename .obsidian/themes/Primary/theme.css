@@ -686,27 +686,6 @@ svg.vault {
 body {
   /*────────── Window ──────────*/
   
-  /* Ribbon */
-  --ribbon-border-width: 1px;
-  --ribbon-radius: var(--editor-border-radius);
-  --ribbon-radius: var(--editor-border-radius);
-  --ribbon-margin-bottom: var(--editor-pane-margin);
-  --ribbon-icon-spacing: var(--size-2-2);
-  /* Sidebar */
-  --nav-item-white-space: nowrap;
-  --nav-item-radius: 6px;
-  --nav-item-padding: calc(var(--size-4-1) + 1px)
-                      var(--size-4-2)
-                      calc(var(--size-4-1) + 1px)
-                      var(--size-4-6);
-  --nav-file-padding-active: calc(var(--size-4-1))
-                              var(--size-4-2)
-                              calc(var(--size-4-1) + var(--button-inset-shadow-size))
-                              var(--size-4-6);
-  /* Status Bar */
-  --status-bar-floating-opacity: 0.5;
-  --status-bar-floating-opacity-hover: 1;
-  --status-bar-floating-offset: var(--size-2-2);
   /* Titlebar */
   --titlebar-text-weight: var(--font-normal);
   /* Vault Switcher */
@@ -743,7 +722,6 @@ body {
                       var(--size-4-2);
   --button-anim: var(--anim-duration-fast) var(--anim-motion-jumpy);
   --close-button-radius: var(--radius-l);
-  --copy-code-button-radius: var(--radius-s);
   --button-opacity-active: 0.5;
   /* Dropdown */
   --dropdown-height: calc(
@@ -799,24 +777,7 @@ body {
   /*────────── Editor ──────────*/
   /* Background */
   --editor-bgpattern-size: 50px 50px;
-  /* Blockquote */
-  --blockquote-border-thickness: 2px;
-  /* Callout */
-  --callout-shadow-offset: 4px;
-  --callout-content-shadow-blur: 3px;
-  --callout-title-padding: var(--size-4-3) var(--size-4-4);
-  --callout-content-padding: var(--size-4-1)
-                              var(--size-4-4)
-                              calc(var(--size-4-1) + var(--callout-shadow-offset))
-                              var(--size-4-4);
-  --callout-radius: var(--radius-m);
-  --callout-blend-mode: unset;
-  /* Checklist */
-  --checklist-done-decoration: line-through;
-  --checkbox-radius: var(--radius-s);
-  /* Code */
-  --code-radius: var(--radius-m);
-  --inline-code-radius: var(--radius-s);
+  
   /* Embeds */
   --embed-padding: var(--size-2-3) var(--embed-left-right-padding) 0px;
   --embed-left-right-padding: var(--size-4-4);
@@ -1447,30 +1408,9 @@ body.is-mobile {
                       0px 2px 4px -1.4px rgba(0, 0, 0, 0.3),
                       0px 3px 10px -1.7px rgba(0, 0, 0, 0.14);
   /*────────── Editor ──────────*/
-  /* Active Line */
-  --active-line-bg: var(--color-base-00);
   /* Background */
   --editor-bg-color: var(--background-primary);
   --editor-bgpattern-color: var(--color-l-gray-60);
-  /* Blockquote */
-  --blockquote-border-color: var(--background-modifier-border);
-  --blockquote-background-color: var(--color-l-gray-10);
-  /* Callout */
-  --callout-color-opacity: 32.5%;
-  --callout-border-opacity: 0.2;
-  --callout-icon-fold-filter: brightness(0.8);
-  --callout-title-color: var(--text-normal);
-  --callout-content-background: color-mix(
-                                  in srgb,
-                                  var(--background-primary-alt) 50%,
-                                  var(--background-primary)
-                                  );
-  --callout-container-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.08),
-                              0px 1px 6px 0px rgba(0, 0, 0, 0.12);
-  --callout-title-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.05),
-                          inset 0px 1px 1px 0px rgba(255, 255, 255, 0.2);
-  --callout-content-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.08),
-                              inset 0px calc(-1 * var(--callout-shadow-offset)) var(--callout-content-shadow-blur) 0px rgba(100, 100, 100, 0.13);
   /* Embed */
   --embed-background: var(--embed-bg-color-mix);
   --embed-bg-color-mix: color-mix(
@@ -2377,30 +2317,10 @@ body.is-mobile {
                       0px 2px 4px -1.4px rgba(0, 0, 0, 0.3),
                       0px 3px 10px -1.7px rgba(0, 0, 0, 0.14);
   /*────────── Editor ──────────*/
-  /* Active Line */
-  --active-line-bg: var(--color-base-20);
   /* Background */
   --editor-bg-color: var(--background-primary);
   --editor-bgpattern-color: var(--color-d-gray-70);
-  /* Blockquote */
-  --blockquote-border-color: var(--background-modifier-border);
-  --blockquote-background-color: var(--color-d-gray-120);
-  /* Callout */
-  --callout-color-opacity: 32.5%;
-  --callout-border-opacity: 0.1;
-  --callout-icon-fold-filter: brightness(1);
-  --callout-title-color: var(--text-normal);
-  --callout-content-background: color-mix(
-                                  in srgb,
-                                  var(--background-primary-alt) 50%,
-                                  var(--editor-bg-color)
-                                  );
-  --callout-container-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-                              0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-  --callout-title-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.25),
-                          inset 0px 1px 1px 0px rgba(255, 255, 255, 0.1);
-  --callout-content-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-                              inset 0px calc(-1 * var(--callout-shadow-offset) - 1px) var(--callout-content-shadow-blur) 0px rgba(0, 0, 0, 0.3);
+  
   /* Embed */
   --embed-background: var(--embed-bg-color-mix);
   --embed-bg-color-mix: color-mix(
@@ -5039,214 +4959,8 @@ li.task-list-item[data-task="-"] {
   text-decoration: var(--cancelled-chbx-text-decoration);
 }
 
-/*────────── Callout ──────────*/
-.markdown-source-view.mod-cm6 .cm-content > [contenteditable=false] {
-  contain: unset !important;
-}
 
-.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):hover {
-  overflow: visible;
-}
 
-.callout {
-  background-color: color-mix(in srgb, rgba(var(--callout-color)) var(--callout-color-opacity), var(--editor-bg-color));
-  padding: 0;
-  box-shadow: var(--callout-container-shadow);
-}
-.callout.is-collapsible.is-collapsed .callout-title {
-  border-radius: var(--callout-radius);
-}
-.callout-title {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  box-shadow: var(--callout-title-shadow);
-  gap: var(--size-4-2);
-}
-.callout-title .callout-icon,
-.callout-title .callout-fold {
-  filter: var(--callout-icon-fold-filter);
-}
-.callout-title .callout-icon svg,
-.callout-title .callout-fold svg {
-  height: var(--font-text-size);
-  width: var(--font-text-size);
-}
-.callout-title-inner {
-  font-weight: var(--font-semibold);
-}
-.callout .callout-title {
-  margin-right: auto;
-}
-.callout .callout-fold {
-  margin-left: auto;
-}
-.callout-content {
-  box-shadow: var(--callout-content-shadow);
-  border-bottom-right-radius: var(--callout-radius);
-  border-bottom-left-radius: var(--callout-radius);
-}
-
-body {
-  --callout-icon-general: shapes;
-  --callout-icon-note: sticker;
-  --callout-icon-abstract: loader;
-  --callout-icon-summary: align-justify;
-  --callout-icon-tldr: book-open-text;
-  --callout-icon-info: badge-info;
-  --callout-icon-todo: list-todo;
-  --callout-icon-tip: clover;
-  --callout-icon-hint: search-slash;
-  --callout-icon-important: square-asterisk;
-  --callout-icon-success: check-check;
-  --callout-icon-check: check-check;
-  --callout-icon-done: check-check;
-  --callout-icon-question: circle-help;
-  --callout-icon-help: life-buoy;
-  --callout-icon-faq: circle-help;
-  --callout-icon-warning: triangle-alert;
-  --callout-icon-caution: construction;
-  --callout-icon-attention: megaphone;
-  --callout-icon-fail: circle-slash;
-  --callout-icon-missing: search;
-  --callout-icon-danger: shield-alert;
-  --callout-icon-error: ban;
-  --callout-icon-bug: bug;
-  --callout-icon-example: scroll-text;
-  --callout-icon-quote: message-square-note;
-  --callout-icon-cite: book-marked;
-  --callout-rgb-general: 182, 196, 182;
-  --callout-rgb-note: 200, 175, 155;
-  --callout-rgb-summary: 234, 181, 52;
-  --callout-rgb-abstract: 34, 152, 225;
-  --callout-rgb-tldr: 240, 180, 225;
-  --callout-rgb-info: 71, 162, 187;
-  --callout-rgb-todo: 58, 173, 252;
-  --callout-rgb-tip: 70, 206, 185;
-  --callout-rgb-hint: 70, 206, 185;
-  --callout-rgb-important: 246, 113, 118;
-  --callout-rgb-success: 87, 200, 83;
-  --callout-rgb-check: 87, 200, 83;
-  --callout-rgb-done: 87, 200, 83;
-  --callout-rgb-question: 130, 190, 235;
-  --callout-rgb-help: 250, 128, 96;
-  --callout-rgb-faq: 130, 190, 235;
-  --callout-rgb-warning: 255, 161, 32;
-  --callout-rgb-caution: 255, 161, 32;
-  --callout-rgb-attention: 255, 161, 32;
-  --callout-rgb-fail: 226, 72, 86;
-  --callout-rgb-missing: 226, 72, 86;
-  --callout-rgb-danger: 226, 72, 86;
-  --callout-rgb-error: 226, 72, 86;
-  --callout-rgb-bug: 153, 93, 133;
-  --callout-rgb-example: 216, 141, 130;
-  --callout-rgb-quote: 173, 214, 171;
-  --callout-rgb-cite: 237, 217, 162;
-}
-
-.callout {
-  --callout-icon: var(--callout-icon-general);
-  --callout-color: var(--callout-rgb-general);
-}
-.callout[data-callout=note] {
-  --callout-icon: var(--callout-icon-note);
-  --callout-color: var(--callout-rgb-note);
-}
-.callout[data-callout=abstract] {
-  --callout-icon: var(--callout-icon-abstract);
-  --callout-color: var(--callout-rgb-abstract);
-}
-.callout[data-callout=summary] {
-  --callout-icon: var(--callout-icon-summary);
-  --callout-color: var(--callout-rgb-summary);
-}
-.callout[data-callout=tldr], .callout[data-callout="tl;dr"] {
-  --callout-icon: var(--callout-icon-tldr);
-  --callout-color: var(--callout-rgb-tldr);
-}
-.callout[data-callout=info] {
-  --callout-icon: var(--callout-icon-info);
-  --callout-color: var(--callout-rgb-info);
-}
-.callout[data-callout=todo] {
-  --callout-icon: var(--callout-icon-todo);
-  --callout-color: var(--callout-rgb-todo);
-}
-.callout[data-callout=tip] {
-  --callout-icon: var(--callout-icon-tip);
-  --callout-color: var(--callout-rgb-tip);
-}
-.callout[data-callout=hint] {
-  --callout-icon: var(--callout-icon-hint);
-  --callout-color: var(--callout-rgb-hint);
-}
-.callout[data-callout=important] {
-  --callout-icon: var(--callout-icon-important);
-  --callout-color: var(--callout-rgb-important);
-}
-.callout[data-callout=success] {
-  --callout-icon: var(--callout-icon-success);
-  --callout-color: var(--callout-rgb-success);
-}
-.callout[data-callout=check] {
-  --callout-icon: var(--callout-icon-check);
-  --callout-color: var(--callout-rgb-check);
-}
-.callout[data-callout=done] {
-  --callout-icon: var(--callout-icon-done);
-  --callout-color: var(--callout-rgb-done);
-}
-.callout[data-callout=question] {
-  --callout-color: var(--callout-rgb-question);
-}
-.callout[data-callout=help] {
-  --callout-icon: var(--callout-icon-help);
-  --callout-color: var(--callout-rgb-help);
-}
-.callout[data-callout=faq] {
-  --callout-color: var(--callout-rgb-faq);
-}
-.callout[data-callout=warning] {
-  --callout-color: var(--callout-rgb-warning);
-}
-.callout[data-callout=caution] {
-  --callout-icon: var(--callout-icon-caution);
-  --callout-color: var(--callout-rgb-caution);
-}
-.callout[data-callout=attention] {
-  --callout-icon: var(--callout-icon-attention);
-  --callout-color: var(--callout-rgb-attention);
-}
-.callout[data-callout=failure], .callout[data-callout=fail] {
-  --callout-icon: var(--callout-icon-fail);
-  --callout-color: var(--callout-rgb-fail);
-}
-.callout[data-callout=missing] {
-  --callout-icon: var(--callout-icon-missing);
-  --callout-color: var(--callout-rgb-missing);
-}
-.callout[data-callout=danger] {
-  --callout-icon: var(--callout-icon-danger);
-  --callout-color: var(--callout-rgb-danger);
-}
-.callout[data-callout=error] {
-  --callout-icon: var(--callout-icon-error);
-  --callout-color: var(--callout-rgb-error);
-}
-.callout[data-callout=bug] {
-  --callout-icon: var(--callout-icon-bug);
-  --callout-color: var(--callout-rgb-bug);
-}
-.callout[data-callout=example] {
-  --callout-icon: var(--callout-icon-example);
-  --callout-color: var(--callout-rgb-example);
-}
-.callout[data-callout=quote] {
-  --callout-color: var(--callout-rgb-quote);
-}
-.callout[data-callout=cite] {
-  --callout-icon: var(--callout-icon-cite);
-  --callout-color: var(--callout-rgb-cite);
-}
 
 /*────────── Code ──────────*/
 .cm-html-embed.cm-embed-block pre code,
@@ -5255,7 +4969,6 @@ body {
 .markdown-rendered code:not(pre code) {
   color: var(--inline-code-color);
   background: var(--inline-code-bg);
-  border-radius: var(--inline-code-radius);
 }
 
 /*────────── Embed ──────────*/
@@ -7246,11 +6959,6 @@ body.file-header-title-hover .view-header-title-container:hover {
   opacity: 1;
 }
 
-body.active-line-highlight .cm-active {
-  background: var(--active-line-bg);
-  box-shadow: -25vw 0 var(--active-line-bg), 25vw 0 var(--active-line-bg);
-}
-
 /*────────── Style Settings: Notes and Files ──────────*/
 /* Headings */
 body.h1-vt-align-center .cm-s-obsidian .cm-line.HyperMD-header {
@@ -7700,20 +7408,6 @@ settings:
         title: Active Line Gutter Number Text Color
         default-light: 'hsla(31, 23%, 50%, 1)'
         default-dark: 'hsla(34, 24%, 40%, 1)'
-    -
-		id: active-line-highlight
-		type: class-toggle
-		title: Toggle Active Line Highlighting
-        description: Adds background color to active line.
-    -
-        id: active-line-bg
-        type: variable-themed-color
-        format: hsl
-        opacity: true
-        title: Active Line Background Color
-        description: Only works when Active Line Highlighting is turned on.
-        default-light: 'hsla(36, 38%, 98%, 1)'
-        default-dark: 'hsla(33, 20%, 16%, 1)'
 	-
 		id: interface_status-bar
 		type: heading

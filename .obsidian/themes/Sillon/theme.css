@@ -41,11 +41,15 @@ References (read the usage, license, and contribution pages)
   --background-primary-alt: hsl(311, 20%, 14%);
   --background-secondary-alt: #18021f;
 
+  /* Some variables I made up and don't know where to place */
+  --active-line-highlight-color: #4818db;
+
   /* Color Palette */
+  --color-accent: var(--sillon-accent-color);
 }
 
 body {
-  /* #region Animations */
+  /* #region Animations (WIP) */
     /* --anim-duration-fast: 140 ms; */
     /* --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95); */
 
@@ -170,6 +174,7 @@ body {
   --code-tag: var(--color-red);
   --code-value: var(--color-purple);
   --code-inline-color: rgba(14, 210, 247, 0.9);
+  --code-line-numbers-color: var(--code-comment);
 
   /* #endregion */
 
@@ -281,7 +286,59 @@ body {
   --radius-xs: 2px;
   /* #endregion */
 
-   /* #region Incomplete */
+  /* #region Ribbon (WIP) */ 
+    --ribbon-background: var(--background-secondary);
+    --ribbon-background-collapsed: var(--background-primary);
+    --ribbon-width: 44px;
+    --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
+
+    /* From Primary */ 
+    --ribbon-border-width: 1px;
+    --ribbon-radius: var(--editor-border-radius);
+    --ribbon-margin-bottom: var(--editor-pane-margin);
+    --ribbon-icon-spacing: var(--size-2-2);
+
+  /* #endregion */
+
+  /* #region Sidebar (WIP)*/
+  --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
+  --sidebar-tab-text-display: none;
+
+  /* From Primary */
+  --nav-item-white-space: nowrap;
+  --nav-item-radius: 6px;
+  --nav-item-padding: calc(var(--size-4-1) + 1px)
+                      var(--size-4-2)
+                      calc(var(--size-4-1) + 1px)
+                      var(--size-4-6);
+  --nav-file-padding-active: calc(var(--size-4-1))
+                              var(--size-4-2)
+                              calc(var(--size-4-1) + var(--button-inset-shadow-size))
+                              var(--size-4-6);
+  /* #endregion */
+
+  /* #region Status bar */
+
+  /* Do Not Change */
+  --status-bar-radius: var(--radius-m);
+  --status-bar-border-width: 1px;
+
+
+  --status-bar-background: var(--background-secondary);
+  --status-bar-border-color: var(--divider-color);
+  --status-bar-font-size: var(--font-ui-smaller);
+  --status-bar-text-color: var(--text-muted);
+  
+  
+  --status-bar-scroll-padding: calc(var(--status-bar-font-size) + 18px);
+  --status-bar-floating-opacity: 0.5;
+  --status-bar-floating-opacity-hover: 1;
+  --status-bar-floating-offset: var(--size-2-2);
+  /* #endregion */
+
+
+
+  /* #region Incomplete */
   /* Collapse icons */
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
@@ -577,14 +634,7 @@ body {
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
   --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
-  
-  
-  
-  /* Ribbon */
-  --ribbon-background: var(--background-secondary);
-  --ribbon-background-collapsed: var(--background-primary);
-  --ribbon-width: 44px;
-  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
+
   /* Scrollbars */
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
@@ -611,9 +661,7 @@ body {
   --size-4-12: 48px;
   --size-4-16: 64px;
   --size-4-18: 72px;
-  /* Sidebar */
-  --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
-  --sidebar-tab-text-display: none;
+  
   /* Sliders */
   --slider-thumb-border-width: 1px;
   --slider-thumb-border-color: var(--background-modifier-border-hover);
@@ -625,15 +673,7 @@ body {
   --slider-s-thumb-position: -5px;
   --slider-track-background: var(--background-modifier-border);
   --slider-track-height: 3px;
-  /* Status bar */
-  --status-bar-background: var(--background-secondary);
-  --status-bar-border-color: var(--divider-color);
-  --status-bar-border-width: 1px 0 0 1px;
-  --status-bar-font-size: var(--font-ui-smaller);
-  --status-bar-text-color: var(--text-muted);
-  --status-bar-position: fixed;
-  --status-bar-radius: var(--radius-m) 0 0 0;
-  --status-bar-scroll-padding: calc(var(--status-bar-font-size) + 18px);
+  
   /* Sync */
   --sync-avatar-color-current-user: transparent;
   --sync-avatar-color-1: var(--color-red);
@@ -805,7 +845,7 @@ body {
   --interactive-normal: var(--color-base-00);
   --interactive-hover: var(--color-base-10);
   --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-accent: var(--color-accent-1);
+  --interactive-accent: #cc0a0a; /* var(--color-accent-1); */
   --interactive-accent-hover: var(--color-accent-2);
   /* #endregion */
 }
@@ -902,6 +942,13 @@ strong {
 .callout-content > p:last-child, .callout-content > ul:last-child, .callout-content > ol:last-child {
   margin-bottom: .25rem;
 }
+
+/* From Primary For Reference */
+/* .callout[data-callout=danger] {
+  --callout-icon: var(--callout-icon-danger);
+  --callout-color: var(--callout-rgb-danger);
+} */
+
 /* For Reference 
 In style settings have a value like .callout-color-toggle to just set variables if enabled. 
 
@@ -1195,13 +1242,44 @@ input[type=checkbox] {
   border-bottom: transparent;
 }
 
-.markdown-rendered code {
-  border: none;
+.HyperMD-codeblock {
+  border-top: transparent !important;
+  border-right: transparent !important;
+  border-bottom: transparent !important;
 }
 
 .cm-s-obsidian span.cm-inline-code {
   color: var(--code-inline-color);
 }
+
+
+/* #region From AnuPpuccin */
+.HyperMD-codeblock-begin {
+  counter-reset: line-numbers;
+}
+
+.HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
+  padding-left: 2.5rem;
+  position: relative;
+}
+
+.HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end)::before {
+  align-items: flex-end;
+  color: var(--code-line-numbers-color);
+  content: counter(line-numbers);
+  counter-increment: line-numbers;
+  left: 0;
+
+  font-size: .9em;
+  height: 100%;
+  justify-content: flex-end;
+  
+  padding-top: .07rem;
+  position: absolute;
+  text-align: right;
+  width: 1.75rem;
+}
+/* #endregion */
 
 /* #endregion */
 
@@ -1243,6 +1321,7 @@ body {
 .markdown-source-view.cm-s-obsidian.markdown-source-view.mod-cm6:not(.is-live-preview) .cm-active.cm-line {
   background-color: #10dae125;
 }
+
 
 /* #endregion */
 
@@ -1290,4 +1369,32 @@ input.slider,
 .modal-close-button {
   cursor: pointer;
 }
+/* #endregion */
+
+/* #region STATUS BAR (complete?) */
+.status-bar {
+  bottom: 10px;
+  right: 10px;
+  box-shadow: 2px 2px 1px 0px rgba(126, 28, 196, 0.789);
+}
+/* #endregion */
+
+/* #region EDITOR (miscellaneous WIP) */
+
+/* Highlight active line - From AnuPuccin */ 
+.markdown-source-view .cm-active.cm-line {
+  background-color: var(--active-line-highlight-color);
+}
+
+/* Font */ 
+.markdown-source-view:not(.is-live-preview) {
+  
+}
+
+.markdown-source-view.is-live-preview {
+}
+
+.markdown-preview-view {
+}
+
 /* #endregion */
