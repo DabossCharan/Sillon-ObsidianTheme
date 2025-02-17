@@ -1,6 +1,0 @@
-dddd
-\xtofrom{#}
-\begin{prooftree}...
-Conclusion
-second
-Second

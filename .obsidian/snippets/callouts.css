@@ -1,0 +1,106 @@
+/* Callouts CSS */ 
+
+/* Callout Variables */
+body {
+  /* Callout Layout (add to Style Settings) */
+  --callout-title-padding: 0rem;
+  --callout-padding: .75rem 1rem .75rem 1rem;
+  --callout-border-width: 4px;
+  --callout-border-opacity: .5;
+  --callout-radius: var(--radius-s);
+  --callout-title-size: inherit;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+
+  /* Do Not Change */
+  --callout-blend-mode: screen;
+  
+  /* Callout Colors (add to Style Settings) */
+  /* Define Colors For: 
+     - Abstract
+     - Attention 
+     - Bug 
+     - Caution 
+     - Cite 
+     - Check 
+     - Default
+     - Danger 
+     - Done
+     - Error 
+     - Example
+     - Fail 
+     - Failure 
+     - FAQ 
+     - Help 
+     - Hint 
+     - Important 
+     - Info 
+     - Missing 
+     - Note
+     - Question 
+     - Seealso
+     - Success
+     - Summary 
+     - Tip
+     - Tldr
+     - Todo
+     - Warning
+     - Quote
+    */
+
+    --callout-note: var(--color-purple-rgb); 
+    /* when reassinging, should be written as three numbers 
+    (ex: 1, 2, 124) and not rgb(1, 2, 124); */
+}
+
+.markdown-preview-view .callout, .markdown-source-view.mod-cm6.is-live-preview .callout {
+    border-radius: var(--callout-radius);
+    border-bottom: transparent;
+    border-right: transparent;
+    border-top: transparent;
+  }
+  
+  .markdown-source-view.mod-cm6.is-live-preview .callout, .markdown-source-view.mod-cm6.is-live-preview .callout:hover {
+    border-radius: 0px;
+  }
+  
+  /* Default Callout */
+  .callout {
+    
+  }
+  
+  /* Example Callout Styling For Reference (Do This For Every Type Of Callout */ 
+  .callout[data-callout=note] {
+    --callout-color: var(--callout-note);
+    --callout-icon: lucide-alert-triangle;
+  }
+  
+  /*
+  .markdown-preview-view .callout .callout-content p {
+    margin: .25rem 0 .25rem 0;
+  } */
+  
+  /* From AnuPpuccin 
+  .callout-content > p:first-child, .callout-content > ul:first-child, .callout-content > ol:first-child {
+    margin-top: .25rem;
+  }
+  .callout-content > p:last-child, .callout-content > ul:last-child, .callout-content > ol:last-child {
+    margin-bottom: .25rem;
+  } */
+  
+  /* From Primary For Reference */
+  /* .callout[data-callout=danger] {
+    --callout-icon: var(--callout-icon-danger);
+    --callout-color: var(--callout-rgb-danger);
+  } */
+  
+  /* For Reference 
+  In style settings have a value like .callout-color-toggle to just set variables if enabled. 
+  
+  .callout-color-toggle .callout {
+     --callout-abstract: var(--variableThatcolorFromStyleSettingsIsSavedTo);
+     --callout-attention: var(--variableThatcolorFromStyleSettingsIsSavedTo);
+     ...
+     -callout-summary: var(--variableThatcolorFromStyleSettingsIsSavedTo);
+  }
+  
+  */
