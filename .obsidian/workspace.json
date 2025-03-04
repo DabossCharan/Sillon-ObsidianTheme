@@ -14,36 +14,6 @@
               "type": "markdown",
               "state": {
                 "file": "Test.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Test"
-            }
-          },
-          {
-            "id": "42f1d815e471af0a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Test.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Test"
-            }
-          },
-          {
-            "id": "c904aeea003d65d4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Test.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": false
@@ -51,9 +21,18 @@
               "icon": "lucide-file",
               "title": "Test"
             }
+          },
+          {
+            "id": "ffa9d25eb4493f83",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -83,37 +62,48 @@
       }
     ],
     "direction": "horizontal",
-    "width": 229.5
+    "width": 264
   },
   "right": {
     "id": "ef487fe2498ce9d6",
     "type": "split",
-    "children": [],
+    "children": [
+      {
+        "id": "3e8398822469c8d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ff57e859fb694529",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ]
+      }
+    ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 284
   },
   "left-ribbon": {
     "hiddenItems": {
-      "omnisearch:Omnisearch": false,
-      "graph:Open graph view": false,
-      "daily-notes:Open today's daily note": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "switcher:Open quick switcher": false,
-      "random-note:Open random note": false,
-      "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false,
-      "homepage:Open homepage": false,
-      "obsidian-kanban:Create new board": false,
-      "canvas:Create new canvas": false
+      "command-palette:Open command palette": false,
+      "graph:Open graph view": false
     }
   },
-  "active": "c904aeea003d65d4",
+  "active": "f6d7fa6a949e6c87",
   "lastOpenFiles": [
-    "Readme.md",
     "Test.md",
+    "Accessibility Research.md",
+    "Readme.md",
     "00 Guide/00 Guide.md",
     "Vault Upkeep/Charan's Obsidian Reference.md",
     "02 Sample/This is another Note.md",
@@ -121,7 +111,6 @@
     "02 Sample/02 Sample.md",
     "02 Sample/Ctrl + Click on the Folder Itself to See Table of Contents.md",
     "01 Sample/01 Sample.md",
-    "Accessibility Research.md",
     "Untitled.canvas",
     "Vault Upkeep/Homepage.md",
     "Homepage.pdf",

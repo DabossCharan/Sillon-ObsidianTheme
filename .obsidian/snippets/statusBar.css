@@ -1,0 +1,22 @@
+/* Status Bar Variables */
+body {
+  /* Add to Style Settings */
+  --status-bar-radius: var(--radius-m);
+  --status-bar-border-width: 2px;
+  --status-bar-background: var(--background-secondary);
+  --status-bar-border-color: var(--divider-color);
+  --status-bar-font-size: var(--font-ui-smaller);
+  --status-bar-text-color: var(--text-muted);
+  
+  
+  --status-bar-scroll-padding: calc(var(--status-bar-font-size) + 18px);
+  --status-bar-floating-opacity: 0.5;
+  --status-bar-floating-opacity-hover: 1;
+  --status-bar-floating-offset: var(--size-2-2);
+}
+
+.status-bar {
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 2px 2px 1px 0px rgba(126, 28, 196, 0.789);
+}

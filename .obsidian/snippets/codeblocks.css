@@ -1,0 +1,65 @@
+/* Code Block Variables */
+body {
+  --code-background: var(--background-primary-alt);
+  --code-border-color: #FFFFFF; /*var(--background-modifier-border);*/
+  --code-border-width: 4px;
+
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-operator: var(--color-red);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --code-inline-color: rgba(14, 210, 247, 0.9);
+  --code-line-numbers-color: var(--code-comment);
+}
+
+.markdown-rendered pre {
+    padding-left: 1.25rem;
+    border-top: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+  }
+  
+  .HyperMD-codeblock {
+    border-top: transparent !important;
+    border-right: transparent !important;
+    border-bottom: transparent !important;
+  }
+  
+  .cm-s-obsidian span.cm-inline-code {
+    color: var(--code-inline-color);
+  }
+  
+  
+  /* From AnuPpuccin */
+  .HyperMD-codeblock-begin {
+    counter-reset: line-numbers;
+  }
+  
+  .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
+    padding-left: 2.5rem;
+    position: relative;
+  }
+  
+  .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end)::before {
+    align-items: flex-end;
+    color: var(--code-line-numbers-color);
+    content: counter(line-numbers);
+    counter-increment: line-numbers;
+    left: 0;
+  
+    font-size: .9em;
+    height: 100%;
+    justify-content: flex-end;
+    
+    padding-top: .07rem;
+    position: absolute;
+    text-align: right;
+    width: 1.75rem;
+  }
