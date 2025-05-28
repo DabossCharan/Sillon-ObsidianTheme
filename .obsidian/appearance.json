@@ -6,12 +6,9 @@
   "textFontFamily": "",
   "enabledCssSnippets": [
     "custom-rainbow-colors",
-    "callouts",
-    "checkboxes",
-    "codeblocks",
-    "statusBar",
-    "blockquotes",
-    "cardLayout"
+    "workspace",
+    "fonts",
+    "variables"
   ],
   "baseFontSize": 21,
   "baseFontSizeAction": true,

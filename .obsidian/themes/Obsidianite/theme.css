@@ -97,7 +97,7 @@
   /***************************************/
 
   /** Font Customization **/
-  --default-font: "JetBrains Mono", 'Rubik', 'Glow Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  --default-font: 'Rubik', 'Glow Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
 
   --default-font-size: 18px;
@@ -501,7 +501,7 @@ h6 {
   font-weight: 600;
 }
 
-/* .HyperMD-header.HyperMD-header-2,
+.HyperMD-header.HyperMD-header-2,
 .HyperMD-header.HyperMD-header-3,
 .HyperMD-header.HyperMD-header-4,
 .HyperMD-header.HyperMD-header-5,
@@ -510,7 +510,7 @@ h6 {
   border-width: 1px;
   border-image-slice: 1;
   border-image-source: linear-gradient(to right, var(--text-sub-accent), #100e17, #100e17, #100e17);
-} */
+}
 
 .HyperMD-header {
   padding: 20px;
@@ -561,16 +561,11 @@ h6 {
   /* padding-top: 1.25rem; */
   margin: 45px 0 20px 0;
   position: relative;
-  /* padding-bottom: 10px; */
-  /* border-bottom: 1px solid;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
   border-width: 35%;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, var(--text-sub-accent), #1e790e, #100e17, #330cbe); */
-}
-
-/* Charan Added */
-.cm-s-obsidian .cm-line.HyperMD-header {
-  padding-top: 0.5rem !important;
+  border-image-source: linear-gradient(to right, var(--text-sub-accent), #100e17, #100e17, #100e17);
 }
 
 .view-header-icon {
@@ -591,8 +586,8 @@ h6 {
 /** hr styles -- PREVIEW MODE */
 .cm-line hr,
 .markdown-preview-view hr {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  margin-block-start: 4em;
+  margin-block-end: 4em;
   border: none;
   height: 0;
   border-bottom: 1px solid;
@@ -621,8 +616,7 @@ h6 {
 .cm-strong,
 strong {
   -webkit-background-clip: text;
-  /* -webkit-text-fill-color: transparent; */
-  -webkit-text-fill-color: var(--text-faint);
+  -webkit-text-fill-color: transparent;
   padding: 0;
   color: #7aa2f7;
   background-color: #7aa2f7;
@@ -654,7 +648,7 @@ strong kbd {
 .cm-em,
 em {
   color: #bb9af7 !important;
-  font-family: "JetBrains Mono", OperatorMonoSSmLig-Book, Rubik, var(--default-font) !important;
+  font-family: OperatorMonoSSmLig-Book, Rubik, var(--default-font) !important;
 }
 
 .cm-em.cm-formatting-em {
@@ -695,7 +689,7 @@ em {
   -webkit-text-fill-color: var(--text-normal);
   background-position: 0 100%;
   background-repeat: repeat-x;
-  background-size: 5px 2px;
+  background-size: 5px 5px;
   text-decoration: none;
 }
 
@@ -722,7 +716,7 @@ cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline {
   color: var(--text-normal);
   background-position: 0 100%;
   background-repeat: repeat-x;
-  background-size: 5px 2px;
+  background-size: 5px 5px;
   text-decoration: none;
   transition: background 350ms ease-in-out;
 }

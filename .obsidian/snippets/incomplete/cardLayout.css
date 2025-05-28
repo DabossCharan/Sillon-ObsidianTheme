@@ -1,34 +1,11 @@
 /* Modified Card Layout From AnuPpuccin */
 
-/*
-.workspace-split:not(.mod-root) .graph-controls.is-close,
-.workspace-split:not(.mod-root) .graph-controls,
-.workspace-split:not(.mod-root) .graph-controls:not(.is-close)
-{
-  background-color: transparent;
-}
-*/
-
-.mod-vertical .workspace-tabs {
-  background-color: transparent;
-}
-
-.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-leaf {
-  background-color: #121212; var(--background-primary);*/
-}
-
-/*
-.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container
-{
-  background-color: #c8bfbf !important;
-}
-
 
 body {
-  --card-background-color: rgba(255, 255, 255, 0.5);
-  --card-foreground-color: #a75a5a;
+  --card-background-color: rgba(255, 255, 255, .8);
+  --card-foreground-color: rgba(255, 255, 255, .8);
   --divider-color: transparent;
-  --tab-outline-color: #f5ecec;
+  --tab-outline-color: #b0acac;
   --divider-color-hover: var(--backgrouund-modifier-border);
   --divider-width: 4px;
   --divider-width-hover: 4px;
@@ -37,34 +14,17 @@ body {
   	var(--background-modifier-border);
   --ribbon-padding: 0;
 
-
   /* To Hide Borders of Tabs */
   /* --tab-outline-color: transparent; */
-  /*
+
 }
 
-/*
-body .menu {
-  border: 0px !important;
-}
-
-
-.sidebar-toggle-button, .workspace-tabs.mod-top {
-  --tab-container-background: var(--card-background-color);
-}
-
-
-body .workspace-tabs.mod-top:has(.obsidian-banner-wrapper) {
-  --file-header-border: none;
-}*/
-
-/*
+.sidebar-toggle-button, .workspace-tabs.mod-top,
 body.is-focused, body.is-focused .sidebar-toggle-button, body.is-focused .workspace-tabs.mod-top {
   --tab-container-background: var(--card-background-color);
+  
 }
-*/
 
-/*
 body .mod-left-split .workspace-tabs .workspace-leaf,
 body .mod-right-split .workspace-tabs .workspace-leaf,
 body .mod-left-split,
@@ -75,85 +35,64 @@ body .workspace-fake-target-overlay:not(.is-in-sidebar) .workspace-tabs .workspa
 body .mod-root .workspace-tabs .workspace-leaf,
 body .workspace-ribbon.mod-left,
 body .workspace-ribbon.mod-left:before {
-  background-color: var(--tab-container-background);
-
-  background: transparent;
+  background: #121212;
 }
 
-body .mod-vertical .workspace-tabs .workspace-tab-container .workspace-leaf-content {
-  background-color: #67a75a !important;
-}
-
-/*
 body .workspace-ribbon.mod-left {
-  margin-right: 10px;
+  margin-right: 5px;
 }
   
-
-
 body .side-dock-actions {
   border-radius: 0px var(--radius-xl) var(--radius-xl) 0px;
   margin-top: 2px;
   border-width: 1px 1px 0px 1px;
-}
 
-
-body .side-dock-actions {
   border-style: solid;
   border-color: var(--tab-outline-color);
   background-color: var(--card-foreground-color);
-}
 
-body .side-dock-actions {
   padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
 }
+
 body .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
-  border: none;
-  margin: 10px;
-  margin-bottom: 0;
-  background-color: transparent;
+  border-style: solid;
+  border-color: var(--tab-outline-color);
+  border-radius: var(--radius-xl);
+  margin: 4px;
+  margin-bottom: 10px;
+  border-width: 1px;
+  background-color: var(--card-foreground-color) !important;
 }
+
 body .workspace-ribbon.mod-left {
   margin-top: calc(var(--header-height) - 1px);
 }
-
 
 body .workspace-tab-header-container,
 body .workspace-ribbon.mod-left:before {
   border-bottom: none;
 }
+
 body .mod-vertical .workspace-tabs .workspace-tab-header-container {
   padding-left: 20px;
-}
-body .mod-vertical .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner {
-  margin: 6px -5px calc(var(--tab-outline-width) * -1);
-  z-index: 1;
 }
 
 body .mod-left-split .workspace-tab-container,
 body .mod-right-split .workspace-tab-container {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-color: var(--tab-container-background);
+  
 }
 
 body .workspace-split .workspace-tab-container {
   background-color: var(--tab-container-background);
+  
 }
 
-/*
 body .workspace-split .workspace-leaf-content, body .side-dock-actions, body .workspace-split .workspace-leaf-content[data-type=file-explorer] {
   box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 0.05);
 }
-
-
-body .workspace-split .mod-stacked .workspace-leaf-content {
-  border-radius: 0;
-  border: none;
-  margin-bottom: 0px;
-  border-left: none;
-}
-
 
 body .workspace-split.mod-horizontal > * {
   width: unset;
@@ -161,7 +100,7 @@ body .workspace-split.mod-horizontal > * {
 
 body .workspace .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
   border-style: solid;
-  border-radius: var(--anp-card-radius, var(--radius-xl)) 0px 0px var(--anp-card-radius, var(--radius-xl));
+  border-radius: var(--radius-xl) 0px 0px var(--radius-xl);
   border-width: var(--tab-outline-width);
   border-color: var(--tab-outline-color);
   border-right: var(--tab-outline-width) dashed var(--tab-outline-color);
@@ -188,8 +127,8 @@ body .workspace-drop-overlay:before {
 }
 
 body:not(.is-phone) .mod-vertical .workspace-tabs {
-  padding-left: var(--anp-card-layout-padding, 10px);
-  padding-right: var(--anp-card-layout-padding, 10px);
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
@@ -198,46 +137,22 @@ body .workspace-leaf-content {
   border: 1px solid var(--tab-outline-color);
   border-radius: var(--radius-xl);
   margin-bottom: 10px;
-}
-
-/*
-.workspace, .app-container, .horizontal-main-container {
-  background-color: var(--tab-container-background);
-}*/
-
-/* Testing Code From https://yomaru.dev/700+Knowledge/Obsidian+Translucent+window */
-/*
-body {
-  --titlebar-background: transparent !important;
-  --titlebar-background-focused: var(--titlebar-background);
-  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.5);
   
 }
 
-.workspace-tab-header.is-active {
+.workspace, .app-container, .horizontal-main-container {
+  background-color: var(--tab-container-background);
+  
 }
 
 
-.workspace-leaf,
-.workspace-tab-header-container {
-  background: transparent !important;
+body .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container .view-header, body .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container .view-content {
+  background-color: var(--card-background-color) !important;
+  
 }
 
-.workspace-split.mod-root,
-.workspace-split.mod-root .view-content,
-.workspace-split.mod-root .view-header {
-  background: transparent !important;
+.workspace-tab-header {
+  background-color: var(--card-background-color) !important;
+  
 }
 
-.view-header-title-container:not(.mod-at-end):after {
-  background: transparent !important;
-}
-
-.custom-frames-frame {
-  background: transparent !important;
-}
-
-.is-focused .workspace-leaf.mod-active .view-header {
-  background: transparent !important;
-}
-*/

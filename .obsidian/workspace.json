@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "d6b53d1aeb1a1382",
+        "id": "d4ca6153d9daa165",
         "type": "tabs",
         "children": [
           {
@@ -15,21 +15,11 @@
               "state": {
                 "file": "Test.md",
                 "mode": "preview",
-                "source": false,
+                "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
               "title": "Test"
-            }
-          },
-          {
-            "id": "ffa9d25eb4493f83",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
             }
           }
         ]
@@ -62,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264
+    "width": 200
   },
   "right": {
     "id": "ef487fe2498ce9d6",
@@ -87,23 +77,41 @@
             }
           }
         ]
+      },
+      {
+        "id": "506fe0eefb66cb05",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "74f2404a017ebb92",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 284
+    "width": 329
   },
   "left-ribbon": {
     "hiddenItems": {
+      "graph:Open graph view": false,
       "workspaces:Manage workspace layouts": false,
-      "command-palette:Open command palette": false,
-      "graph:Open graph view": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "f6d7fa6a949e6c87",
+  "active": "9084b6d9539fbec4",
   "lastOpenFiles": [
     "Test.md",
-    "Accessibility Research.md",
     "Readme.md",
+    "Accessibility Research.md",
+    "Test/New Note.md",
+    "Test",
     "00 Guide/00 Guide.md",
     "Vault Upkeep/Charan's Obsidian Reference.md",
     "02 Sample/This is another Note.md",
@@ -128,7 +136,6 @@
     "03 AP Stats/Unit 6 - Inference for Categorical Data - Proportions/Confidence Intervals for Proportions.md",
     "03 AP Stats/Unit 6 - Inference for Categorical Data - Proportions/Interpreting Confidence Interval.md",
     "03 AP Stats/Unit 6 - Inference for Categorical Data - Proportions/Interpreting Confidence Level.md",
-    "03 AP Stats/03 AP Stats.md",
     "Vault Upkeep/Attachments/Images/Pasted image 20250128223338.png",
     "Vault Upkeep/Attachments/Images/Pasted image 20250126134229.png",
     "Vault Upkeep/Attachments/Images/Pasted image 20250126133514.png",
@@ -146,7 +153,6 @@
     "05 Game Development/Meshes",
     "808 Music Production/FL Studio",
     "Vault Upkeep/Attachments/Images/Images",
-    "01 AP Lit/Film",
-    "Vault Upkeep/Attachments"
+    "01 AP Lit/Film"
   ]
 }

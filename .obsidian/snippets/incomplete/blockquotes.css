@@ -9,6 +9,9 @@ body {
   --blockquote-background-color: #45024277;  
 }
 
+.markdown-rendered blockquote {
+  padding: 5px 5px 5px 10px;
+}
 
 .markdown-preview-view blockquote {
     border-radius: var(--blockquote-border-radius); 

@@ -48,3 +48,6 @@ Color Accessibility:
 - To meet this requirement, in general you should use complementary colors or colors from opposite ends of the spectrum 
 - Use Color Contrast Checker 
 	- [Color Contrast Checker | Free Accessibility Tool | AudioEye®](https://www.audioeye.com/color-contrast-checker/)
+- Pix
+	- Pix
+	- 

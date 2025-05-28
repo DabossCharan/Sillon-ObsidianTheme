@@ -1,0 +1,121 @@
+body {
+  --card-background-color: #121212;
+  --card-foreground-color: #ffffff;
+  --divider-color: transparent;
+  --tab-outline-color: var(--background-modifier-border); /*transparent*/
+  --divider-color-hover: var(--backgrouund-modifier-border);
+  --divider-width: 4px;
+  --divider-width-hover: 4px;
+  --tab-container-background: var(--card-background-color);
+  --file-header-border: var(--border-width) dashed var(--background-modifier-border);
+  --ribbon-padding: 0;
+}
+
+body.is-focused,
+body.is-focused .sidebar-toggle-button,
+body.is-focused .workspace-tabs.mod-top {
+  --tab-container-background: var(--card-background-color);
+}
+
+body .mod-left-split .workspace-tabs .workspace-leaf,
+body .mod-right-split .workspace-tabs .workspace-leaf,
+body .mod-left-split,
+body .mod-vertical .workspace-tab-container,
+body .mod-vertical,
+body .workspace-split.mod-vertical,
+body .workspace-fake-target-overlay:not(.is-in-sidebar) .workspace-tabs .workspace-leaf,
+body .mod-root .workspace-tabs .workspace-leaf,
+body .workspace-ribbon.mod-left,
+body .workspace-ribbon.mod-left:before {
+  background-color: var(--tab-container-background);
+}
+
+.workspace-ribbon.mod-left {
+  margin-right: var(--card-layout-padding, 2px);
+}
+
+.side-dock-actions {
+  border-radius: 0px var(--card-radius, var(--radius-xl)) var(--card-radius, var(--radius-xl)) 0px;
+  margin-top: 2px;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-color: var(--tab-outline-color);
+  background-color: var(--card-foreground-color);
+  padding: var(--size-4-1) var(--size-4-1) var(--size-4-1);
+}
+
+body .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  border: none;
+  margin: var(--card-layout-padding, 10px);
+  margin-bottom: 0;
+  background-color: transparent;
+}
+body .workspace-ribbon.mod-left {
+  margin-top: calc(var(--header-height) - 1px);
+}
+body .workspace-tab-header-container,
+body .workspace-ribbon.mod-left:before {
+  border-bottom: none;
+}
+body .mod-vertical .workspace-tabs .workspace-tab-header-container {
+  padding-left: var(--card-header-left-padding, 20px);
+}
+body .mod-vertical .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner {
+  margin: 6px -5px calc(var(--tab-outline-width) * -1);
+  z-index: 1;
+}
+body .mod-left-split .workspace-tab-container,
+body .mod-right-split .workspace-tab-container {
+  padding-left: var(--card-layout-padding, 10px);
+  padding-right: var(--card-layout-padding, 10px);
+  background-color: var(--tab-container-background);
+}
+body .workspace-split .workspace-leaf-content:not([data-type=file-explorer]), body-filebrowser .workspace-leaf-content[data-type=file-explorer] {
+  background-color: var(--card-foreground-color);
+  border: 1px solid var(--tab-outline-color);
+}
+body .workspace-split .workspace-leaf-content, body .side-dock-actions, body .workspace-split .workspace-leaf-content[data-type=file-explorer] {
+  box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 0.05);
+}
+body .workspace-split .mod-stacked .workspace-leaf-content {
+  border-radius: 0;
+  border: none;
+  margin-bottom: 0px;
+  border-left: none;
+}
+body .workspace-split.mod-horizontal > * {
+  width: unset;
+}
+body .workspace .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
+  border-style: solid;
+  border-radius: var(--card-radius, var(--radius-xl)) 0px 0px var(--card-radius, var(--radius-xl));
+  border-width: var(--tab-outline-width);
+  border-color: var(--tab-outline-color);
+  border-right: var(--tab-outline-width) dashed var(--tab-outline-color);
+}
+body .workspace .workspace-tabs.mod-stacked .workspace-leaf {
+  border-left-width: 0px;
+  border-top-width: var(--tab-outline-width);
+  border-bottom-width: var(--tab-outline-width);
+  border-style: solid;
+  border-color: var(--tab-outline-color);
+  border-radius: 0 var(--card-radius, var(--radius-xl)) var(--card-radius, var(--radius-xl)) 0;
+}
+body .workspace .workspace-tabs.mod-stacked .workspace-tab-container {
+  padding-bottom: var(--card-layout-padding, 10px);
+}
+body .workspace-drop-overlay:before {
+  width: calc(100% - 6px - var(--card-layout-padding, 0) * 2);
+  height: calc(100% - 6px - var(--card-layout-padding, 0) * 2);
+  margin: auto;
+}
+
+body:not(.is-phone) .mod-vertical .workspace-tabs {
+  padding-left: var(--card-layout-padding, 10px);
+  padding-right: var(--card-layout-padding, 10px);
+}
+body:not(.is-phone) .workspace-split .workspace-leaf-content:not([data-type=file-explorer]), body:not(.is-phone)-filebrowser .workspace-leaf-content[data-type=file-explorer] {
+  border-radius: var(--card-radius, var(--radius-xl));
+  margin-bottom: var(--card-layout-padding, 10px);
+}
+

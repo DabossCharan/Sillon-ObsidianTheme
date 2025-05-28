@@ -1,3 +1,17 @@
+/*===============================================================
+                           AnuPpuccin
+                           ----------
+                  Personal theme for Obsidian
+
+AnuPpuccin is licensed under the GPL-3.0 license which allows you
+  to modify the code freely, however the Copyright and license
+notices must be preserved in your CSS. If you redistribute a part
+of my code, please credit my theme in your CSS file, and specify
+  which code you are using. Please keep my Buy Me a Coffee link
+                  in your README if you do so.
+
+            https://www.buymeacoffee.com/anubisnekhet
+*===============================================================*/
 /* @settings
 name: AnuPpuccin
 id: anuppuccin-theme-settings
@@ -13,18 +27,151 @@ settings:
     level: 1
     collapsed: true
 -
+    id: anuppuccin-theme-light
+    title: Light Theme Flavor
+    description: Select your preferred light mode flavor
+    type: class-select
+    allowEmpty: false
+    default: ctp-latte
+    options:
+    -
+        label: Latte
+        value: ctp-latte
+    -
+        label: Rosé Pine
+        value: ctp-rosepine-light
+-
+    id: anuppuccin-theme-dark
+    title: Dark Theme Flavor
+    description: Select your preferred dark mode flavor
+    type: class-select
+    allowEmpty: false
+    default: ctp-mocha
+    options:
+    -
+        label: Frappe
+        value: ctp-frappe
+    -
+        label: Macchiato
+        value: ctp-macchiato
+    -
+        label: Mocha
+        value: ctp-mocha
+    -
+        label: Mocha Old
+        value: ctp-mocha-old
+-
+    id: anuppuccin-light-theme-accents
+    title: Light Theme Accent
+    description: Select your preferred light theme accent (Defaults to dark theme accent if left empty)
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+    -
+        label: Rosewater
+        value: ctp-accent-light-rosewater
+    -
+        label: Flamingo
+        value: ctp-accent-light-flamingo
+    -
+        label: Pink
+        value: ctp-accent-light-pink
+    -
+        label: Mauve
+        value: ctp-accent-light-mauve
+    -
+        label: Red
+        value: ctp-accent-light-red
+    -
+        label: Maroon
+        value: ctp-accent-light-maroon
+    -
+        label: Peach
+        value: ctp-accent-light-peach
+    -
+        label: Yellow
+        value: ctp-accent-light-yellow
+    -
+        label: Green
+        value: ctp-accent-light-green
+    -
+        label: Teal
+        value: ctp-accent-light-teal
+    -
+        label: Sky
+        value: ctp-accent-light-sky
+    -
+        label: Sapphire
+        value: ctp-accent-light-sapphire
+    -
+        label: Blue
+        value: ctp-accent-light-blue
+    -
+        label: Lavender
+        value: ctp-accent-light-lavender
+-
+    id: anuppuccin-theme-accents
+    title: Dark Theme Accent
+    description: Select your preferred accent
+    type: class-select
+    allowEmpty: false
+    default: ctp-accent-rosewater
+    options:
+    -
+        label: Rosewater
+        value: ctp-accent-rosewater
+    -
+        label: Flamingo
+        value: ctp-accent-flamingo
+    -
+        label: Pink
+        value: ctp-accent-pink
+    -
+        label: Mauve
+        value: ctp-accent-mauve
+    -
+        label: Red
+        value: ctp-accent-red
+    -
+        label: Maroon
+        value: ctp-accent-maroon
+    -
+        label: Peach
+        value: ctp-accent-peach
+    -
+        label: Yellow
+        value: ctp-accent-yellow
+    -
+        label: Green
+        value: ctp-accent-green
+    -
+        label: Teal
+        value: ctp-accent-teal
+    -
+        label: Sky
+        value: ctp-accent-sky
+    -
+        label: Sapphire
+        value: ctp-accent-sapphire
+    -
+        label: Blue
+        value: ctp-accent-blue
+    -
+        label: Lavender
+        value: ctp-accent-lavender
+-
     id: anuppuccin-accent-toggle
     title: Force Custom Accents
     description: Forces colorscheme-specific custom accents to be utilised instead of default obsidian accent
     type: class-toggle
     default: true
 -
-    id: ctp-accent
-    title: Accent
-    type: variable-themed-color
-    default-light: '#'
-    default-dark: '#'
-    format: 'rgb-values'
+    id: anuppuccin-url-extended-colorschemes
+    title: Extended Color Schemes Snippet
+    description: "Download the snippet by clicking on [this link](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css)."
+    type: info-text
+    markdown: true
 
 # Colors :: Color Overrides
 
@@ -35,7 +182,104 @@ settings:
     type: heading
     level: 2
     collapsed: true
-
+-
+    id: ctp-custom-rosewater
+    title: Rosewater
+    type: variable-themed-color
+    default-light: '#'
+    default-dark: '#'
+    format: 'rgb-values'
+-
+    id: ctp-custom-flamingo
+    title: Flamingo
+    type: variable-themed-color
+    default-light: '#'
+    default-dark: '#'
+    format: 'rgb-values'
+-
+    id: ctp-custom-pink
+    title: Pink
+    type: variable-themed-color
+    default-light: '#'
+    default-dark: '#'
+    format: 'rgb-values'
+-
+    id: ctp-custom-mauve
+    title: Mauve
+    type: variable-themed-color
+    default-light: '#'
+    default-dark: '#'
+    format: 'rgb-values'
+-
+    id: ctp-custom-red
+    title: Red
+    type: variable-themed-color
+    default-light: '#'
+    default-dark: '#'
+    format: 'rgb-values'
+-
+    id: ctp-custom-maroon
+    title: Maroon
+    type: variable-themed-color
+    default-light: '#'
+    default-dark: '#'
+    format: 'rgb-values'
+-
+    id: ctp-custom-peach
+    title: Peach
+    type: variable-themed-color
+    default-light: '#'
+    default-dark: '#'
+    format: 'rgb-values'
+-
+    id: ctp-custom-yellow
+    title: Yellow
+    type: variable-themed-color
+    default-light: '#'
+    default-dark: '#'
+    format: 'rgb-values'
+-
+    id: ctp-custom-green
+    title: Green
+    type: variable-themed-color
+    default-light: '#'
+    default-dark: '#'
+    format: 'rgb-values'
+-
+    id: ctp-custom-teal
+    title: Teal
+    type: variable-themed-color
+    default-light: '#'
+    default-dark: '#'
+    format: 'rgb-values'
+-
+    id: ctp-custom-sky
+    title: Sky
+    type: variable-themed-color
+    default-light: '#'
+    default-dark: '#'
+    format: 'rgb-values'
+-
+    id: ctp-custom-sapphire
+    title: Sapphire
+    type: variable-themed-color
+    default-light: '#'
+    default-dark: '#'
+    format: 'rgb-values'
+-
+    id: ctp-custom-blue
+    title: Blue
+    type: variable-themed-color
+    default-light: '#'
+    default-dark: '#'
+    format: 'rgb-values'
+-
+    id: ctp-custom-lavender
+    title: Lavender
+    type: variable-themed-color
+    default-light: '#'
+    default-dark: '#'
+    format: 'rgb-values'
 -
     id: ctp-custom-text
     title: Text
@@ -126,7 +370,7 @@ settings:
 -
     id: anp-editor-header
     title: File Editor & Markdown Elements
-    description: Callouts, Codeblocks, Lists, Tables, Tags, etc.
+    description: Callouts, Checkboxes, Codeblocks, Lists, Tables, Tags, etc.
     type: heading
     level: 1
     collapsed: true
@@ -143,7 +387,78 @@ settings:
     -
         label: Highlight
         value: anp-current-line
+    -
+        label: Highlight + Border
+        value: anp-current-line-border
+    -
+        label: Border Only
+        value: anp-current-line-border-only
 
+# File Editor & Markdown Elements :: Callouts
+-
+    id: anp-callout-header
+    title: Callouts
+    description: Callout styles, border radius, custom colors
+    type: heading
+    level: 2
+    collapsed: true
+-
+    id: anp-callout-select
+    title: Callout Style
+    type: class-select
+    default: none
+    allowEmpty: false
+    options:
+    -
+        label: Default
+        value: none
+    -
+        label: Sleek
+        value: anp-callout-sleek
+    -
+        label: Block
+        value: anp-callout-block
+    -
+        label: Vanilla Normal
+        value: anp-callout-vanilla-normal
+    -
+        label: Vanilla Plus
+        value: anp-callout-vanilla-plus
+-
+    id: anp-callout-color-toggle
+    title: Enable Custom Callout Colors
+    type: class-toggle
+-
+    id: callout-radius
+    title: Callout Radius
+    type: variable-number
+    default: 4
+    format: px
+-
+    id: callout-padding
+    title: Callout Padding
+    description: Be careful, it does not properly work with all the callouts style yet.
+    type: variable-text
+    default: 0px
+-
+    id: callout-title-padding
+    title: Callout Title Padding
+    type: variable-text
+    default: 8px
+-
+    id: callout-title-opacity
+    title: Callout Title Background Opacity
+    description: Applies to Sleek, Vanilla and Vanilla Plus callouts
+    type: variable-number-slider
+    default: 0.1
+    min: 0
+    max: 1
+    step: 0.05
+-
+    id: callout-content-padding
+    title: Callout Content Padding
+    type: variable-text
+    default: 8px
 -
     id: anp-callout-fold-position
     title: Callout Fold Position
@@ -156,6 +471,24 @@ settings:
     -
         label: Right
         value: 1
+
+# File Editor & Markdown Elements :: Checkboxes
+
+-
+    id: anp-custom-checkboxes-header
+    title: Checkboxes
+    description: Custom checkboxes and speech bubbles
+    type: heading
+    level: 2
+    collapsed: true
+-
+    id: anp-custom-checkboxes
+    title: Enable Custom Checkboxes
+    type: class-toggle
+-
+    id: anp-speech-bubble
+    title: Enable Speech Bubbles
+    type: class-toggle
 
 # File Editor & Markdown Elements :: Codeblocks
 
@@ -243,6 +576,175 @@ settings:
     default: 4
     format: px
 
+# File Editor & Markdown Elements :: LaTeX
+
+-
+    id: anp-latex-header
+    title: LaTex
+    type: heading
+    description: LaTeX (Math) color, font size
+    level: 2
+    collapsed: true
+-
+    id: anp-latex-inline-color
+    title: LaTeX Inline Color
+    type: class-select
+    allowEmpty: true
+    default: anp-latex-inline-text
+    options:
+    -
+        label: Rosewater
+        value: anp-latex-inline-rosewater
+    -
+        label: Flamingo
+        value: anp-latex-inline-flamingo
+    -
+        label: Pink
+        value: anp-latex-inline-pink
+    -
+        label: Mauve
+        value: anp-latex-inline-mauve
+    -
+        label: Red
+        value: anp-latex-inline-red
+    -
+        label: Maroon
+        value: anp-latex-inline-maroon
+    -
+        label: Peach
+        value: anp-latex-inline-peach
+    -
+        label: Yellow
+        value: anp-latex-inline-yellow
+    -
+        label: Green
+        value: anp-latex-inline-green
+    -
+        label: Teal
+        value: anp-latex-inline-teal
+    -
+        label: Sky
+        value: anp-latex-inline-sky
+    -
+        label: Sapphire
+        value: anp-latex-inline-sapphire
+    -
+        label: Blue
+        value: anp-latex-inline-blue
+    -
+        label: Lavender
+        value: anp-latex-inline-lavender
+    -
+        label: Text
+        value: anp-latex-inline-text
+    -
+        label: Subtext 1
+        value: anp-latex-inline-subtext1
+    -
+        label: Subtext 0
+        value: anp-latex-inline-subtext0
+    -
+        label: Overlay 2
+        value: anp-latex-inline-overlay2
+    -
+        label: Overlay 1
+        value: anp-latex-inline-overlay1
+    -
+        label: Overlay 0
+        value: anp-latex-inline-overlay0
+    -
+        label: Surface 2
+        value: anp-latex-inline-surface2
+    -
+        label: Surface 1
+        value: anp-latex-inline-surface1
+    -
+        label: Surface 0
+        value: anp-latex-inline-surface0
+-
+    id: anp-latex-block-color
+    title: LaTeX Block Color
+    type: class-select
+    allowEmpty: true
+    default: anp-latex-block-text
+    options:
+    -
+        label: Rosewater
+        value: anp-latex-block-rosewater
+    -
+        label: Flamingo
+        value: anp-latex-block-flamingo
+    -
+        label: Pink
+        value: anp-latex-block-pink
+    -
+        label: Mauve
+        value: anp-latex-block-mauve
+    -
+        label: Red
+        value: anp-latex-block-red
+    -
+        label: Maroon
+        value: anp-latex-block-maroon
+    -
+        label: Peach
+        value: anp-latex-block-peach
+    -
+        label: Yellow
+        value: anp-latex-block-yellow
+    -
+        label: Green
+        value: anp-latex-block-green
+    -
+        label: Teal
+        value: anp-latex-block-teal
+    -
+        label: Sky
+        value: anp-latex-block-sky
+    -
+        label: Sapphire
+        value: anp-latex-block-sapphire
+    -
+        label: Blue
+        value: anp-latex-block-blue
+    -
+        label: Lavender
+        value: anp-latex-block-lavender
+    -
+        label: Text
+        value: anp-latex-block-text
+    -
+        label: Subtext 1
+        value: anp-latex-block-subtext1
+    -
+        label: Subtext 0
+        value: anp-latex-block-subtext0
+    -
+        label: Overlay 2
+        value: anp-latex-block-overlay2
+    -
+        label: Overlay 1
+        value: anp-latex-block-overlay1
+    -
+        label: Overlay 0
+        value: anp-latex-block-overlay0
+    -
+        label: Surface 2
+        value: anp-latex-block-surface2
+    -
+        label: Surface 1
+        value: anp-latex-block-surface1
+    -
+        label: Surface 0
+        value: anp-latex-block-surface0
+-
+    id: anp-latex-block-font-size
+    title: LaTeX Block Font Size
+    description: Change the font size of LaTeX blocks.
+    type: variable-number
+    default: 100
+    format: "%"
+
 # File Editor & Markdown Elements :: Lists
 
 -
@@ -275,6 +777,63 @@ settings:
     default-light: '#'
     default-dark: '#'
     format: 'hex'
+-
+    id: list-numbered-style
+    title: Ordered list style
+    type: variable-select
+    default: decimal
+    options:
+    -
+        label: "Decimal"
+        value: decimal
+    -
+        label: "Decimal with leading zeroes"
+        value: decimal-leading-zero
+    -
+        label: "Lowercase alphabetical"
+        value: lower-alpha
+    -
+        label: "Uppercase alphabetical"
+        value: upper-alpha
+    -
+        label: "Lowercase Roman Numerals"
+        value: lower-roman
+    -
+        label: "Uppercase Roman Numerals"
+        value: upper-roman
+    -
+        label: "Lowercase Latin"
+        value: lower-latin
+    -
+        label: "Uppercase Latin"
+        value: upper-latin
+    -
+        label: "Lowercase Greek"
+        value: lower-greek
+    -
+        label: "Uppercase Greek"
+        value: upper-greek
+    -
+        label: "Hiragana"
+        value: hiragana
+    -
+        label: "Hiragana Iroha"
+        value: hiragana-iroha
+    -
+        label: "Katakana"
+        value: armenian
+    -
+        label: "Katakana Iroha"
+        value: katakana-iroha
+    -
+        label: "Armenian"
+        value: armenian
+    -
+        label: "CJK Ideographic"
+        value: cjk-ideographic
+    -
+        label: "Hebrew"
+        value: hebrew
 
 # File Editor & Markdown Elements :: Tables
 
@@ -433,6 +992,114 @@ settings:
     default: 700
     format: px
 
+# Integrations
+
+-
+    id: anp-plugin-header
+    title: Integrations
+    description: MAKE.md, Minimal Cards Snippet, etc.
+    type: heading
+    level: 1
+    collapsed: true
+
+# Integrations :: MAKE.md
+
+-
+    id: anp-plugin-makemd
+    title: MAKE.md
+    description: 
+    type: heading
+    level: 2
+    collapsed: true
+-
+    id: anp-inline-title-vis
+    title: Inline Title Visibility
+    description: Make.md requires inline titles to be enabled to show folder titles, hence this toggle exists to disable it on notes elsewhere.
+    type: variable-select
+    default: block
+    options:
+    -
+        label: Visible
+        value: block
+    -
+        label: Invisible
+        value: none
+
+# Integrations :: Minimal Cards
+
+-
+    id: anp-snippet-minimal-cards
+    title: Minimal Cards
+    type: heading
+    level: 2
+    collapsed: true
+-
+    id: anp-snippet-minimal-cards-disc
+    title: Usage
+    description: "Minimal Cards is a feature of [Minimal](https://github.com/kepano/obsidian-minimal). AnuPpuccin does not come compiled with the snippet, however you can use a compiled version with this theme."
+    type: info-text
+    markdown: true
+-
+    id: anuppuccin-url-minimal-cards-snippet
+    title: Minimal Cards Snippet
+    description: "Download the snippet from [kepano](https://github.com/kepano/)'s github via [this link](https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/cards.scss)."
+    type: info-text
+    markdown: true
+-
+    id: cards-min-width
+    title: Card minimum width
+    type: variable-text
+    default: 180px
+-
+    id: cards-max-width
+    title: Card maximum width
+    description: Default fills the available width, accepts valid CSS units
+    type: variable-text
+    default: 1fr
+-
+    id: cards-mobile-width
+    title: Card minimum width on mobile
+    type: variable-text
+    default: 120px
+-
+    id: cards-padding
+    title: Card padding
+    type: variable-text
+    default: 1.2em
+-
+    id: cards-image-height
+    title: Card maximum image height
+    type: variable-text
+    default: 400px
+-
+    id: cards-border-width
+    title: Card border width
+    type: variable-text
+    default: 1px
+
+# Miscellaneous
+
+-
+    id: anp-misc-element-header
+    title: Miscellaneous
+    description: Color Palette Transition, Custom Metadata Button
+    type: heading
+    level: 1
+    collapsed: true
+-
+    id: anp-color-transition-toggle
+    title: Enable Color Transition (WIP)
+    description: "Adds a transition when switching palettes, looks really neat :)"
+    type: class-toggle
+-
+    id: anp-button-metadata-toggle
+    title: Enable Custom Metadata Button
+    type: class-toggle
+-
+    id: anp-print
+    title: Enable Print Styling
+    type: class-toggle
+
 # Show/Hide UI Elements
 
 -
@@ -442,6 +1109,22 @@ settings:
     type: heading
     level: 1
     collapsed: true
+-
+    id: anp-autohide-titlebar
+    title: Autohide Title Bar
+    type: class-toggle
+-
+    id: anp-cursor
+    title: Pointer cursor
+    type: variable-select
+    default: pointer
+    options:
+    -
+        label: Pointer
+        value: pointer
+    -
+        label: Normal
+        value: initial
 -
     id: anp-toggle-metadata
     title: Hide Metadata
@@ -707,12 +1390,54 @@ settings:
     type: variable-number
     default: 1.2
 -
-    id: anp-h1-color
+    id: anp-h1-color-custom
     title: H1 Color
-    type: variable-themed-color
-    default-light: '#'
-    default-dark: '#'
-    format: 'rgb-values'
+    type: class-select
+    allowEmpty: true
+    default: anp-h1-red
+    options:
+    -
+        label: Rosewater
+        value: anp-h1-rosewater
+    -
+        label: Flamingo
+        value: anp-h1-flamingo
+    -
+        label: Pink
+        value: anp-h1-pink
+    -
+        label: Mauve
+        value: anp-h1-mauve
+    -
+        label: Red
+        value: anp-h1-red
+    -
+        label: Maroon
+        value: anp-h1-maroon
+    -
+        label: Peach
+        value: anp-h1-peach
+    -
+        label: Yellow
+        value: anp-h1-yellow
+    -
+        label: Green
+        value: anp-h1-green
+    -
+        label: Teal
+        value: anp-h1-teal
+    -
+        label: Sky
+        value: anp-h1-sky
+    -
+        label: Sapphire
+        value: anp-h1-sapphire
+    -
+        label: Blue
+        value: anp-h1-blue
+    -
+        label: Lavender
+        value: anp-h1-lavender
 -
     id: anp-h1-divider
     title: H1 Divider
@@ -749,12 +1474,54 @@ settings:
     type: variable-number
     default: 1.2
 -
-    id: anp-h2-color
+    id: anp-h2-color-custom
     title: H2 Color
-    type: variable-themed-color
-    default-light: '#'
-    default-dark: '#'
-    format: 'rgb-values'
+    type: class-select
+    allowEmpty: true
+    default: anp-h2-peach
+    options:
+    -
+        label: Rosewater
+        value: anp-h2-rosewater
+    -
+        label: Flamingo
+        value: anp-h2-flamingo
+    -
+        label: Pink
+        value: anp-h2-pink
+    -
+        label: Mauve
+        value: anp-h2-mauve
+    -
+        label: Red
+        value: anp-h2-red
+    -
+        label: Maroon
+        value: anp-h2-maroon
+    -
+        label: Peach
+        value: anp-h2-peach
+    -
+        label: Yellow
+        value: anp-h2-yellow
+    -
+        label: Green
+        value: anp-h2-green
+    -
+        label: Teal
+        value: anp-h2-teal
+    -
+        label: Sky
+        value: anp-h2-sky
+    -
+        label: Sapphire
+        value: anp-h2-sapphire
+    -
+        label: Blue
+        value: anp-h2-blue
+    -
+        label: Lavender
+        value: anp-h2-lavender
 -
     id: anp-h2-divider
     title: H2 Divider
@@ -791,12 +1558,54 @@ settings:
     type: variable-number
     default: 1.3
 -
-    id: anp-h3-color
+    id: anp-h3-color-custom
     title: H3 Color
-    type: variable-themed-color
-    default-light: '#'
-    default-dark: '#'
-    format: 'rgb-values'
+    type: class-select
+    allowEmpty: true
+    default: anp-h3-green
+    options:
+    -
+        label: Rosewater
+        value: anp-h3-rosewater
+    -
+        label: Flamingo
+        value: anp-h3-flamingo
+    -
+        label: Pink
+        value: anp-h3-pink
+    -
+        label: Mauve
+        value: anp-h3-mauve
+    -
+        label: Red
+        value: anp-h3-red
+    -
+        label: Maroon
+        value: anp-h3-maroon
+    -
+        label: Peach
+        value: anp-h3-peach
+    -
+        label: Yellow
+        value: anp-h3-yellow
+    -
+        label: Green
+        value: anp-h3-green
+    -
+        label: Teal
+        value: anp-h3-teal
+    -
+        label: Sky
+        value: anp-h3-sky
+    -
+        label: Sapphire
+        value: anp-h3-sapphire
+    -
+        label: Blue
+        value: anp-h3-blue
+    -
+        label: Lavender
+        value: anp-h3-lavender
 -
     id: anp-h3-divider
     title: H3 Divider
@@ -833,12 +1642,54 @@ settings:
     type: variable-number
     default: 1.4
 -
-    id: anp-h4-color
+    id: anp-h4-color-custom
     title: H4 Color
-    type: variable-themed-color
-    default-light: '#'
-    default-dark: '#'
-    format: 'rgb-values'
+    type: class-select
+    allowEmpty: true
+    default: anp-h4-teal
+    options:
+    -
+        label: Rosewater
+        value: anp-h4-rosewater
+    -
+        label: Flamingo
+        value: anp-h4-flamingo
+    -
+        label: Pink
+        value: anp-h4-pink
+    -
+        label: Mauve
+        value: anp-h4-mauve
+    -
+        label: Red
+        value: anp-h4-red
+    -
+        label: Maroon
+        value: anp-h4-maroon
+    -
+        label: Peach
+        value: anp-h4-peach
+    -
+        label: Yellow
+        value: anp-h4-yellow
+    -
+        label: Green
+        value: anp-h4-green
+    -
+        label: Teal
+        value: anp-h4-teal
+    -
+        label: Sky
+        value: anp-h4-sky
+    -
+        label: Sapphire
+        value: anp-h4-sapphire
+    -
+        label: Blue
+        value: anp-h4-blue
+    -
+        label: Lavender
+        value: anp-h4-lavender
 -
     id: anp-h4-divider
     title: H4 Divider
@@ -875,12 +1726,54 @@ settings:
     type: variable-number
     default: 1.5
 -
-    id: anp-h5-color
+    id: anp-h5-color-custom
     title: H5 Color
-    type: variable-themed-color
-    default-light: '#'
-    default-dark: '#'
-    format: 'rgb-values'
+    type: class-select
+    allowEmpty: true
+    default: anp-h5-lavender
+    options:
+    -
+        label: Rosewater
+        value: anp-h5-rosewater
+    -
+        label: Flamingo
+        value: anp-h5-flamingo
+    -
+        label: Pink
+        value: anp-h5-pink
+    -
+        label: Mauve
+        value: anp-h5-mauve
+    -
+        label: Red
+        value: anp-h5-red
+    -
+        label: Maroon
+        value: anp-h5-maroon
+    -
+        label: Peach
+        value: anp-h5-peach
+    -
+        label: Yellow
+        value: anp-h5-yellow
+    -
+        label: Green
+        value: anp-h5-green
+    -
+        label: Teal
+        value: anp-h5-teal
+    -
+        label: Sky
+        value: anp-h5-sky
+    -
+        label: Sapphire
+        value: anp-h5-sapphire
+    -
+        label: Blue
+        value: anp-h5-blue
+    -
+        label: Lavender
+        value: anp-h5-lavender
 -
     id: anp-h5-divider
     title: H5 Divider
@@ -917,12 +1810,54 @@ settings:
     type: variable-number
     default: 1.5
 -
-    id: anp-h6-color
+    id: anp-h6-color-custom
     title: H6 Color
-    type: variable-themed-color
-    default-light: '#'
-    default-dark: '#'
-    format: 'rgb-values'
+    type: class-select
+    allowEmpty: true
+    default: anp-h6-mauve
+    options:
+    -
+        label: Rosewater
+        value: anp-h6-rosewater
+    -
+        label: Flamingo
+        value: anp-h6-flamingo
+    -
+        label: Pink
+        value: anp-h6-pink
+    -
+        label: Mauve
+        value: anp-h6-mauve
+    -
+        label: Red
+        value: anp-h6-red
+    -
+        label: Maroon
+        value: anp-h6-maroon
+    -
+        label: Peach
+        value: anp-h6-peach
+    -
+        label: Yellow
+        value: anp-h6-yellow
+    -
+        label: Green
+        value: anp-h6-green
+    -
+        label: Teal
+        value: anp-h6-teal
+    -
+        label: Sky
+        value: anp-h6-sky
+    -
+        label: Sapphire
+        value: anp-h6-sapphire
+    -
+        label: Blue
+        value: anp-h6-blue
+    -
+        label: Lavender
+        value: anp-h6-lavender
 -
     id: anp-h6-divider
     title: H6 Divider
@@ -962,33 +1897,165 @@ settings:
     title: Enable Decoration Colors
     type: class-toggle
 -
-    id: anp-bold-color
+    id: anp-bold-custom
     title: Bold Color
-    type: variable-themed-color
-    default-light: '#'
-    default-dark: '#'
-    format: 'rgb-values'
+    type: class-select
+    allowEmpty: false
+    default: anp-bold-red
+    options:
+    -
+        label: None
+        value: none
+    -
+        label: Rosewater
+        value: anp-bold-rosewater
+    -
+        label: Flamingo
+        value: anp-bold-flamingo
+    -
+        label: Pink
+        value: anp-bold-pink
+    -
+        label: Mauve
+        value: anp-bold-mauve
+    -
+        label: Red
+        value: anp-bold-red
+    -
+        label: Maroon
+        value: anp-bold-maroon
+    -
+        label: Peach
+        value: anp-bold-peach
+    -
+        label: Yellow
+        value: anp-bold-yellow
+    -
+        label: Green
+        value: anp-bold-green
+    -
+        label: Teal
+        value: anp-bold-teal
+    -
+        label: Sky
+        value: anp-bold-sky
+    -
+        label: Sapphire
+        value: anp-bold-sapphire
+    -
+        label: Blue
+        value: anp-bold-blue
+    -
+        label: Lavender
+        value: anp-bold-lavender
 -
-    id: anp-italic-color
+    id: anp-italic-custom
     title: Italic Color
-    type: variable-themed-color
-    default-light: '#'
-    default-dark: '#'
-    format: 'rgb-values'
+    type: class-select
+    allowEmpty: false
+    default: anp-italic-green
+    options:
+    -
+        label: None
+        value: none
+    -
+        label: Rosewater
+        value: anp-italic-rosewater
+    -
+        label: Flamingo
+        value: anp-italic-flamingo
+    -
+        label: Pink
+        value: anp-italic-pink
+    -
+        label: Mauve
+        value: anp-italic-mauve
+    -
+        label: Red
+        value: anp-italic-red
+    -
+        label: Maroon
+        value: anp-italic-maroon
+    -
+        label: Peach
+        value: anp-italic-peach
+    -
+        label: Yellow
+        value: anp-italic-yellow
+    -
+        label: Green
+        value: anp-italic-green
+    -
+        label: Teal
+        value: anp-italic-teal
+    -
+        label: Sky
+        value: anp-italic-sky
+    -
+        label: Sapphire
+        value: anp-italic-sapphire
+    -
+        label: Blue
+        value: anp-italic-blue
+    -
+        label: Lavender
+        value: anp-italic-lavender
 -
-    id: anp-highlight-color
+    id: anp-highlight-custom
     title: Highlight Color
-    type: variable-themed-color
-    default-light: '#'
-    default-dark: '#'
-    format: 'rgb-values'
+    type: class-select
+    allowEmpty: false
+    default: anp-highlight-yellow
+    options:
+    -
+        label: Rosewater
+        value: anp-highlight-rosewater
+    -
+        label: Flamingo
+        value: anp-highlight-flamingo
+    -
+        label: Pink
+        value: anp-highlight-pink
+    -
+        label: Mauve
+        value: anp-highlight-mauve
+    -
+        label: Red
+        value: anp-highlight-red
+    -
+        label: Maroon
+        value: anp-highlight-maroon
+    -
+        label: Peach
+        value: anp-highlight-peach
+    -
+        label: Yellow
+        value: anp-highlight-yellow
+    -
+        label: Green
+        value: anp-highlight-green
+    -
+        label: Teal
+        value: anp-highlight-teal
+    -
+        label: Sky
+        value: anp-highlight-sky
+    -
+        label: Sapphire
+        value: anp-highlight-sapphire
+    -
+        label: Blue
+        value: anp-highlight-blue
+    -
+        label: Lavender
+        value: anp-highlight-lavender
 
 # Workspace
 
 -
     id: anp-workspace-header
     title: Workspace
-    description: Background, Layout, Sidebar, Tabs, Translucency, etc.
+    description: Background, Colorful Frame, Layout, Sidebar, Tabs, Translucency, etc.
     type: heading
     level: 1
     collapsed: true
@@ -1006,6 +2073,48 @@ settings:
     id: anp-canvas-dark-bg
     title: Darker Canvas Background
     type: class-toggle
+
+# Workspace :: Colorful Frame
+
+-
+    id: colorful-frame
+    title: Colorful Frame
+    description: 
+    type: heading
+    level: 2
+    collapsed: true
+-
+    id: anp-colorful-frame
+    title: "Enable Colorful Frame (WIP)"
+    type: class-toggle
+-
+    id: anp-colorful-frame-icon-toggle-light
+    title: "Invert Icon Colors - Light"
+    type: class-toggle
+-
+    id: anp-colorful-frame-icon-toggle-dark
+    title: "Invert Icon Colors - Dark"
+    type: class-toggle
+-
+    id: anp-colorful-frame-opacity
+    title: Colorful Frame Opacity
+    type: variable-number-slider
+    default: 1
+    min: 0
+    max: 1
+    step: 0.05
+-
+    id: anp-colorful-frame-color
+    title: Custom Colorful Frame Color
+    type: variable-themed-color
+    format: "rgb-values"
+    opacity: false
+    default-light: '#'
+    default-dark: '#'
+    alt-format:
+    -
+        id: anp-colorful-frame-color-hsl
+        format: "hsl-values"
 
 # Workspace :: File Browser
 
@@ -1065,6 +2174,96 @@ settings:
     desc: Blends PDF viewer background with obsidian background in light mode
     type: class-toggle
 
+# Workspace :: Rainbow Folders
+
+-
+    id: anp-rainbow-section-header
+    title: Rainbow Folders
+    description: 
+    type: heading
+    level: 2
+    collapsed: true
+-
+    id: anuppuccin-url-custom-rainbow-colors
+    title: Custom rainbow folder colors snippet
+    description: "Download the snippet through [this link](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/custom-rainbow-colors.css)."
+    type: info-text
+    markdown: true
+-
+    id: anp-alt-rainbow-style
+    title: Rainbow style
+    type: class-select
+    allowEmpty: false
+    default: anp-default-rainbow
+    options:
+    -
+        label: None
+        value: anp-default-rainbow
+    -
+        label: Full
+        value: anp-full-rainbow-color-toggle
+    -
+        label: Simple
+        value: anp-simple-rainbow-color-toggle
+
+# Workspace :: Rainbow Folders :: Full Folder Settings
+
+-
+    id: anp-full-rainbow-folder-settings
+    title: Full Folder Settings
+    description: 
+    type: heading
+    level: 3
+    collapsed: true
+-
+    id: anp-rainbow-file-toggle
+    title: File recolor toggle
+    desc: Recolors files to match the folders
+    type: class-toggle
+-
+    id: anp-full-rainbow-text-color-toggle-light
+    title: Invert title colors (Light Mode)
+    type: class-toggle
+-
+    id: anp-full-rainbow-text-color-toggle-dark
+    title: Invert title colors (Dark Mode)
+    type: class-toggle
+-
+    id: anp-rainbow-folder-bg-opacity
+    title: Folder background color opacity
+    type: variable-number
+    default: 0.7
+
+# Workspace :: Rainbow Folders :: Simple Folder Settings
+
+-
+    id: anp-simple-rainbow-folder-settings
+    title: Simple Folder Settings
+    description: 
+    type: heading
+    level: 3
+    collapsed: true
+-
+    id: anp-simple-rainbow-title-toggle
+    title: Enable title recolor
+    type: class-toggle
+-
+    id: anp-simple-rainbow-collapse-icon-toggle
+    title: Enable collapse icon recolor
+    type: class-toggle
+-
+    id: anp-simple-rainbow-indentation-toggle
+    title: Enable collapse indent recolor
+    type: class-toggle
+-
+    id: anp-simple-rainbow-icon-toggle
+    title: Enable circular file
+    type: class-toggle
+-
+    id: anp-rainbow-subfolder-color-toggle
+    title: Enable subfolder color inheritance
+    type: class-toggle
+
 # Workspace :: Stacked Tabs
 
 -
@@ -1108,6 +2307,9 @@ settings:
     -
         label: Floating
         value: anp-floating-status-bar
+    -
+        label: Fixed
+        value: anp-fixed-status-bar
 
 # Workspace :: Tabs
 
@@ -1129,6 +2331,12 @@ settings:
         label: Default
         value: anp-default-tab
     -
+        label: Depth
+        value: anp-depth-tab-toggle
+    -
+        label: Minimalistic
+        value: anp-mini-tab-toggle
+    -
         label: Safari-style (Animated)
         value: anp-alternate-tab-toggle
     -
@@ -1146,6 +2354,33 @@ settings:
     title: Disable new tab button right alignment
     type: class-toggle
 
+# Workspace :: Tabs :: Depth Tab Settings
+
+-
+    id: anp-depth-tab-header
+    title: Depth Tab Settings
+    description: Only applies to inactive tabs
+    type: heading
+    level: 3
+    collapsed: true
+-
+    id: anp-depth-tab-text-invert
+    title: Invert tab text color
+    type: class-toggle
+-
+    id: anp-depth-tab-opacity
+    title: Tab opacity
+    type: variable-number-slider
+    default: 0.6
+    max: 1
+    min: 0
+    step: 0.1
+-
+    id: anp-depth-tab-gap
+    title: Tab gap
+    type: variable-number
+    default: 10
+    format: px
 
 # Workspace :: Tabs :: Animated Safari-style Tab Settings
 
@@ -1215,19 +2450,6 @@ settings:
     level: 2
     collapsed: true
 -
-    id: anp-layout-select
-    title: Workspace Layout variant
-    type: class-select
-    allowEmpty: false
-    default: none
-    options:
-    -
-        label: Default
-        value: none
-    -
-        label: Cards
-        value: anp-card-layout
--
     id: anp-bg-fix
     title: Background fix for applying colors
     type: class-toggle
@@ -1252,12 +2474,6 @@ settings:
     default: 16
     format: px
 -
-    id: anp-card-layout-padding
-    title: Card padding
-    type: variable-number
-    default: 10
-    format: px
--
     id: anp-card-header-left-padding
     title: Tab left padding
     type: variable-number
@@ -1268,197 +2484,54 @@ settings:
     title: Enable shadows
     type: class-toggle
 -
-    id: anp-card-layout-actions
-    title: Enable card format for actions
-    type: class-toggle
+    id: anp-layout-border
+    title: Border Layout Settings
+    description: 
+    type: heading
+    level: 3
+    collapsed: true
 -
-    id: anp-card-layout-filebrowser
-    title: Enable card format for file browser
-    type: class-toggle
+    id: anp-border-radius
+    title: Border Layout Radius
+    type: variable-number
+    default: 16
+    format: px
+-
+    id: anp-border-padding
+    title: Border Layout Padding
+    type: variable-number
+    default: 20
+    format: px
+
+# Credits
+
+-
+    id: anuppuccin-support
+    title: Support AnuPpuccin
+    description: If you like the theme, here are some ways to support development
+    type: heading
+    level: 1
+    collapsed: true
+-
+    id: anuppuccin-url-donate
+    title: Buy Me a Coffee
+    description: "[https://www.buymeacoffee.com/anubisnekhet](https://www.buymeacoffee.com/anubisnekhet)"
+    type: info-text
+    markdown: true
+-
+    id: anuppuccin-url-star-repo
+    title: Star the Theme on GitHub
+    description: "[https://github.com/anubisnekhet/anuppuccin](https://github.com/anubisnekhet/anuppuccin)"
+    type: info-text
+    markdown: true
+-
+    id: anuppuccin-url-submit-issue
+    title: Submit an Issue on GitHub
+    description: "[https://github.com/anubisnekhet/anuppuccin/issues](https://github.com/anubisnekhet/anuppuccin/issues)"
+    type: info-text
+    markdown: true
 
 */
-/*------------------Defining Colorschemes-------------------*/
-
-.theme-dark, .theme-light {
-  --ctp-text: var(--ctp-custom-text, var(--ctp-ext-text, 198, 208, 245));
-  --ctp-subtext1: var(--ctp-custom-subtext1, var(--ctp-ext-subtext1, 179, 188, 223));
-  --ctp-subtext0: var(--ctp-custom-subtext0, var(--ctp-ext-subtext0, 161, 168, 201));
-  --ctp-overlay2: var(--ctp-custom-overlay2, var(--ctp-ext-overlay2, 142, 149, 179));
-  --ctp-overlay1: var(--ctp-custom-overlay1, var(--ctp-ext-overlay1, 123, 129, 157));
-  --ctp-overlay0: var(--ctp-custom-overlay0, var(--ctp-ext-overlay0, 105, 109, 134));
-  --ctp-surface2: var(--ctp-custom-surface2, var(--ctp-ext-surface2, 86, 89, 112));
-  --ctp-surface1: var(--ctp-custom-surface1, var(--ctp-ext-surface1, 67, 70, 90));
-  --ctp-surface0: var(--ctp-custom-surface0, var(--ctp-ext-surface0, 49, 50, 68));
-  --ctp-base: var(--ctp-custom-base, var(--ctp-ext-base, 30, 30, 46));
-  --ctp-mantle: var(--ctp-custom-mantle, var(--ctp-ext-mantle, 24, 24, 37));
-  --ctp-crust: var(--ctp-custom-crust, var(--ctp-ext-crust, 17, 17, 27));
-}
-
-/*------------------Actual Configs--------------------*/
-.anuppuccin-accent-toggle {
-  --color-accent: rgb(var(--ctp-accent));
-  --color-accent-1: rgb(var(--ctp-accent));
-  --color-accent-2: rgba(var(--ctp-accent), 0.9);
-  --text-selection: rgba(var(--ctp-accent), 0.25);
-  --interactive-accent: rgb(var(--ctp-accent));
-  --interactive-accent-hover: rgba(var(--ctp-accent), 0.9);
-  --text-accent: rgb(var(--ctp-accent));
-  --text-accent-hover: rgb(var(--ctp-accent));
-  --text-highlight-bg: rgba(var(--ctp-accent), 0.4);
-  --text-highlight-bg-active: rgba(var(--ctp-accent), 0.6);
-  --interactive-accent: rgb(var(--ctp-accent));
-  --interactive-accent-rgb: var(--ctp-accent);
-  --interactive-accent-hover: rgb(var(--ctp-accent));
-  --background-modifier-active: rgba(var(--ctp-accent), 0.1);
-  --background-modifier-active-hover: rgba(var(--ctp-accent), 0.15);
-  --link-unresolved-decoration-color: rgba(var(--ctp-accent), 0.3);
-  --tag-background: rgba(var(--ctp-accent), 0.1);
-  --tag-background-hover: rgba(var(--ctp-accent), 0.2);
-  --tag-border-color: rgba(var(--ctp-accent), 0.15);
-  --tag-border-color-hover: rgba(var(--ctp-accent), 0.15);
-  --nav-item-background-selected: rgba(var(--ctp-accent), 0.2);
-  --heading-formatting: rgb(var(--ctp-accent));
-  --icon-color-focused: rgb(var(--ctp-accent));
-}
-
-.theme-dark,
-.theme-light {
-  --mono-rgb-0: var(--ctp-crust);
-  --mono-rgb-100: var(--ctp-text);
-  --color-red-rgb: var(--ctp-red);
-  --color-red: rgb(var(--ctp-red));
-  --color-green-rgb: var(--ctp-green);
-  --color-green: rgb(var(--ctp-green));
-  --color-orange-rgb: var(--ctp-peach);
-  --color-orange: rgb(var(--ctp-peach));
-  --color-yellow-rgb: var(--ctp-yellow);
-  --color-yellow: rgb(var(--ctp-yellow));
-  --color-cyan-rgb: var(--ctp-sky);
-  --color-cyan: rgb(var(--ctp-sky));
-  --color-blue-rgb: var(--ctp-blue);
-  --color-blue: rgb(var(--ctp-blue));
-  --color-purple-rgb: var(--ctp-lavender);
-  --color-purple: rgb(var(--ctp-lavender));
-  --color-pink-rgb: var(--ctp-pink);
-  --color-pink: rgb(var(--ctp-pink));
-  --color-base-00: rgb(var(--ctp-crust));
-  --color-base-10: rgb(var(--ctp-mantle));
-  --color-base-20: rgb(var(--ctp-base));
-  --color-base-25: rgb(var(--ctp-surface0));
-  --color-base-30: rgb(var(--ctp-surface1));
-  --color-base-35: rgb(var(--ctp-surface2));
-  --color-base-40: rgb(var(--ctp-overlay0));
-  --color-base-50: rgb(var(--ctp-overlay1));
-  --color-base-60: rgb(var(--ctp-overlay2));
-  --color-base-70: rgb(var(--ctp-subtext0));
-  --color-base-100: rgb(var(--ctp-text));
-  --text-highlight-bg: rgba(var(--ctp-yellow), 0.2);
-  --text-highlight-bg-active: rgba(var(--ctp-yellow), 0.4);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(var(255, 255, 255), 0.09),
-      0 2px 4px 0 rgba(var(--ctp-crust), 0.15),
-      0 1px 1.5px 0 rgba(var(--ctp-crust), 0.1),
-      0 1px 2px 0 rgba(var(--ctp-crust), 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(var(255, 255, 255), 0.16),
-      0 2px 3px 0 rgba(var(--ctp-crust), 0.3),
-      0 1px 1.5px 0 rgba(var(--ctp-crust), 0.2),
-      0 1px 2px 0 rgba(var(--ctp-crust), 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(var(--ctp-crust), 0.121),
-      0px 3.4px 6.7px rgba(var(--ctp-crust), 0.179),
-      0px 15px 30px rgba(var(--ctp-crust), 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(var(--ctp-crust), 0.071),
-      0px 6.3px 24.7px rgba(var(--ctp-crust), 0.112),
-      0px 30px 90px rgba(var(--ctp-crust), 0.2);
-  --background-primary: rgb(var(--ctp-base));
-  --background-primary-alt: rgb(var(--ctp-mantle));
-  --background-secondary: rgb(var(--ctp-mantle));
-  --background-secondary-alt: rgb(var(--ctp-crust));
-  --background-modifier-hover: rgba(var(--ctp-text), 0.075);
-  --background-modifier-form-field: rgba(var(--ctp-crust), 0.3);
-  --background-modifier-success: rgba(var(--ctp-green), 1);
-  --background-modifier-success-hover: rgba(var(--ctp-green), 0.9);
-  --background-modifier-success-rgb: var(--ctp-green);
-  --background-modifier-error: rgba(var(--ctp-red), 1);
-  --background-modifier-error-rgb: var(--ctp-red);
-  --background-modifier-error-hover: rgba(var(--ctp-red), 0.9);
-  --background-modifier-message: rgba(var(--ctp-crust), 0.9);
-  --modal-border-color: rgb(var(--ctp-surface0));
-  --text-normal: rgb(var(--ctp-text));
-  --text-muted: rgb(var(--ctp-overlay2));
-  --text-muted-rgb: var(--ctp-overlay2);
-  --text-faint: rgb(var(--ctp-subtext0));
-  --text-error: rgb(var(--ctp-red));
-  --text-error-hover: rgba(var(--ctp-red), 0.8);
-  --text-success: rgb(var(--ctp-green));
-  --text-on-accent: rgb(var(--ctp-base));
-  --interactive-normal: rgb(var(--ctp-surface0));
-  --interactive-hover: rgb(var(--ctp-surface1));
-  --interactive-success: rgb(var(--ctp-green));
-  --workspace-background-translucent: rgba(var(--ctp-crust), 0.6);
-  --blockquote-background-color: rgba(var(--ctp-crust), 0.5);
-  --width-image-gallery: 200px;
-  --min-width-image: 50%;
-  --max-width-image: 90%;
-  --drag-ghost-background: rgb(var(--ctp-text));
-  --drag-ghost-text-color: rgb(var(--ctp-crust));
-  --nav-indentation-guide-color: rgb(var(--ctp-overlay0));
-  --titlebar-text-color-focused: var(--color-accent);
-  --table-border-width: var(--anp-table-thickness, 1px);
-  --icon-color-focused: var(--color-accent);
-  --embed-block-shadow-hover: none;
-}
-
-.theme-dark {
-  color-scheme: dark;
-  --highlight-mix-blend-mode: none;
-  --background-modifier-border: rgb(var(--ctp-surface0));
-  --background-modifier-border-hover: rgb(var(--ctp-surface1));
-  --background-modifier-border-focus: rgb(var(--ctp-surface2));
-  --anp-speech-bubble-opacity: var(--anp-sp-op-dark, 0.9);
-  --background-modifier-cover: rgba(var(--ctp-mantle), 0.4);
-}
-
-.theme-light {
-  color-scheme: light;
-  --highlight-mix-blend-mode: none;
-  --background-modifier-border: rgb(var(--ctp-surface1));
-  --background-modifier-border-hover: rgb(var(--ctp-surface2));
-  --background-modifier-border-focus: rgb(var(--ctp-overlay0));
-  --anp-speech-bubble-opacity: var(--anp-sp-op-light, 0.5);
-  --background-modifier-cover: #00000022;
-}
-
-body {
-  --anp-preview-width-pct: 95%;
-  --anp-preview-width-max: 800px;
-  --anp-header-margin-value: 15px;
-  --anp-header-font: "Noto Serif";
-  --tab-stacked-pane-width: calc(var(--anp-tab-stacked-pane-width, 1) * var(--file-line-width));
-  --anp-table-width-pct: 100%;
-  --code-background: var(--anp-code-bg-color, var(--background-secondary-alt));
-  --canvas-color: var(--ctp-overlay2);
-  --card-background-color: rgb(var(--ctp-crust));
-  --card-foreground-color: rgb(var(--ctp-base));
-  --tab-inactive-color: rgb(var(--ctp-mantle));
-  --code-normal: var(--anp-code-text-color, var(--text-normal));
-  --background-modifier-active: hsla(var(--color-accent-hsl), 0.1);
-  --pdf-background: var(--background-primary);
-  --pdf-dark-opacity: 1;
-  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px transparent;
-  --pdf-sidebar-background: var(--background-primary);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px transparent;
-}
-body.theme-light {
-  --anp-background-image: var(--anp-background-image-light);
-  --anp-custom-bg-brightness: var(--anp-custom-bg-brightness-light);
-  --anp-custom-bg-blur: var(--anp-custom-bg-blur-light);
-  --anp-custom-bg-card-fg-opacity: var(--anp-custom-bg-card-fg-opacity-light);
-}
-body.theme-dark {
-  --anp-background-image: var(--anp-background-image-dark);
-  --anp-custom-bg-brightness: var(--anp-custom-bg-brightness-dark);
-  --anp-custom-bg-blur: var(--anp-custom-bg-blur-dark);
-  --anp-custom-bg-card-fg-opacity: var(--anp-custom-bg-card-fg-opacity-dark);
-}
 
 /*===============================================================
 * CORE
@@ -1467,6 +2540,25 @@ body.theme-dark {
 /*-Highlight current line-*/
 .anp-current-line .markdown-source-view .cm-active.cm-line {
   background-color: rgba(var(--ctp-surface1), 0.4);
+}
+
+.anp-current-line-border .markdown-source-view .cm-active.cm-line {
+  border-left: 2px solid var(--interactive-accent);
+  margin-left: -2px !important;
+  background-color: rgba(var(--ctp-surface1), 0.4);
+}
+
+.anp-current-line-border-only .markdown-source-view .cm-active.cm-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1.5rem;
+  width: 2px;
+  background-color: rgba(var(--interactive-accent-rgb), 0.3);
+}
+.anp-current-line-border-only .markdown-source-view .cm-focused .cm-active.cm-line::before {
+  background-color: var(--interactive-accent);
 }
 
 /*-Custom editor font-*/
@@ -1493,9 +2585,15 @@ body.theme-dark {
   color: var(--interactive-accent);
 }
 
+/*-ZWSP Highlight-*/
+.ͼ2 .cm-specialChar {
+  color: rgb(var(--ctp-red));
+}
+
 /*-Block edit button-*/
 .markdown-source-view.mod-cm6 .edit-block-button {
   background-color: var(--background-secondary);
+  cursor: pointer;
   border: 1px solid var(--background-modifer-border);
 }
 .markdown-source-view.mod-cm6 .edit-block-button:hover {
@@ -1508,6 +2606,69 @@ body.theme-dark {
   background-color: var(--background-secondary);
   border: 1px solid var(--background-modifer-border);
   opacity: 1;
+}
+
+/*-Vim Terminal-*/
+.ͼ2 .cm-panels-bottom {
+  border-top: 1px solid rgb(var(--ctp-surface1));
+}
+.ͼ2 .cm-panels-bottom input {
+  background-color: transparent;
+  font-family: var(--font-monospace);
+  width: 100%;
+}
+.ͼ2 .cm-panels-bottom input:hover, .ͼ2 .cm-panels-bottom input:focus, .ͼ2 .cm-panels-bottom input:focus-visible {
+  border: none;
+  box-shadow: none;
+}
+
+.ͼp .cm-vim-panel {
+  font-family: var(--font-monospace);
+}
+
+/*======== CURSOR MODS ==========*/
+.workspace-tab-header,
+.clickable-icon,
+.dropdown,
+.checkbox-container,
+input.slider,
+.task-list-item-checkbox,
+.vertical-tab-nav-item,
+.nav-folder-title,
+.nav-file-title,
+.tree-item,
+.tree-item-self.is-clickable,
+.workspace-tab-header-status-icon,
+.workspace-tab-header-inner-close-button,
+.CodeMirror-foldmarker,
+.CodeMirror-foldgutter-open,
+.CodeMirror-foldgutter-folded,
+.markdown-source-view.mod-cm6 .edit-block-button,
+.empty-state-action,
+.setting-hotkey-icon,
+.setting-add-hotkey-button,
+.setting-restore-hotkey-button,
+.spellchecker-dictionary-remove-button,
+.community-item,
+.status-bar-item.mod-clickable,
+.titlebar-button,
+.button,
+.frontmatter-container .frontmatter-container-header,
+.card.u-clickable,
+.list-item-part.clickable-icon,
+.u-clickable,
+.document-search-close-button,
+.markdown-preview-view .collapse-indicator,
+.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator,
+.input[type=color],
+.menu-item,
+.modal-checkbox-label,
+.view-header-breadcrumb,
+.nav-action-button,
+.tree-item-inner,
+.callout.is-collapsible .callout-title,
+.modal-close-button {
+  cursor: var(--anp-cursor, var(--cursor));
 }
 
 /*======== FILE PREVIEW =========*/
@@ -1559,9 +2720,12 @@ body.theme-dark {
   background-color: rgb(var(--ctp-crust));
 }
 
-.anp-card-layout .workspace-split:not(.mod-root) .graph-controls.is-close,
-.anp-card-layout .workspace-split:not(.mod-root) .graph-controls,
-.anp-card-layout .workspace-split:not(.mod-root) .graph-controls:not(.is-close),
+.workspace-split:not(.mod-root) .graph-controls.is-close,
+.workspace-split:not(.mod-root) .graph-controls,
+.workspace-split:not(.mod-root) .graph-controls:not(.is-close),
+.workspace-split:not(.mod-root) .graph-controls.is-close,
+.workspace-split:not(.mod-root) .graph-controls,
+.workspace-split:not(.mod-root) .graph-controls:not(.is-close),
 .workspace-leaf .graph-controls.is-close,
 .workspace-leaf .graph-controls,
 .workspace-leaf .graph-controls:not(.is-close) {
@@ -1573,6 +2737,14 @@ body.theme-dark {
   float: right;
   margin-right: -12px;
 }
+.anp-button-metadata-toggle .markdown-rendered.rtl .frontmatter-container .frontmatter-container-header {
+  left: unset;
+  right: calc(100% - 32px);
+}
+.anp-button-metadata-toggle .markdown-rendered.rtl .frontmatter-container .frontmatter-container-header:after {
+  margin-left: unset;
+  margin-right: 7px;
+}
 .markdown-rendered.rtl blockquote {
   border-right: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
   border-left: none;
@@ -1583,6 +2755,77 @@ body.theme-dark {
   margin-right: -22px;
 }
 
+/*======== PRINT ================*/
+.anp-print .print.theme-light,
+.anp-print .print.theme-dark {
+  --ctp-crust: inherit;
+  --ctp-mantle: inherit;
+  --ctp-base: inherit;
+  --ctp-surface0: inherit;
+  --ctp-surface1: inherit;
+  --ctp-surface2: inherit;
+  --ctp-overlay0: inherit;
+  --ctp-overlay1: inherit;
+  --ctp-overlay2: inherit;
+  --ctp-subtext0: inherit;
+  --ctp-subtext1: inherit;
+  --ctp-text: inherit;
+  --ctp-rosewater: inherit;
+  --ctp-flamingo: inherit;
+  --ctp-red: inherit;
+  --ctp-maroon: inherit;
+  --ctp-mauve: inherit;
+  --ctp-pink: inherit;
+  --ctp-peach: inherit;
+  --ctp-yellow: inherit;
+  --ctp-green: inherit;
+  --ctp-teal: inherit;
+  --ctp-sky: inherit;
+  --ctp-sapphire: inherit;
+  --ctp-blue: inherit;
+  --ctp-lavender: inherit;
+}
+
+@media print {
+  .anp-print .print {
+    --ctp-crust: inherit;
+    --ctp-mantle: inherit;
+    --ctp-base: inherit;
+    --ctp-surface0: inherit;
+    --ctp-surface1: inherit;
+    --ctp-surface2: inherit;
+    --ctp-overlay0: inherit;
+    --ctp-overlay1: inherit;
+    --ctp-overlay2: inherit;
+    --ctp-subtext0: inherit;
+    --ctp-subtext1: inherit;
+    --ctp-text: inherit;
+    --ctp-rosewater: inherit;
+    --ctp-flamingo: inherit;
+    --ctp-red: inherit;
+    --ctp-maroon: inherit;
+    --ctp-mauve: inherit;
+    --ctp-pink: inherit;
+    --ctp-peach: inherit;
+    --ctp-yellow: inherit;
+    --ctp-green: inherit;
+    --ctp-teal: inherit;
+    --ctp-sky: inherit;
+    --ctp-sapphire: inherit;
+    --ctp-blue: inherit;
+    --ctp-lavender: inherit;
+  }
+  .anp-print .print,
+  body.anp-print,
+  .anp-print .markdown-rendered,
+  :root:has(.anp-print),
+  :root {
+    background-color: rgb(var(--ctp-base));
+  }
+  .anp-print .print .markdown-preview-view {
+    color: rgb(var(--ctp-text));
+  }
+}
 /*======== PDF ==================*/
 /* PDF Blending */
 .theme-dark.anp-pdf-blend-toggle-dark,
@@ -1731,11 +2974,6 @@ body.theme-dark {
   background-color: var(--background-modifier-active-hover);
 }
 
-.workspace,
-.horizontal-main-container,
-.anp-card-layout .mod-vertical .workspace-tabs {
-  background-color: var(--tab-container-background);
-}
 
 /* Align file extension labels to the right in sidebar */
 .nav-file-title-content {
@@ -1753,7 +2991,7 @@ body.theme-dark {
 
 /* Inline title visibility */
 .inline-title {
-  display: var(block);
+  display: var(--anp-inline-title-vis, block);
 }
 
 /* Search page hover item fix */
@@ -1780,7 +3018,7 @@ body.theme-dark {
   display: inline;
 }
 
-.modal.mod-settings, .modal.mod-community-theme, .modal.kanban-plugin__board-settings-modal, .modal.mod-community-plugin {
+.modal.mod-settings, .modal.mod-community-theme, .modal.mod-community-plugin {
   --h1-font: var(--font-interface);
   --h2-font: var(--font-interface);
   --h3-font: var(--font-interface);
@@ -1800,53 +3038,58 @@ body {
   --tab-stacked-header-width: var(--anp-stacked-header-width, 40px);
 }
 
-.anp-card-layout .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-leaf {
-  background-color: var(--background-primary);
-}
 
-body.is-translucent {
-  background-color: transparent;
-  --workspace-background-translucent: rgba(var(--ctp-crust), var(--anp-translucency-opacity));
-}
 
-.is-translucent:not(.is-fullscreen) {
-  --nav-collapse-icon-color: rgba(var(--mono-rgb-100), 0.3);
-  --nav-collapse-icon-color-collapsed: rgba(var(--mono-rgb-100), 0.3);
-  --divider-color: rgba(var(--ctp-surface0), 0.15);
+.anp-autohide-titlebar:not(.is-mobile) {
+  --title-bar-delay: 150ms;
+  --title-bar-duration: 300ms;
+  --title-bar-target-translate-y: 18px;
+  --title-bar-translate-y: 40px;
+  /**
+  * This should fix the drag/click titlebar issue.
+  * 
+  * Invisible boxes are not rendered (as if they were fully transparent),
+  * cannot be interacted with (and behave as if they had pointer-events: none),
+  * and are removed from navigation (similar to display: none).
+  * 
+  * @see: https://drafts.csswg.org/css-display/#visibility
+  */
 }
-
-.is-translucent:not(.is-fullscreen) .workspace-ribbon.mod-left,
-.is-translucent:not(.is-fullscreen) .workspace-tabs,
-.is-translucent:not(.is-fullscreen) .mod-left-split .workspace-tab-header-container,
-.is-translucent:not(.is-fullscreen) .mod-right-split .workspace-tab-header-container,
-.is-translucent:not(.is-fullscreen) .mod-top .workspace-tab-header-container,
-.is-translucent:not(.is-fullscreen) .workspace-tabs .workspace-leaf,
-.is-translucent:not(.is-fullscreen) .workspace-ribbon.mod-left:before,
-.is-translucent:not(.is-fullscreen) .workspace-split.mod-root,
-.is-translucent:not(.is-fullscreen) .workspace-split.mod-root.mod-left-split .view-content,
-.is-translucent:not(.is-fullscreen) .view-header,
-.is-translucent:not(.is-fullscreen) .horizontal-main-container {
-  background-color: transparent;
+.anp-autohide-titlebar:not(.is-mobile) .workspace-leaf-content .view-header {
+  margin-top: calc(var(--title-bar-translate-y) * -1);
+  position: relative;
+  transition: transform var(--title-bar-duration) var(--title-bar-delay);
 }
-.is-translucent:not(.is-fullscreen) .view-header-title-container:not(.mod-at-end):after {
-  background-image: none;
+.anp-autohide-titlebar:not(.is-mobile) .workspace-leaf-content .view-header::before {
+  bottom: calc(var(--title-bar-target-translate-y) * -1);
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: transform var(--title-bar-duration) var(--title-bar-delay);
+  width: 100%;
+  z-index: 0;
 }
-.is-translucent:not(.is-fullscreen) .workspace-tabs.mod-stacked .workspace-tab-header,
-.is-translucent:not(.is-fullscreen) .workspace-tabs.mod-stacked .view-header {
-  background-color: var(--background-primary);
+.anp-autohide-titlebar:not(.is-mobile) .workspace-leaf-content .view-header:is(:hover, :focus-within)::before {
+  transform: translateY(var(--title-bar-target-translate-y));
 }
-
-.is-translucent .workspace {
-  background-color: transparent;
+.anp-autohide-titlebar:not(.is-mobile) .workspace-leaf-content .view-header:is(:hover, :focus-within),
+.anp-autohide-titlebar:not(.is-mobile) .workspace-leaf-content .view-header:is(:hover, :focus-within) + .view-content {
+  transform: translateY(var(--title-bar-translate-y));
 }
-
-.is-translucent .workspace-split.mod-left-split.is-sidedock-collapsed .workspace-tabs,
-.is-translucent .workspace-split.mod-right-split.is-sidedock-collapsed .workspace-tabs {
+.anp-autohide-titlebar:not(.is-mobile) .workspace-leaf-content .view-content {
+  transition: transform var(--title-bar-duration) var(--title-bar-delay);
+}
+.anp-autohide-titlebar:not(.is-mobile) .workspace-leaf-content .view-header-title {
+  --file-header-font-size: var(--font-ui-medium);
+}
+.anp-autohide-titlebar:not(.is-mobile) .workspace-leaf-content .view-header > div {
+  transition: visibility var(--title-bar-duration) var(--title-bar-delay);
+  visibility: visible;
+  z-index: 1;
+}
+.anp-autohide-titlebar:not(.is-mobile) .workspace-leaf-content .view-header:not(:hover, :focus-within) > div {
   visibility: hidden;
-}
-
-.is-translucent.anp-card-layout {
-  --card-background-color: transparent;
 }
 
 body:not(.anp-alternate-tab-toggle):not(.anp-disable-newtab-align) .workspace-split.mod-vertical .workspace-tab-header-spacer {
@@ -2041,96 +3284,306 @@ body:not(.anp-alternate-tab-toggle):not(.anp-disable-newtab-align) .workspace-sp
   height: var(--tab-height);
 }
 
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.is-focused:not(.anp-mini-tab-toggle.anp-colorful-frame) .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
 .is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
   color: var(--color-accent);
 }
 
-/*----------------CALLOUTS-------------------*/
-.callout:not([data-callout-metadata*=revert]) {
-  --callout-blend-mode: normal;
+.anp-mini-tab-toggle {
+  --header-height: var(--anp-alt-tab-custom-height, 40px);
+  --tab-stacked-header-width: var(--anp-stacked-header-width, 40px);
 }
-.callout:not([data-callout-metadata*=revert]) > .callout-title > .callout-title-inner {
-  flex-grow: var(--anp-callout-fold-position, 0);
+.anp-mini-tab-toggle .workspace-split:not(.mod-left-split):not(.mod-right-split) .workspace-tab-header-container-inner .workspace-tab-header {
+  background-color: transparent;
+  box-shadow: none;
 }
-.theme-light .callout:not([data-callout-metadata*=revert]) > .callout-title > .callout-title-inner {
-  color: var(--text-normal);
+.anp-mini-tab-toggle .workspace-split:not(.mod-left-split):not(.mod-right-split) .workspace-tab-header-container-inner .workspace-tab-header::before, .anp-mini-tab-toggle .workspace-split:not(.mod-left-split):not(.mod-right-split) .workspace-tab-header-container-inner .workspace-tab-header::after {
+  display: none;
 }
-.callout:not([data-callout-metadata*=revert]):not(.is-collapsible) > .callout-title .callout-title-inner {
-  font-weight: 500;
-}
-.callout:not([data-callout-metadata*=revert]) .callout-title {
-  --bold-color: currentColor;
-  --italic-color: currentColor;
-}
-
-.callout-content > p:first-child,
-.callout-content > ul:first-child,
-.callout-content > ol:first-child {
-  margin-top: 0px;
-}
-.callout-content > p:last-child,
-.callout-content > ul:last-child,
-.callout-content > ol:last-child {
+.anp-mini-tab-toggle .workspace-split:not(.mod-left-split):not(.mod-right-split) .workspace-tab-header-container-inner .workspace-tab-header.is-active {
+  border-bottom: 2px solid var(--color-accent);
   margin-bottom: 0px;
+  padding-bottom: 0px;
 }
-.callout-content > h1,
-.callout-content > h2,
-.callout-content > h3,
-.callout-content > h4,
-.callout-content > h5,
-.callout-content > h6 {
-  margin: 0 !important;
+.anp-mini-tab-toggle .workspace-split:not(.mod-left-split):not(.mod-right-split) .workspace-tab-header-container-inner .workspace-tab-header.is-active .workspace-tab-header-inner {
+  border-radius: var(--tab-radius) var(--tab-radius) 0px 0px;
+  margin-top: 0.5px;
+  padding-bottom: 4px;
 }
-
-.anp-callout-block .callout:not([data-callout-metadata*=anp-sleek],
-[data-callout-metadata*=anp-vanilla-normal],
-[data-callout-metadata*=anp-vanilla-plus]):not([data-callout-metadata*=revert],
-[data-callout=blank-container],
-[data-callout=multi-column]),
-.callout[data-callout-metadata*=anp-block]:not([data-callout-metadata*=revert],
-[data-callout=blank-container],
-[data-callout=multi-column]) {
-  border-left: var(--size-2-3) solid rgb(var(--callout-color));
+.anp-mini-tab-toggle .workspace-split:not(.mod-left-split):not(.mod-right-split) .workspace-tab-header-container-inner .workspace-tab-header ::after {
+  display: none;
+}
+.anp-mini-tab-toggle .workspace-split:not(.mod-left-split):not(.mod-right-split) .workspace-tab-header-container-inner .workspace-tab-header:hover .workspace-tab-header-inner {
+  background-color: var(--background-modifier-hover);
 }
 
-.anp-callout-sleek .callout:not([data-callout-metadata*=anp-block],
-[data-callout-metadata*=anp-vanilla-normal],
-[data-callout-metadata*=anp-vanilla-plus]):not([data-callout-metadata*=revert],
-[data-callout=blank-container],
-[data-callout=multi-column]),
-.callout[data-callout-metadata*=anp-sleek]:not([data-callout-metadata*=revert],
-[data-callout=blank-container],
-[data-callout=multi-column]) {
-  --callout-border-width: 1px;
-  --callout-border-opacity: 0.4;
-  --callout-border-width: 1px;
-  background-color: rgba(var(--ctp-mantle), 0.4);
+.anp-depth-tab-toggle .workspace .mod-root .workspace-tab-header {
+  --tab-text-color-focused-active-current: rgb(var(--anp-depth-tab-text, var(--ctp-text)));
+  --tab-text-color-focused: rgb(var(--anp-depth-tab-text, var(--ctp-text)));
+}
+.anp-depth-tab-toggle .workspace .mod-root .workspace-tab-header:not(.is-active) {
+  --tab-text-color: rgb(var(--anp-depth-tab-text));
+  --icon-color: rgb(var(--anp-depth-tab-text));
+  --icon-color-hover: rgb(var(--anp-depth-tab-text));
+  background-color: rgba(var(--ctp-mantle), var(--anp-depth-tab-opacity, 0.6));
+}
+.anp-depth-tab-toggle .workspace .mod-root .workspace-tab-header:not(.is-active)::before, .anp-depth-tab-toggle .workspace .mod-root .workspace-tab-header:not(.is-active)::after {
+  box-shadow: inset 0 0 0 var(--tab-outline-width) transparent, 0 0 0 calc(var(--tab-curve) * 4) rgba(var(--ctp-mantle), var(--anp-depth-tab-opacity, 0.6));
+}
+.anp-depth-tab-toggle .workspace .mod-root .workspace-tab-header:not(.is-active)::after {
+  clip-path: inset(50% 50% 0 calc(var(--tab-curve) * 0));
+}
+.anp-depth-tab-toggle .workspace .mod-root .workspace-tab-header:not(.is-active)::before {
+  clip-path: inset(50% calc(var(--tab-curve) * 0) 0 50%);
+}
+.anp-depth-tab-toggle .workspace .mod-root .workspace-tab-header-inner::after {
+  display: none;
+}
+.anp-depth-tab-toggle .workspace .mod-root .workspace-tab-header-container-inner {
+  gap: var(--anp-depth-tab-gap, 10px);
+}
+.anp-depth-tab-toggle .workspace .mod-root .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+  background-color: transparent;
+}
+.anp-depth-tab-toggle .workspace .mod-root .workspace-tab-header-inner-close-button:hover {
+  background-color: var(--background-modifier-hover);
 }
 
-.anp-callout-sleek .callout:not([data-callout-metadata*=anp-block],
-[data-callout-metadata*=anp-vanilla-normal],
-[data-callout-metadata*=anp-vanilla-plus]):not([data-callout-metadata*=revert],
-[data-callout=blank-container],
-[data-callout=multi-column]) > .callout-content,
-.callout[data-callout-metadata*=anp-sleek]:not([data-callout-metadata*=revert],
-[data-callout=blank-container],
-[data-callout=multi-column]) > .callout-content {
-  border-top: var(--callout-border-width) dashed rgba(var(--callout-color), var(--callout-border-opacity));
-}
-.anp-callout-sleek .callout:not([data-callout-metadata*=anp-block],
-[data-callout-metadata*=anp-vanilla-normal],
-[data-callout-metadata*=anp-vanilla-plus]):not([data-callout-metadata*=revert],
-[data-callout=blank-container],
-[data-callout=multi-column]) .list-collapse-indicator,
-.callout[data-callout-metadata*=anp-sleek]:not([data-callout-metadata*=revert],
-[data-callout=blank-container],
-[data-callout=multi-column]) .list-collapse-indicator {
-  margin-left: -35px;
-  padding-right: 3px;
+.anp-depth-tab-toggle.anp-depth-tab-text-invert {
+  --anp-depth-tab-text: var(--ctp-crust);
 }
 
-/*---------------CUSTOM CALLOUTS---------------*/
+
+/*--------------------------
+Inspired by https://github.com/Akifyss/obsidian-border
+---------------------------*/
+body.anp-border-layout {
+  --card-background-color: rgb(var(--ctp-crust));
+  --card-foreground-color: var(--background-primary);
+  --border-border-style: 1px solid var(--tab-outline-color);
+  --anp-border-bottom-padding: var(--anp-border-padding, 20px);
+}
+body.anp-border-layout .horizontal-main-container {
+  background-color: var(--card-background-color);
+  --titlebar-background: var(--card-background-color);
+  --ribbon-background: var(--card-background-color);
+  --ribbon-background-collapsed: var(--card-background-color);
+}
+body.anp-border-layout.anp-fixed-status-bar {
+  --anp-border-bottom-padding: calc(var(--anp-border-padding, 20px) - 18px);
+}
+body.anp-border-layout .workspace .workspace-tab-container {
+  border-bottom: var(--border-border-style);
+}
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-tabs:nth-child(2).workspace-tabs.mod-top-left-space > .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-tabs:nth-child(2).mod-top-left-space > .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-vertical > .workspace-tabs:nth-child(2).mod-top-left-space > .workspace-tab-container {
+  border-bottom-left-radius: var(--anp-border-radius, var(--radius-xl));
+}
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-top-left-space .workspace-tab-container {
+  border-top-left-radius: var(--anp-border-radius, var(--radius-xl));
+}
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-horizontal:nth-child(2) > .workspace-tabs:last-child .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:nth-child(2) > .workspace-tabs:last-child .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:nth-child(2) > .workspace-tabs:last-child .workspace-tab-container {
+  border-bottom-left-radius: var(--anp-border-radius, var(--radius-xl));
+}
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-horizontal:nth-child(2) > .workspace-split.mod-vertical:last-child > .workspace-tabs:nth-child(2) .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:nth-child(2) > .workspace-split.mod-vertical:last-child > .workspace-tabs:nth-child(2) .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:nth-child(2) > .workspace-split.mod-vertical:last-child > .workspace-tabs:nth-child(2) .workspace-tab-container {
+  border-bottom-left-radius: var(--anp-border-radius, var(--radius-xl));
+}
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-top-left-space > .workspace-tab-container {
+  border-left: var(--border-border-style);
+}
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-horizontal:nth-child(2) > .workspace-tabs > .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:nth-child(2) > .workspace-tabs > .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:nth-child(2) > .workspace-tabs > .workspace-tab-container {
+  border-left: var(--border-border-style);
+}
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-horizontal:nth-child(2) > .workspace-tabs:not(.mod-top-left-space) > .workspace-tab-header-container,
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:nth-child(2) > .workspace-tabs:not(.mod-top-left-space) > .workspace-tab-header-container,
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:nth-child(2) > .workspace-tabs:not(.mod-top-left-space) > .workspace-tab-header-container {
+  border-left: var(--border-border-style);
+}
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-horizontal:nth-child(2) > .workspace-split.mod-vertical > .workspace-tabs:nth-child(2) > .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:nth-child(2) > .workspace-split.mod-vertical > .workspace-tabs:nth-child(2) > .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:nth-child(2) > .workspace-split.mod-vertical > .workspace-tabs:nth-child(2) > .workspace-tab-container {
+  border-left: var(--border-border-style);
+}
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-horizontal:nth-child(2) > .workspace-split.mod-vertical > .workspace-tabs:nth-child(2):not(.mod-top-left-space) > .workspace-tab-header-container,
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:nth-child(2) > .workspace-split.mod-vertical > .workspace-tabs:nth-child(2):not(.mod-top-left-space) > .workspace-tab-header-container,
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:nth-child(2) > .workspace-split.mod-vertical > .workspace-tabs:nth-child(2):not(.mod-top-left-space) > .workspace-tab-header-container {
+  border-left: var(--border-border-style);
+}
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-tabs:last-child.mod-top-right-space > .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-tabs:last-child.mod-top-right-space > .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-vertical > .workspace-tabs:last-child.mod-top-right-space > .workspace-tab-container {
+  border-bottom-right-radius: var(--anp-border-radius, var(--radius-xl));
+}
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-top-right-space .workspace-tab-container {
+  border-top-right-radius: var(--anp-border-radius, var(--radius-xl));
+}
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-horizontal:last-child > .workspace-tabs:last-child .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:last-child > .workspace-tabs:last-child .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:last-child > .workspace-tabs:last-child .workspace-tab-container {
+  border-bottom-right-radius: var(--anp-border-radius, var(--radius-xl));
+}
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-horizontal:last-child > .workspace-split.mod-vertical:last-child > .workspace-tabs:last-child .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:last-child > .workspace-split.mod-vertical:last-child > .workspace-tabs:last-child .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:last-child > .workspace-split.mod-vertical:last-child > .workspace-tabs:last-child .workspace-tab-container {
+  border-bottom-right-radius: var(--anp-border-radius, var(--radius-xl));
+}
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-top-right-space > .workspace-tab-container {
+  border-right: var(--border-border-style);
+}
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-horizontal:last-child > .workspace-tabs > .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:last-child > .workspace-tabs > .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:last-child > .workspace-tabs > .workspace-tab-container {
+  border-right: var(--border-border-style);
+}
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-horizontal:last-child > .workspace-tabs:not(.mod-top-right-space) > .workspace-tab-header-container,
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:last-child > .workspace-tabs:not(.mod-top-right-space) > .workspace-tab-header-container,
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:last-child > .workspace-tabs:not(.mod-top-right-space) > .workspace-tab-header-container {
+  border-right: var(--border-border-style);
+}
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-horizontal:last-child > .workspace-split.mod-vertical > .workspace-tabs:last-child > .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:last-child > .workspace-split.mod-vertical > .workspace-tabs:last-child > .workspace-tab-container,
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:last-child > .workspace-split.mod-vertical > .workspace-tabs:last-child > .workspace-tab-container {
+  border-right: var(--border-border-style);
+}
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-horizontal:last-child > .workspace-split.mod-vertical > .workspace-tabs:last-child:not(.mod-top-right-space) > .workspace-tab-header-container,
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:last-child > .workspace-split.mod-vertical > .workspace-tabs:last-child:not(.mod-top-right-space) > .workspace-tab-header-container,
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) > .workspace-split.mod-vertical.mod-root > .workspace-split.mod-vertical > .workspace-split.mod-vertical > .workspace-split.mod-horizontal:last-child > .workspace-split.mod-vertical > .workspace-tabs:last-child:not(.mod-top-right-space) > .workspace-tab-header-container {
+  border-right: var(--border-border-style);
+}
+body.anp-border-layout .workspace .workspace-split.mod-left-split {
+  background-color: var(--card-background-color);
+  padding-left: calc(var(--anp-border-padding, 20px) - 20px);
+}
+body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-tabs {
+  background-color: var(--card-background-color);
+}
+body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-tabs .workspace-tab-container {
+  border-left: var(--border-border-style);
+}
+body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-tabs .workspace-tab-container .workspace-leaf {
+  background-color: var(--card-foreground-color);
+}
+body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container {
+  border-left: var(--border-border-style);
+}
+body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-tabs:last-child .workspace-tab-container {
+  border-bottom: var(--border-border-style);
+}
+body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-tabs.mod-top-left-space .workspace-tab-container {
+  border-top: var(--border-border-style);
+  border-left: var(--border-border-style);
+}
+body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  border-top: none;
+  background-color: var(--card-foreground-color);
+  border-left: var(--border-border-style);
+  border-bottom: var(--border-border-style);
+}
+body.anp-border-layout .workspace .workspace-split.mod-right-split {
+  background-color: var(--card-background-color);
+}
+body.anp-border-layout .workspace .workspace-split.mod-right-split .workspace-tabs {
+  background-color: var(--card-background-color);
+}
+body.anp-border-layout .workspace .workspace-split.mod-right-split .workspace-tabs .workspace-tab-container {
+  border-right: var(--border-border-style);
+}
+body.anp-border-layout .workspace .workspace-split.mod-right-split .workspace-tabs .workspace-tab-container .workspace-leaf {
+  background-color: var(--card-foreground-color);
+}
+body.anp-border-layout .workspace .workspace-split.mod-right-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container {
+  border-right: var(--border-border-style);
+}
+body.anp-border-layout .workspace .workspace-split.mod-right-split .workspace-tabs:last-child .workspace-tab-container {
+  border-bottom: var(--border-border-style);
+}
+body.anp-border-layout .workspace .workspace-split.mod-right-split .workspace-tabs.mod-top-right-space .workspace-tab-container {
+  border-top: var(--border-border-style);
+  border-right: var(--border-border-style);
+}
+body.anp-border-layout .workspace .workspace-split:not(.mod-right-split):not(.mod-left-split) {
+  background-color: var(--card-background-color);
+}
+body.anp-border-layout .workspace .workspace-split:not(.mod-right-split):not(.mod-left-split) > .workspace-split {
+  padding-bottom: 0;
+}
+body.anp-border-layout .workspace .workspace-split:not(.mod-right-split):not(.mod-left-split) .workspace-tabs {
+  background-color: var(--card-background-color);
+}
+body.anp-border-layout .workspace .workspace-split:not(.mod-right-split):not(.mod-left-split) .workspace-tabs:last-child .workspace-tab-container {
+  border-bottom: var(--border-border-style);
+}
+body.anp-border-layout .workspace .workspace-split:not(.mod-right-split):not(.mod-left-split) .workspace-tabs.mod-top .workspace-tab-container {
+  border-top: var(--border-border-style);
+}
+body.anp-border-layout .workspace .workspace-tabs:not(.mod-top) .workspace-tab-header-container {
+  background-color: var(--card-foreground-color);
+}
+body.anp-border-layout .workspace .workspace-tabs.mod-top .workspace-tab-header-container {
+  border-bottom: none;
+}
+body.anp-border-layout .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+body.anp-border-layout .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  height: calc(100% + -1 * var(--header-height) + -1 * var(--anp-border-bottom-padding, 20px));
+  bottom: var(--anp-border-bottom-padding, 20px);
+}
+body.anp-border-layout .workspace-split {
+  --divider-vertical-height: calc(100% + -1*var(--header-height));
+}
+body.anp-border-layout .workspace-ribbon.mod-left:before {
+  border-bottom: 1px solid var(--card-background-color);
+}
+body.anp-border-layout .workspace-ribbon.mod-left,
+body.anp-border-layout .workspace-ribbon.mod-left.is-focused {
+  border-right-color: var(--card-background-color);
+}
+body.anp-border-layout.is-popout-window .workspace {
+  margin-left: var(--anp-border-padding, 20px);
+}
+
+body.anp-border-layout:not(.is-mobile) .workspace {
+  margin-right: var(--anp-border-padding, 20px);
+}
+body.anp-border-layout:not(.is-mobile) .workspace .workspace-split.mod-left-split {
+  padding-bottom: var(--anp-border-bottom-padding, 20px);
+}
+body.anp-border-layout:not(.is-mobile) .workspace .workspace-split.mod-left-split .workspace-tabs.mod-top-left-space .workspace-tab-container {
+  border-top-left-radius: var(--anp-border-radius, var(--radius-xl));
+}
+body.anp-border-layout:not(.is-mobile) .workspace .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  border-bottom-left-radius: var(--anp-border-radius, var(--radius-xl));
+}
+body.anp-border-layout:not(.is-mobile) .workspace .workspace-split.mod-right-split {
+  padding-bottom: var(--anp-border-bottom-padding, 20px);
+}
+body.anp-border-layout:not(.is-mobile) .workspace .workspace-split.mod-right-split .workspace-tabs:last-child .workspace-tab-container {
+  border-bottom-right-radius: var(--anp-border-radius, var(--radius-xl));
+}
+body.anp-border-layout:not(.is-mobile) .workspace .workspace-split.mod-right-split .workspace-tabs.mod-top-right-space .workspace-tab-container {
+  border-top-right-radius: var(--anp-border-radius, var(--radius-xl));
+}
+body.anp-border-layout:not(.is-mobile) .workspace .workspace-split.mod-root:not(.mod-right-split):not(.mod-left-split) {
+  padding-bottom: var(--anp-border-bottom-padding, 20px);
+}
+
+.anp-bg-fix .workspace,
+.anp-bg-fix .app-container,
+.anp-bg-fix .horizontal-main-container {
+  background-color: var(--tab-container-background);
+}
+
+.anp-hide-borders {
+  --tab-outline-color: transparent;
+  --divider-color: transparent;
+}
+
 
 /*-Blockquote spacing-*/
 .markdown-rendered blockquote {
@@ -2213,9 +3666,74 @@ video {
   padding: 0px 6px;
 }
 
-.anp-header-color-toggle .app-container,
-.anp-header-color-toggle .print {
-  --h1-color: rgb(var(--anp-h1-color));
+.anp-header-color-toggle.anp-h1-rosewater .app-container,
+.anp-header-color-toggle.anp-h1-rosewater .print {
+  --h1-color: rgb(var(--ctp-rosewater));
+}
+
+.anp-header-color-toggle.anp-h1-flamingo .app-container,
+.anp-header-color-toggle.anp-h1-flamingo .print {
+  --h1-color: rgb(var(--ctp-flamingo));
+}
+
+.anp-header-color-toggle.anp-h1-pink .app-container,
+.anp-header-color-toggle.anp-h1-pink .print {
+  --h1-color: rgb(var(--ctp-pink));
+}
+
+.anp-header-color-toggle.anp-h1-mauve .app-container,
+.anp-header-color-toggle.anp-h1-mauve .print {
+  --h1-color: rgb(var(--ctp-mauve));
+}
+
+.anp-header-color-toggle.anp-h1-red .app-container,
+.anp-header-color-toggle.anp-h1-red .print {
+  --h1-color: rgb(var(--ctp-red));
+}
+
+.anp-header-color-toggle.anp-h1-maroon .app-container,
+.anp-header-color-toggle.anp-h1-maroon .print {
+  --h1-color: rgb(var(--ctp-maroon));
+}
+
+.anp-header-color-toggle.anp-h1-peach .app-container,
+.anp-header-color-toggle.anp-h1-peach .print {
+  --h1-color: rgb(var(--ctp-peach));
+}
+
+.anp-header-color-toggle.anp-h1-yellow .app-container,
+.anp-header-color-toggle.anp-h1-yellow .print {
+  --h1-color: rgb(var(--ctp-yellow));
+}
+
+.anp-header-color-toggle.anp-h1-green .app-container,
+.anp-header-color-toggle.anp-h1-green .print {
+  --h1-color: rgb(var(--ctp-green));
+}
+
+.anp-header-color-toggle.anp-h1-teal .app-container,
+.anp-header-color-toggle.anp-h1-teal .print {
+  --h1-color: rgb(var(--ctp-teal));
+}
+
+.anp-header-color-toggle.anp-h1-sky .app-container,
+.anp-header-color-toggle.anp-h1-sky .print {
+  --h1-color: rgb(var(--ctp-sky));
+}
+
+.anp-header-color-toggle.anp-h1-sapphire .app-container,
+.anp-header-color-toggle.anp-h1-sapphire .print {
+  --h1-color: rgb(var(--ctp-sapphire));
+}
+
+.anp-header-color-toggle.anp-h1-blue .app-container,
+.anp-header-color-toggle.anp-h1-blue .print {
+  --h1-color: rgb(var(--ctp-blue));
+}
+
+.anp-header-color-toggle.anp-h1-lavender .app-container,
+.anp-header-color-toggle.anp-h1-lavender .print {
+  --h1-color: rgb(var(--ctp-lavender));
 }
 
 .anp-h1-divider .markdown-rendered h1,
@@ -2232,9 +3750,74 @@ video {
   color: var(--h1-color);
 }
 
-.anp-header-color-toggle .app-container,
-.anp-header-color-toggle .print {
-  --h2-color: rgb(var(--anp-h2-color));
+.anp-header-color-toggle.anp-h2-rosewater .app-container,
+.anp-header-color-toggle.anp-h2-rosewater .print {
+  --h2-color: rgb(var(--ctp-rosewater));
+}
+
+.anp-header-color-toggle.anp-h2-flamingo .app-container,
+.anp-header-color-toggle.anp-h2-flamingo .print {
+  --h2-color: rgb(var(--ctp-flamingo));
+}
+
+.anp-header-color-toggle.anp-h2-pink .app-container,
+.anp-header-color-toggle.anp-h2-pink .print {
+  --h2-color: rgb(var(--ctp-pink));
+}
+
+.anp-header-color-toggle.anp-h2-mauve .app-container,
+.anp-header-color-toggle.anp-h2-mauve .print {
+  --h2-color: rgb(var(--ctp-mauve));
+}
+
+.anp-header-color-toggle.anp-h2-red .app-container,
+.anp-header-color-toggle.anp-h2-red .print {
+  --h2-color: rgb(var(--ctp-red));
+}
+
+.anp-header-color-toggle.anp-h2-maroon .app-container,
+.anp-header-color-toggle.anp-h2-maroon .print {
+  --h2-color: rgb(var(--ctp-maroon));
+}
+
+.anp-header-color-toggle.anp-h2-peach .app-container,
+.anp-header-color-toggle.anp-h2-peach .print {
+  --h2-color: rgb(var(--ctp-peach));
+}
+
+.anp-header-color-toggle.anp-h2-yellow .app-container,
+.anp-header-color-toggle.anp-h2-yellow .print {
+  --h2-color: rgb(var(--ctp-yellow));
+}
+
+.anp-header-color-toggle.anp-h2-green .app-container,
+.anp-header-color-toggle.anp-h2-green .print {
+  --h2-color: rgb(var(--ctp-green));
+}
+
+.anp-header-color-toggle.anp-h2-teal .app-container,
+.anp-header-color-toggle.anp-h2-teal .print {
+  --h2-color: rgb(var(--ctp-teal));
+}
+
+.anp-header-color-toggle.anp-h2-sky .app-container,
+.anp-header-color-toggle.anp-h2-sky .print {
+  --h2-color: rgb(var(--ctp-sky));
+}
+
+.anp-header-color-toggle.anp-h2-sapphire .app-container,
+.anp-header-color-toggle.anp-h2-sapphire .print {
+  --h2-color: rgb(var(--ctp-sapphire));
+}
+
+.anp-header-color-toggle.anp-h2-blue .app-container,
+.anp-header-color-toggle.anp-h2-blue .print {
+  --h2-color: rgb(var(--ctp-blue));
+}
+
+.anp-header-color-toggle.anp-h2-lavender .app-container,
+.anp-header-color-toggle.anp-h2-lavender .print {
+  --h2-color: rgb(var(--ctp-lavender));
 }
 
 .anp-h2-divider .markdown-rendered h2,
@@ -2251,9 +3834,74 @@ video {
   color: var(--h2-color);
 }
 
-.anp-header-color-toggle .app-container,
-.anp-header-color-toggle .print {
-  --h3-color: rgb(var(--anp-h3-color));
+.anp-header-color-toggle.anp-h3-rosewater .app-container,
+.anp-header-color-toggle.anp-h3-rosewater .print {
+  --h3-color: rgb(var(--ctp-rosewater));
+}
+
+.anp-header-color-toggle.anp-h3-flamingo .app-container,
+.anp-header-color-toggle.anp-h3-flamingo .print {
+  --h3-color: rgb(var(--ctp-flamingo));
+}
+
+.anp-header-color-toggle.anp-h3-pink .app-container,
+.anp-header-color-toggle.anp-h3-pink .print {
+  --h3-color: rgb(var(--ctp-pink));
+}
+
+.anp-header-color-toggle.anp-h3-mauve .app-container,
+.anp-header-color-toggle.anp-h3-mauve .print {
+  --h3-color: rgb(var(--ctp-mauve));
+}
+
+.anp-header-color-toggle.anp-h3-red .app-container,
+.anp-header-color-toggle.anp-h3-red .print {
+  --h3-color: rgb(var(--ctp-red));
+}
+
+.anp-header-color-toggle.anp-h3-maroon .app-container,
+.anp-header-color-toggle.anp-h3-maroon .print {
+  --h3-color: rgb(var(--ctp-maroon));
+}
+
+.anp-header-color-toggle.anp-h3-peach .app-container,
+.anp-header-color-toggle.anp-h3-peach .print {
+  --h3-color: rgb(var(--ctp-peach));
+}
+
+.anp-header-color-toggle.anp-h3-yellow .app-container,
+.anp-header-color-toggle.anp-h3-yellow .print {
+  --h3-color: rgb(var(--ctp-yellow));
+}
+
+.anp-header-color-toggle.anp-h3-green .app-container,
+.anp-header-color-toggle.anp-h3-green .print {
+  --h3-color: rgb(var(--ctp-green));
+}
+
+.anp-header-color-toggle.anp-h3-teal .app-container,
+.anp-header-color-toggle.anp-h3-teal .print {
+  --h3-color: rgb(var(--ctp-teal));
+}
+
+.anp-header-color-toggle.anp-h3-sky .app-container,
+.anp-header-color-toggle.anp-h3-sky .print {
+  --h3-color: rgb(var(--ctp-sky));
+}
+
+.anp-header-color-toggle.anp-h3-sapphire .app-container,
+.anp-header-color-toggle.anp-h3-sapphire .print {
+  --h3-color: rgb(var(--ctp-sapphire));
+}
+
+.anp-header-color-toggle.anp-h3-blue .app-container,
+.anp-header-color-toggle.anp-h3-blue .print {
+  --h3-color: rgb(var(--ctp-blue));
+}
+
+.anp-header-color-toggle.anp-h3-lavender .app-container,
+.anp-header-color-toggle.anp-h3-lavender .print {
+  --h3-color: rgb(var(--ctp-lavender));
 }
 
 .anp-h3-divider .markdown-rendered h3,
@@ -2270,9 +3918,74 @@ video {
   color: var(--h3-color);
 }
 
-.anp-header-color-toggle .app-container,
-.anp-header-color-toggle .print {
-  --h4-color: rgb(var(--anp-h4-color));
+.anp-header-color-toggle.anp-h4-rosewater .app-container,
+.anp-header-color-toggle.anp-h4-rosewater .print {
+  --h4-color: rgb(var(--ctp-rosewater));
+}
+
+.anp-header-color-toggle.anp-h4-flamingo .app-container,
+.anp-header-color-toggle.anp-h4-flamingo .print {
+  --h4-color: rgb(var(--ctp-flamingo));
+}
+
+.anp-header-color-toggle.anp-h4-pink .app-container,
+.anp-header-color-toggle.anp-h4-pink .print {
+  --h4-color: rgb(var(--ctp-pink));
+}
+
+.anp-header-color-toggle.anp-h4-mauve .app-container,
+.anp-header-color-toggle.anp-h4-mauve .print {
+  --h4-color: rgb(var(--ctp-mauve));
+}
+
+.anp-header-color-toggle.anp-h4-red .app-container,
+.anp-header-color-toggle.anp-h4-red .print {
+  --h4-color: rgb(var(--ctp-red));
+}
+
+.anp-header-color-toggle.anp-h4-maroon .app-container,
+.anp-header-color-toggle.anp-h4-maroon .print {
+  --h4-color: rgb(var(--ctp-maroon));
+}
+
+.anp-header-color-toggle.anp-h4-peach .app-container,
+.anp-header-color-toggle.anp-h4-peach .print {
+  --h4-color: rgb(var(--ctp-peach));
+}
+
+.anp-header-color-toggle.anp-h4-yellow .app-container,
+.anp-header-color-toggle.anp-h4-yellow .print {
+  --h4-color: rgb(var(--ctp-yellow));
+}
+
+.anp-header-color-toggle.anp-h4-green .app-container,
+.anp-header-color-toggle.anp-h4-green .print {
+  --h4-color: rgb(var(--ctp-green));
+}
+
+.anp-header-color-toggle.anp-h4-teal .app-container,
+.anp-header-color-toggle.anp-h4-teal .print {
+  --h4-color: rgb(var(--ctp-teal));
+}
+
+.anp-header-color-toggle.anp-h4-sky .app-container,
+.anp-header-color-toggle.anp-h4-sky .print {
+  --h4-color: rgb(var(--ctp-sky));
+}
+
+.anp-header-color-toggle.anp-h4-sapphire .app-container,
+.anp-header-color-toggle.anp-h4-sapphire .print {
+  --h4-color: rgb(var(--ctp-sapphire));
+}
+
+.anp-header-color-toggle.anp-h4-blue .app-container,
+.anp-header-color-toggle.anp-h4-blue .print {
+  --h4-color: rgb(var(--ctp-blue));
+}
+
+.anp-header-color-toggle.anp-h4-lavender .app-container,
+.anp-header-color-toggle.anp-h4-lavender .print {
+  --h4-color: rgb(var(--ctp-lavender));
 }
 
 .anp-h4-divider .markdown-rendered h4,
@@ -2289,9 +4002,74 @@ video {
   color: var(--h4-color);
 }
 
-.anp-header-color-toggle .app-container,
-.anp-header-color-toggle .print {
-  --h5-color: rgb(var(--anp-h5-color));
+.anp-header-color-toggle.anp-h5-rosewater .app-container,
+.anp-header-color-toggle.anp-h5-rosewater .print {
+  --h5-color: rgb(var(--ctp-rosewater));
+}
+
+.anp-header-color-toggle.anp-h5-flamingo .app-container,
+.anp-header-color-toggle.anp-h5-flamingo .print {
+  --h5-color: rgb(var(--ctp-flamingo));
+}
+
+.anp-header-color-toggle.anp-h5-pink .app-container,
+.anp-header-color-toggle.anp-h5-pink .print {
+  --h5-color: rgb(var(--ctp-pink));
+}
+
+.anp-header-color-toggle.anp-h5-mauve .app-container,
+.anp-header-color-toggle.anp-h5-mauve .print {
+  --h5-color: rgb(var(--ctp-mauve));
+}
+
+.anp-header-color-toggle.anp-h5-red .app-container,
+.anp-header-color-toggle.anp-h5-red .print {
+  --h5-color: rgb(var(--ctp-red));
+}
+
+.anp-header-color-toggle.anp-h5-maroon .app-container,
+.anp-header-color-toggle.anp-h5-maroon .print {
+  --h5-color: rgb(var(--ctp-maroon));
+}
+
+.anp-header-color-toggle.anp-h5-peach .app-container,
+.anp-header-color-toggle.anp-h5-peach .print {
+  --h5-color: rgb(var(--ctp-peach));
+}
+
+.anp-header-color-toggle.anp-h5-yellow .app-container,
+.anp-header-color-toggle.anp-h5-yellow .print {
+  --h5-color: rgb(var(--ctp-yellow));
+}
+
+.anp-header-color-toggle.anp-h5-green .app-container,
+.anp-header-color-toggle.anp-h5-green .print {
+  --h5-color: rgb(var(--ctp-green));
+}
+
+.anp-header-color-toggle.anp-h5-teal .app-container,
+.anp-header-color-toggle.anp-h5-teal .print {
+  --h5-color: rgb(var(--ctp-teal));
+}
+
+.anp-header-color-toggle.anp-h5-sky .app-container,
+.anp-header-color-toggle.anp-h5-sky .print {
+  --h5-color: rgb(var(--ctp-sky));
+}
+
+.anp-header-color-toggle.anp-h5-sapphire .app-container,
+.anp-header-color-toggle.anp-h5-sapphire .print {
+  --h5-color: rgb(var(--ctp-sapphire));
+}
+
+.anp-header-color-toggle.anp-h5-blue .app-container,
+.anp-header-color-toggle.anp-h5-blue .print {
+  --h5-color: rgb(var(--ctp-blue));
+}
+
+.anp-header-color-toggle.anp-h5-lavender .app-container,
+.anp-header-color-toggle.anp-h5-lavender .print {
+  --h5-color: rgb(var(--ctp-lavender));
 }
 
 .anp-h5-divider .markdown-rendered h5,
@@ -2308,9 +4086,74 @@ video {
   color: var(--h5-color);
 }
 
-.anp-header-color-toggle .app-container,
-.anp-header-color-toggle .print {
-  --h6-color: rgb(var(--anp-h6-color));
+.anp-header-color-toggle.anp-h6-rosewater .app-container,
+.anp-header-color-toggle.anp-h6-rosewater .print {
+  --h6-color: rgb(var(--ctp-rosewater));
+}
+
+.anp-header-color-toggle.anp-h6-flamingo .app-container,
+.anp-header-color-toggle.anp-h6-flamingo .print {
+  --h6-color: rgb(var(--ctp-flamingo));
+}
+
+.anp-header-color-toggle.anp-h6-pink .app-container,
+.anp-header-color-toggle.anp-h6-pink .print {
+  --h6-color: rgb(var(--ctp-pink));
+}
+
+.anp-header-color-toggle.anp-h6-mauve .app-container,
+.anp-header-color-toggle.anp-h6-mauve .print {
+  --h6-color: rgb(var(--ctp-mauve));
+}
+
+.anp-header-color-toggle.anp-h6-red .app-container,
+.anp-header-color-toggle.anp-h6-red .print {
+  --h6-color: rgb(var(--ctp-red));
+}
+
+.anp-header-color-toggle.anp-h6-maroon .app-container,
+.anp-header-color-toggle.anp-h6-maroon .print {
+  --h6-color: rgb(var(--ctp-maroon));
+}
+
+.anp-header-color-toggle.anp-h6-peach .app-container,
+.anp-header-color-toggle.anp-h6-peach .print {
+  --h6-color: rgb(var(--ctp-peach));
+}
+
+.anp-header-color-toggle.anp-h6-yellow .app-container,
+.anp-header-color-toggle.anp-h6-yellow .print {
+  --h6-color: rgb(var(--ctp-yellow));
+}
+
+.anp-header-color-toggle.anp-h6-green .app-container,
+.anp-header-color-toggle.anp-h6-green .print {
+  --h6-color: rgb(var(--ctp-green));
+}
+
+.anp-header-color-toggle.anp-h6-teal .app-container,
+.anp-header-color-toggle.anp-h6-teal .print {
+  --h6-color: rgb(var(--ctp-teal));
+}
+
+.anp-header-color-toggle.anp-h6-sky .app-container,
+.anp-header-color-toggle.anp-h6-sky .print {
+  --h6-color: rgb(var(--ctp-sky));
+}
+
+.anp-header-color-toggle.anp-h6-sapphire .app-container,
+.anp-header-color-toggle.anp-h6-sapphire .print {
+  --h6-color: rgb(var(--ctp-sapphire));
+}
+
+.anp-header-color-toggle.anp-h6-blue .app-container,
+.anp-header-color-toggle.anp-h6-blue .print {
+  --h6-color: rgb(var(--ctp-blue));
+}
+
+.anp-header-color-toggle.anp-h6-lavender .app-container,
+.anp-header-color-toggle.anp-h6-lavender .print {
+  --h6-color: rgb(var(--ctp-lavender));
 }
 
 .anp-h6-divider .markdown-rendered h6,
@@ -2407,6 +4250,194 @@ hr {
   --list-bullet-radius: 0;
   --list-bullet-border: 1px solid var(--list-marker-color);
   background-color: transparent;
+}
+
+.anp-latex-inline-rosewater span.math:not(.math-block) {
+  color: rgb(var(--ctp-rosewater));
+}
+
+.anp-latex-block-rosewater .math-block {
+  color: rgb(var(--ctp-rosewater));
+}
+
+.anp-latex-inline-flamingo span.math:not(.math-block) {
+  color: rgb(var(--ctp-flamingo));
+}
+
+.anp-latex-block-flamingo .math-block {
+  color: rgb(var(--ctp-flamingo));
+}
+
+.anp-latex-inline-pink span.math:not(.math-block) {
+  color: rgb(var(--ctp-pink));
+}
+
+.anp-latex-block-pink .math-block {
+  color: rgb(var(--ctp-pink));
+}
+
+.anp-latex-inline-mauve span.math:not(.math-block) {
+  color: rgb(var(--ctp-mauve));
+}
+
+.anp-latex-block-mauve .math-block {
+  color: rgb(var(--ctp-mauve));
+}
+
+.anp-latex-inline-red span.math:not(.math-block) {
+  color: rgb(var(--ctp-red));
+}
+
+.anp-latex-block-red .math-block {
+  color: rgb(var(--ctp-red));
+}
+
+.anp-latex-inline-maroon span.math:not(.math-block) {
+  color: rgb(var(--ctp-maroon));
+}
+
+.anp-latex-block-maroon .math-block {
+  color: rgb(var(--ctp-maroon));
+}
+
+.anp-latex-inline-peach span.math:not(.math-block) {
+  color: rgb(var(--ctp-peach));
+}
+
+.anp-latex-block-peach .math-block {
+  color: rgb(var(--ctp-peach));
+}
+
+.anp-latex-inline-yellow span.math:not(.math-block) {
+  color: rgb(var(--ctp-yellow));
+}
+
+.anp-latex-block-yellow .math-block {
+  color: rgb(var(--ctp-yellow));
+}
+
+.anp-latex-inline-green span.math:not(.math-block) {
+  color: rgb(var(--ctp-green));
+}
+
+.anp-latex-block-green .math-block {
+  color: rgb(var(--ctp-green));
+}
+
+.anp-latex-inline-teal span.math:not(.math-block) {
+  color: rgb(var(--ctp-teal));
+}
+
+.anp-latex-block-teal .math-block {
+  color: rgb(var(--ctp-teal));
+}
+
+.anp-latex-inline-sky span.math:not(.math-block) {
+  color: rgb(var(--ctp-sky));
+}
+
+.anp-latex-block-sky .math-block {
+  color: rgb(var(--ctp-sky));
+}
+
+.anp-latex-inline-sapphire span.math:not(.math-block) {
+  color: rgb(var(--ctp-sapphire));
+}
+
+.anp-latex-block-sapphire .math-block {
+  color: rgb(var(--ctp-sapphire));
+}
+
+.anp-latex-inline-blue span.math:not(.math-block) {
+  color: rgb(var(--ctp-blue));
+}
+
+.anp-latex-block-blue .math-block {
+  color: rgb(var(--ctp-blue));
+}
+
+.anp-latex-inline-lavender span.math:not(.math-block) {
+  color: rgb(var(--ctp-lavender));
+}
+
+.anp-latex-block-lavender .math-block {
+  color: rgb(var(--ctp-lavender));
+}
+
+.anp-latex-inline-text span.math:not(.math-block) {
+  color: rgb(var(--ctp-text));
+}
+
+.anp-latex-block-text .math-block {
+  color: rgb(var(--ctp-text));
+}
+
+.anp-latex-inline-subtext1 span.math:not(.math-block) {
+  color: rgb(var(--ctp-subtext1));
+}
+
+.anp-latex-block-subtext1 .math-block {
+  color: rgb(var(--ctp-subtext1));
+}
+
+.anp-latex-inline-subtext0 span.math:not(.math-block) {
+  color: rgb(var(--ctp-subtext0));
+}
+
+.anp-latex-block-subtext0 .math-block {
+  color: rgb(var(--ctp-subtext0));
+}
+
+.anp-latex-inline-overlay2 span.math:not(.math-block) {
+  color: rgb(var(--ctp-overlay2));
+}
+
+.anp-latex-block-overlay2 .math-block {
+  color: rgb(var(--ctp-overlay2));
+}
+
+.anp-latex-inline-overlay1 span.math:not(.math-block) {
+  color: rgb(var(--ctp-overlay1));
+}
+
+.anp-latex-block-overlay1 .math-block {
+  color: rgb(var(--ctp-overlay1));
+}
+
+.anp-latex-inline-overlay0 span.math:not(.math-block) {
+  color: rgb(var(--ctp-overlay0));
+}
+
+.anp-latex-block-overlay0 .math-block {
+  color: rgb(var(--ctp-overlay0));
+}
+
+.anp-latex-inline-surface2 span.math:not(.math-block) {
+  color: rgb(var(--ctp-surface2));
+}
+
+.anp-latex-block-surface2 .math-block {
+  color: rgb(var(--ctp-surface2));
+}
+
+.anp-latex-inline-surface1 span.math:not(.math-block) {
+  color: rgb(var(--ctp-surface1));
+}
+
+.anp-latex-block-surface1 .math-block {
+  color: rgb(var(--ctp-surface1));
+}
+
+.anp-latex-inline-surface0 span.math:not(.math-block) {
+  color: rgb(var(--ctp-surface0));
+}
+
+.anp-latex-block-surface0 .math-block {
+  color: rgb(var(--ctp-surface0));
+}
+
+.math-block {
+  font-size: var(--anp-latex-block-font-size, var(--font-size-lg));
 }
 
 .anp-toggle-metadata .frontmatter-container,
@@ -2590,6 +4621,28 @@ table.dataview.table-view-table > tbody > tr:hover {
   background-color: rgb(var(--ctp-yellow));
 }
 
+/*-----------------------------------
+Rainbow tags is a snippet by @raisabelatrix
+Link: https://gist.github.com/raisabelatrix/eb383f7e19b59f951430c2f3c6ed80b0
+-----------------------------------*/
+body.rainbow-tags {
+  --rainbow-tags-opacity: 0.3;
+  --r1-color: rgb(var(--ctp-red));
+  --r2-color: rgb(var(--ctp-peach));
+  --r3-color: rgb(var(--ctp-yellow));
+  --r4-color: rgb(var(--ctp-green));
+  --r5-color: rgb(var(--ctp-blue));
+  --r6-color: rgb(var(--ctp-lavender));
+  --r7-color: rgb(var(--ctp-mauve));
+  --r1-color-light: rgba(var(--ctp-red), var(--rainbow-tags-opacity));
+  --r2-color-light: rgba(var(--ctp-peach), var(--rainbow-tags-opacity));
+  --r3-color-light: rgba(var(--ctp-yellow), var(--rainbow-tags-opacity));
+  --r4-color-light: rgba(var(--ctp-green), var(--rainbow-tags-opacity));
+  --r5-color-light: rgba(var(--ctp-blue), var(--rainbow-tags-opacity));
+  --r6-color-light: rgba(var(--ctp-lavender), var(--rainbow-tags-opacity));
+  --r7-color-light: rgba(var(--ctp-mauve), var(--rainbow-tags-opacity));
+}
+
 .anp-collapse-folders .workspace-leaf-content:not([data-type=search]) .nav-folder.mod-root .nav-folder > .nav-folder-children:is(.nav-file, .nav-folder) {
   margin-left: var(--size-2-1);
 }
@@ -2610,6 +4663,16 @@ table.dataview.table-view-table > tbody > tr:hover {
 }
 .anp-collapse-folders .workspace-leaf-content:not([data-type=search]) .tree-item .collapse-icon svg {
   display: none;
+}
+
+.anp-color-transition-toggle .horizontal-tab-content,
+.anp-color-transition-toggle .vertical-tab-content,
+.anp-color-transition-toggle .vertical-tab-header,
+.anp-color-transition-toggle .workspace-tab-header-container,
+.anp-color-transition-toggle .workspace-fake-target-overlay:not(.is-in-sidebar) .workspace-tabs .workspace-leaf,
+.anp-color-transition-toggle .mod-root .workspace-tabs .workspace-leaf,
+.anp-color-transition-toggle .setting-item-name {
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out !important;
 }
 
 .callout[data-callout=capacities-card] {
@@ -2703,6 +4766,7 @@ table.dataview.table-view-table > tbody > tr:hover {
   mix-blend-mode: normal;
 }
 .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body] > .callout-content, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body] > .callout-content {
+  padding: var(--callout-padding);
   background-color: var(--background-primary);
 }
 .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop-image], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop-image], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card] {
@@ -2712,9 +4776,15 @@ table.dataview.table-view-table > tbody > tr:hover {
   border-top: none;
 }
 
-.anp-card-layout.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek {
-  --capacities-sidebar-bottom: calc(var(--anp-card-layout-padding, 10px) + 80px);
+.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-vanilla div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] .callout-content, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-vanilla div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop] .callout-content, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-vanilla div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar] .callout-content, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-vanilla.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] .callout-content, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-vanilla.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop] .callout-content, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-vanilla.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar] .callout-content {
+  border-left: none;
+  padding: 0;
 }
+.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-vanilla div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] .callout-title, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-vanilla.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] .callout-title {
+  border-left: none;
+  background-color: transparent;
+}
+
 
 .markdown-reading-view .markdown-preview-view.capacities-card {
   overflow-y: hidden;
@@ -2723,64 +4793,117 @@ table.dataview.table-view-table > tbody > tr:hover {
   display: none;
 }
 
-/*------------FLOATING VAULT TITLE-----------*/
-/*----------------------------------
-This feature is inspired by Cecilia May's Primary theme: https://github.com/ceciliamay/obsidianmd-theme-primary
-None of the original code was used and the feature was implemented from scratch.
-----------------------------------*/
-.anp-floating-header .nav-folder.mod-root > .nav-folder-title {
-  background-color: var(--background-secondary);
-  position: sticky;
-  top: 0;
-  z-index: var(--layer-popover);
-  width: 100%;
-  border: 1px solid var(--background-modifier-border);
-  border-radius: var(--radius-s);
-  box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 0.05);
+/*-Button for metadata-*/
+body.anuppuccin-accent-toggle.anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header,
+body.anuppuccin-accent-toggle .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header {
+  background-color: rgba(var(--ctp-accent), 0.8);
+}
+body.anuppuccin-accent-toggle.anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:hover,
+body.anuppuccin-accent-toggle .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:hover {
+  background-color: rgba(var(--ctp-accent), 0.7);
+}
+body.anuppuccin-accent-toggle.anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:active,
+body.anuppuccin-accent-toggle .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:active {
+  background-color: rgba(var(--ctp-accent), 0.6);
 }
 
-.anp-floating-header.anp-card-layout .nav-folder.mod-root > .nav-folder-title {
-  background-color: var(--card-foreground-color, var(--background-primary));
+body:not(.anuppuccin-accent-toggle).anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header,
+body:not(.anuppuccin-accent-toggle) .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header {
+  background-color: hsla(var(--color-accent-hsl), 0.8);
+}
+body:not(.anuppuccin-accent-toggle).anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:hover,
+body:not(.anuppuccin-accent-toggle) .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:hover {
+  background-color: hsla(var(--color-accent-hsl), 0.7);
+}
+body:not(.anuppuccin-accent-toggle).anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:active,
+body:not(.anuppuccin-accent-toggle) .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:active {
+  background-color: hsla(var(--color-accent-hsl), 0.6);
 }
 
-.anp-floating-header.anp-custom-vault-toggle .nav-folder.mod-root > .nav-folder-title {
-  padding-top: 10px;
+.anp-button-metadata-toggle .frontmatter-container,
+.markdown-rendered.metadata-button .frontmatter-container {
+  padding: 0;
 }
-
-.anp-codeblock-numbers .HyperMD-codeblock-begin {
-  counter-reset: line-numbers;
-}
-
-.anp-codeblock-numbers .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
-  padding-left: 5em;
-  position: relative;
-}
-
-.anp-codeblock-numbers .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end)::before {
-  align-items: flex-end;
-  border-right: 1px solid var(--scrollbar-thumb-bg);
-  color: var(--anp-code-text-color, var(--text-faint));
-  content: counter(line-numbers);
-  counter-increment: line-numbers;
-  display: table-caption;
-  font-size: 0.8em;
-  height: 100%;
-  justify-content: flex-end;
-  left: 0;
-  padding-right: 0.5em;
-  padding-top: 1px;
+.anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header,
+.markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header {
+  width: 32px !important;
+  z-index: 1;
+  height: 32px !important;
+  text-overflow: clip;
+  overflow: hidden;
+  color: transparent !important;
   position: absolute;
-  text-align: right;
-  width: 3em;
+  left: calc(100% - 32px);
+  border-radius: 6px;
+}
+.anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:after,
+.markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:after {
+  position: absolute;
+  content: " ";
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' data-darkreader-inline-stroke='' style='--darkreader-inline-stroke:currentColor;'%3E%3Cpolygon points='12 2 2 7 12 12 22 7 12 2'%3E%3C/polygon%3E%3Cpolyline points='2 17 12 22 22 17'%3E%3C/polyline%3E%3Cpolyline points='2 12 12 17 22 12'%3E%3C/polyline%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' data-darkreader-inline-stroke='' style='--darkreader-inline-stroke:currentColor;'%3E%3Cpolygon points='12 2 2 7 12 12 22 7 12 2'%3E%3C/polygon%3E%3Cpolyline points='2 17 12 22 22 17'%3E%3C/polyline%3E%3Cpolyline points='2 12 12 17 22 12'%3E%3C/polyline%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--background-primary);
+  color: var(--background-secondary);
+  width: 22px;
+  height: 22px;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
-.anp-codeblock-numbers .HyperMD-codeblock.cm-line.cm-active:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end)::before {
-  color: var(--color-accent);
+/*-------Tweak for Minimal Cards--------------
+Minimal cards are a snippet designed by Kepano for the Minimal theme.
+None of the original code was used in this theme, and the following code is merely some tweaks to the snippet.
+--------------------------------------------*/
+.cards .table-view-table > tbody > tr > td:last-child {
+  border-bottom-color: transparent !important;
+  /*-No border for last cell-*/
+}
+.cards .table-view-table > tbody > tr > td:first-child {
+  width: 100% !important;
+  /*-Max width for first cell-*/
+  border-bottom: 1px dashed var(--background-modifier-border) !important;
+  /*-Border for first table that spans to the end because of max width-*/
+}
+.cards .table-view-table > tbody > tr > td:first-child span {
+  margin: 2px calc(var(--cards-padding) * 0.5) 0 calc(var(--cards-padding) * 0.5);
+  /*-Add padding to text-*/
+}
+.cards .table-view-table > tbody > tr > td:first-child span a {
+  padding: 0 !important;
+  /*-0 padding on link-*/
+}
+.cards .table-view-table > tbody > tr > td:not(:last-child):not(:first-child) > .el-p.el-p.el-p:not(.el-embed-image) {
+  border-bottom: 1px dashed var(--background-modifier-border);
+}
+.cards:not([class*=cards-cols-]) {
+  --cards-columns: repeat(auto-fit, minmax(var(--cards-min-width), var(--cards-max-width)));
+  /*-force card width to be obeyed on notes not having cards-cols css class-*/
 }
 
-.anp-codeblock-numbers .HyperMD-codeblock .cm-foldPlaceholder::before {
-  display: none;
+.cards.cards-bookmark .table-view-table .table-view-tbody tr::after {
+  --text-normal: var(--text-muted);
+  content: " ";
+  width: 25px;
+  height: 25px;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--!  --%3E%3Cpath d='M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z'/%3E%3C/svg%3E");
+  /*-SVG for bookmark-*/
+  -webkit-mask-repeat: no-repeat;
+  background-color: var(--color-accent);
+  /*-Bookmark follows accent color-*/
+  position: absolute;
+  margin-top: calc(-2px + -1 * var(--cards-border-width));
+  /*-Bookmark is a bit higher than the card-*/
+  margin-left: 5px;
+  /*-Bookmark is 5px from the left*/
 }
+.cards.cards-bookmark .table-view-table tbody tr > td:first-child span {
+  margin: 2px calc(var(--cards-padding) * 0.5) 0 calc(var(--cards-padding) * 0.5 + 20px);
+  /*-Shift first cell title to the left by about 20px-*/
+}
+
 
 .anp-file-icons .nav-file .nav-file-title[data-path] {
   align-items: center;
@@ -2876,8 +4999,771 @@ None of the original code was used and the feature was implemented from scratch.
   --italic-color: var(--text-muted) !important;
 }
 
+/*===============================================================
+* RAINBOW FOLDERS
+* Author: AnubisNekhet
+* https://www.buymeacoffee.com/anubisnekhet
+*===============================================================*/
+/*---------------------------------------------------------------
+* RAIBOW FOLDER VARIABLE
+
+* --rainbow-folder-color is a raw rgb variable whose value
+* is cycled per child folder in a folder tree.
+* Applying "inherit" to every child folder excluding first-order
+* child folders results in folders "inheriting" their parent
+* folder colors.
+*---------------------------------------------------------------*/
+.nav-folder-children > .nav-folder:nth-child(11n+2),
+.nav-files-container > div > .nav-folder:nth-child(11n+2),
+[data-type=bookmarks] .tree-item:nth-child(11n+2) {
+  --rainbow-folder-color: var(--ctp-red);
+}
+.nav-folder-children > .nav-folder:nth-child(11n+3),
+.nav-files-container > div > .nav-folder:nth-child(11n+3),
+[data-type=bookmarks] .tree-item:nth-child(11n+3) {
+  --rainbow-folder-color: var(--ctp-maroon);
+}
+.nav-folder-children > .nav-folder:nth-child(11n+4),
+.nav-files-container > div > .nav-folder:nth-child(11n+4),
+[data-type=bookmarks] .tree-item:nth-child(11n+4) {
+  --rainbow-folder-color: var(--ctp-peach);
+}
+.nav-folder-children > .nav-folder:nth-child(11n+5),
+.nav-files-container > div > .nav-folder:nth-child(11n+5),
+[data-type=bookmarks] .tree-item:nth-child(11n+5) {
+  --rainbow-folder-color: var(--ctp-yellow);
+}
+.nav-folder-children > .nav-folder:nth-child(11n+6),
+.nav-files-container > div > .nav-folder:nth-child(11n+6),
+[data-type=bookmarks] .tree-item:nth-child(11n+6) {
+  --rainbow-folder-color: var(--ctp-green);
+}
+.nav-folder-children > .nav-folder:nth-child(11n+7),
+.nav-files-container > div > .nav-folder:nth-child(11n+7),
+[data-type=bookmarks] .tree-item:nth-child(11n+7) {
+  --rainbow-folder-color: var(--ctp-teal);
+}
+.nav-folder-children > .nav-folder:nth-child(11n+8),
+.nav-files-container > div > .nav-folder:nth-child(11n+8),
+[data-type=bookmarks] .tree-item:nth-child(11n+8) {
+  --rainbow-folder-color: var(--ctp-sky);
+}
+.nav-folder-children > .nav-folder:nth-child(11n+9),
+.nav-files-container > div > .nav-folder:nth-child(11n+9),
+[data-type=bookmarks] .tree-item:nth-child(11n+9) {
+  --rainbow-folder-color: var(--ctp-sapphire);
+}
+.nav-folder-children > .nav-folder:nth-child(11n+10),
+.nav-files-container > div > .nav-folder:nth-child(11n+10),
+[data-type=bookmarks] .tree-item:nth-child(11n+10) {
+  --rainbow-folder-color: var(--ctp-blue);
+}
+.nav-folder-children > .nav-folder:nth-child(11n+11),
+.nav-files-container > div > .nav-folder:nth-child(11n+11),
+[data-type=bookmarks] .tree-item:nth-child(11n+11) {
+  --rainbow-folder-color: var(--ctp-lavender);
+}
+.nav-folder-children > .nav-folder:nth-child(11n+12),
+.nav-files-container > div > .nav-folder:nth-child(11n+12),
+[data-type=bookmarks] .tree-item:nth-child(11n+12) {
+  --rainbow-folder-color: var(--ctp-mauve);
+}
+
+.anp-rainbow-subfolder-color-toggle .nav-files-container .nav-folder.nav-folder .nav-folder,
+.anp-rainbow-subfolder-color-toggle [data-type=bookmarks] .tree-item .tree-item {
+  --rainbow-folder-color: inherit;
+}
+
+/*---------------------------------------------------------------
+* FULL RAINBOW STYLE
+*---------------------------------------------------------------*/
+.anp-full-rainbow-color-toggle .nav-files-container > div > .nav-folder .nav-folder-title,
+.anp-full-rainbow-color-toggle .nav-files-container > div > .nav-folder .nav-file-title,
+.anp-full-rainbow-color-toggle .nav-files-container .collapse-icon svg.svg-icon,
+.anp-full-rainbow-color-toggle .tree-item-self .tree-item-icon {
+  color: var(--anp-full-rainbow-text-inverted, var(--background-primary));
+  --icon-color: var(--anp-full-rainbow-text-inverted,
+          var(--background-primary));
+}
+.anp-full-rainbow-color-toggle.anp-rainbow-file-toggle .nav-files-container > div > .nav-folder-children > .nav-file .nav-file-title {
+  color: var(--anp-full-rainbow-text-inverted, var(--background-primary));
+}
+.anp-full-rainbow-color-toggle.anp-rainbow-file-toggle.theme-dark .nav-files-container > .nav-folder-children > .nav-file {
+  background-color: rgba(var(--ctp-text), var(--anp-rainbow-folder-bg-opacity));
+}
+.anp-full-rainbow-color-toggle.anp-rainbow-file-toggle.theme-light .nav-files-container > div > .nav-file {
+  background-color: rgba(var(--ctp-overlay1), var(--anp-rainbow-folder-bg-opacity));
+}
+.anp-full-rainbow-color-toggle.anp-rainbow-file-toggle .nav-files-container > div > .nav-file {
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+.anp-full-rainbow-color-toggle:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav-folder-title:hover,
+.anp-full-rainbow-color-toggle:not(.is-grabbing) .nav-files-container > div .nav-file .nav-file-title:hover {
+  background-color: rgba(var(--ctp-base), 0.1);
+}
+.anp-full-rainbow-color-toggle:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav-file-title.is-active {
+  border-color: rgba(var(--ctp-base), 0.2);
+  background-color: rgba(var(--ctp-base), 0.2);
+}
+.anp-full-rainbow-color-toggle .nav-file {
+  overflow-y: hidden;
+}
+.anp-full-rainbow-color-toggle .nav-file-title-content.is-being-renamed,
+.anp-full-rainbow-color-toggle .nav-folder-title-content.is-being-renamed {
+  cursor: text;
+  border-color: var(--interactive-accent);
+  background-color: rgba(var(--ctp-crust), 0.2);
+}
+.anp-full-rainbow-color-toggle .nav-file-title-content.is-being-renamed::selection,
+.anp-full-rainbow-color-toggle .nav-folder-title-content.is-being-renamed::selection {
+  background-color: hsla(var(--color-accent-hsl), 0.2);
+}
+.anp-full-rainbow-color-toggle .nav-file-title-content.is-being-renamed::selection {
+  background-color: rgba(var(--ctp-accent), 0.2);
+}
+.anp-full-rainbow-color-toggle .nav-files-container .nav-folder > .nav-folder-children {
+  padding: 0 5px 0 5px;
+}
+.anp-full-rainbow-color-toggle .nav-files-container > div > .nav-folder {
+  transition: background-color 0.4s;
+  background-color: rgba(var(--rainbow-folder-color), var(--anp-rainbow-folder-bg-opacity));
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+.anp-full-rainbow-color-toggle .nav-files-container > div > .nav-folder .nav-folder-children {
+  border-color: rgba(var(--ctp-crust), 0.4);
+}
+.anp-full-rainbow-color-toggle .nav-files-container > div > .nav-file.has-focus {
+  background-color: rgba(var(--ctp-text), var(--anp-rainbow-folder-bg-opacity));
+  border-left: none;
+  border-color: rgb(var(--ctp-accent));
+}
+.anp-full-rainbow-color-toggle .nav-files-container > div > .nav-file > .nav-file-title, .anp-full-rainbow-color-toggle .nav-files-container > div > .nav-file.has-focus > .nav-file-title {
+  margin-bottom: 0;
+}
+.anp-full-rainbow-color-toggle .workspace-leaf.mod-active .nav-folder.has-focus > .nav-file-title, .anp-full-rainbow-color-toggle .workspace-leaf.mod-active .nav-folder.has-focus > .nav-file-title:focus-within,
+.anp-full-rainbow-color-toggle .workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title,
+.anp-full-rainbow-color-toggle .workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title:focus-within {
+  box-shadow: none;
+}
+
+.anp-full-rainbow-text-color-toggle-dark.theme-dark,
+.anp-full-rainbow-text-color-toggle-light.theme-light {
+  --anp-full-rainbow-text-inverted: rgb(var(--ctp-text));
+}
+
+/*---------------------------------------------------------------
+* SIMPLE RAINBOW STYLE
+*---------------------------------------------------------------*/
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-title-toggle .nav-files-container > div > .nav-folder .nav-folder-title,
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-title-toggle [data-type=bookmarks] .tree-item .tree-item-inner {
+  transition: color 0.4s;
+  color: rgba(var(--rainbow-folder-color), var(--anp-simple-rainbow-opacity, 1));
+  --nav-item-background-hover: rgba(var(--rainbow-folder-color), 0.1);
+  --nav-item-background-active: rgba(var(--rainbow-folder-color), 0.1);
+}
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-title-toggle .nav-folder.is-being-dragged-over {
+  background-color: rgba(var(--rainbow-folder-color), 0.1);
+}
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-icon-toggle .nav-files-container > div > .nav-folder .nav-folder-title:after,
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-icon-toggle [data-type=bookmarks] .tree-item .tree-item-inner:after {
+  transition: color 0.4s;
+  color: rgba(var(--rainbow-folder-color), var(--anp-simple-rainbow-opacity, 1));
+  content: "⬤";
+  font-size: 10px;
+  position: relative;
+  margin-left: 4px;
+  opacity: 0.5;
+  top: -0.5px;
+}
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-icon-toggle [data-type=bookmarks] .tree-item .tree-item-inner {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-indentation-toggle .nav-files-container .nav-folder > .nav-folder-children,
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-indentation-toggle [data-type=bookmarks] .tree-item .tree-item-children {
+  transition: color 0.4s;
+  border-color: rgba(var(--rainbow-folder-color), 0.5);
+}
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-collapse-icon-toggle .tree-item-self .tree-item-icon {
+  --icon-color: rgba(var(--rainbow-folder-color),
+          var(--anp-simple-rainbow-opacity, 1));
+  --nav-collapse-icon-color: rgba(var(--rainbow-folder-color),
+          var(--anp-simple-rainbow-opacity, 1));
+  --nav-collapse-icon-color-collapsed: rgba(var(--rainbow-folder-color),
+          var(--anp-simple-rainbow-opacity, 1));
+}
+
 .modal {
   --h1-font: var(--interface-font);
+}
+
+.style-settings-container:empty {
+  display: none;
+}
+
+.style-settings-heading[data-level] {
+  padding-top: var(--size-4-2);
+  padding-bottom: var(--size-4-2);
+}
+
+.style-settings-heading[data-level="0"]:not(.is-collapsed) {
+  margin-bottom: var(--size-4-2);
+}
+
+.style-settings-heading:not([data-level="0"]) {
+  border-top: 1px solid rgba(var(--ctp-text), 0.2);
+  border-bottom: none;
+}
+
+.style-settings-heading:not([data-level="0"], .is-collapsed) {
+  margin-bottom: 0;
+}
+
+.style-settings-heading:not([data-level="0"]) + .style-settings-container {
+  border: 1px solid rgba(var(--ctp-text), 0.2);
+  border-radius: var(--radius-s);
+  padding: var(--size-4-2);
+  padding-left: var(--size-4-6);
+  background-color: rgba(var(--ctp-crust), 0.3);
+  overflow-x: hidden;
+}
+
+.style-settings-heading[data-level="0"]:not(.is-collapsed) + .style-settings-container {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.style-settings-heading[data-level="1"] {
+  border-top-color: var(--background-modifier-border);
+}
+
+.style-settings-heading:not([data-level="0"]):nth-child(-n+2),
+.style-settings-heading:not([data-level="0"], .is-collapsed) + .style-settings-container + .style-settings-heading,
+.style-settings-container .setting-item + .setting-item-heading {
+  border-top-width: 0;
+}
+
+.style-settings-heading:is([data-id=anuppuccin-theme-settings],
+[data-id=anuppuccin-theme-settings-extended]) {
+  border-color: hsla(var(--color-accent-hsl), 0.2);
+}
+.style-settings-heading:is([data-id=anuppuccin-theme-settings],
+[data-id=anuppuccin-theme-settings-extended]):not(.is-collapsed) + .style-settings-container {
+  border-color: hsla(var(--color-accent-hsl), 0.2);
+}
+.style-settings-heading:is([data-id=anuppuccin-theme-settings],
+[data-id=anuppuccin-theme-settings-extended]) .setting-item-name {
+  color: var(--color-accent);
+}
+
+.anuppuccin-accent-toggle .style-settings-heading:is([data-id=anuppuccin-theme-settings],
+[data-id=anuppuccin-theme-settings-extended]) {
+  border-color: rgba(var(--ctp-accent), 0.2);
+}
+.anuppuccin-accent-toggle .style-settings-heading:is([data-id=anuppuccin-theme-settings],
+[data-id=anuppuccin-theme-settings-extended]):not(.is-collapsed) + .style-settings-container {
+  border-color: rgba(var(--ctp-accent), 0.2);
+}
+
+.style-settings-container .style-settings-heading[data-id=anuppuccin-support] .setting-item-name {
+  color: var(--color-accent) !important;
+}
+
+.style-settings-container .themed-color-wrapper {
+  display: flex;
+  gap: var(--size-4-2);
+}
+
+.style-settings-container .themed-color-wrapper > div + div {
+  margin-top: 0;
+}
+
+.style-settings-container .setting-item:is([data-id=anuppuccin-extended-colorschemes-links],
+[data-id=anp-snippet-minimal-cards-disclaimer],
+[data-id=anp-background-image-light],
+[data-id=anp-background-image-dark],
+[data-id=anuppuccin-theme-donate],
+[data-id=anuppuccin-theme-source]) .setting-item-description > div {
+  display: none;
+}
+
+.style-settings-container .setting-item-control:has(input[type=text]) {
+  flex-grow: 0;
+  position: relative;
+}
+.style-settings-container .setting-item-control:has(input[type=text])::after {
+  align-items: center;
+  background-color: var(--background-modifier-hover);
+  border-radius: var(--radius-s);
+  display: flex;
+  font-size: 10px;
+  font-weight: var(--font-semibold);
+  height: calc(var(--input-height) - 12px);
+  justify-content: center;
+  left: calc(100% - 68px);
+  letter-spacing: 0.05em;
+  line-height: var(--line-height-normal);
+  padding: 0;
+  position: absolute;
+  text-transform: uppercase;
+  top: 6px;
+  width: 28px;
+}
+.is-mobile .style-settings-container .setting-item-control:has(input[type=text])::after {
+  top: 4px;
+}
+
+.style-settings-container .setting-item:is([data-id=tag-border-width],
+[data-id=callout-radius],
+[data-id=file-line-width],
+[data-id=file-margins],
+[data-id=anp-card-radius],
+[data-id=anp-card-header-left-padding],
+[data-id=anp-table-thickness],
+[data-id=anp-alt-tab-custom-height],
+[data-id=anp-depth-tab-gap],
+[data-id=anp-safari-tab-radius],
+[data-id=anp-safari-tab-gap],
+[data-id=anp-safari-border-width],
+[data-id=anp-stacked-header-width],
+[data-id=anp-border-radius],
+[data-id=anp-border-padding]) .setting-item-control::after {
+  content: "px";
+}
+
+.style-settings-container .setting-item:is([data-id=h1-size],
+[data-id=h2-size],
+[data-id=h3-size],
+[data-id=h4-size],
+[data-id=h5-size],
+[data-id=h6-size],
+[data-id=list-indent],
+[data-id=list-spacing]) .setting-item-control::after {
+  content: "em";
+}
+
+.style-settings-container .setting-item:is([data-id=anp-preview-width-pct],
+[data-id=anp-table-width-pct]) .setting-item-control::after {
+  content: "%";
+}
+
+.setting-item[data-id=anp-colors-section-header] > .setting-item-info > .setting-item-name {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, rgb(var(--ctp-rosewater)) 7%, rgb(var(--ctp-flamingo)) 7%, rgb(var(--ctp-flamingo)) 14%, rgb(var(--ctp-mauve)) 14%, rgb(var(--ctp-mauve)) 21%, rgb(var(--ctp-pink)) 21%, rgb(var(--ctp-pink)) 28%, rgb(var(--ctp-red)) 28%, rgb(var(--ctp-red)) 35%, rgb(var(--ctp-maroon)) 35%, rgb(var(--ctp-maroon)) 42%, rgb(var(--ctp-peach)) 42%, rgb(var(--ctp-peach)) 49%, rgb(var(--ctp-yellow)) 49%, rgb(var(--ctp-yellow)) 56%, rgb(var(--ctp-green)) 56%, rgb(var(--ctp-green)) 63%, rgb(var(--ctp-teal)) 63%, rgb(var(--ctp-teal)) 70%, rgb(var(--ctp-sky)) 70%, rgb(var(--ctp-sky)) 77%, rgb(var(--ctp-sapphire)) 77%, rgb(var(--ctp-sapphire)) 85%, rgb(var(--ctp-blue)) 85%, rgb(var(--ctp-blue)) 92%, rgb(var(--ctp-lavender))) 5;
+}
+
+.setting-item:is([data-id^=anuppuccin-url-]) .setting-item-control {
+  display: none;
+}
+.setting-item:is([data-id^=anuppuccin-url-]) .setting-item-name::before {
+  display: inline-flex;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  height: fit-content;
+  padding-right: var(--size-4-2);
+  width: var(--size-4-4);
+}
+
+.setting-item-heading > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  height: fit-content;
+  margin-left: var(--size-4-3);
+  width: var(--size-4-4);
+}
+
+.setting-item[data-id=anuppuccin-url-donate] .setting-item-name::before {
+  content: " ☕";
+}
+
+.setting-item[data-id=anuppuccin-url-star-repo] .setting-item-name::before {
+  content: " ⭐";
+}
+
+.setting-item[data-id=anuppuccin-url-submit-issue] .setting-item-name::before {
+  content: " 🐞";
+}
+
+.setting-item[data-id=anuppuccin-url-minimal-cards-snippet] .setting-item-name::before {
+  content: " ⬇";
+}
+
+.setting-item:is([data-id*=anuppuccin-theme-settings]) > .setting-item-info > .setting-item-name {
+  margin-left: -3px;
+}
+.setting-item:is([data-id*=anuppuccin-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
+}
+.setting-item:is([data-id*=anuppuccin-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  background-color: var(--color-accent);
+  content: " ";
+  display: inline-flex;
+  flex-shrink: 0;
+  height: calc(var(--font-ui-medium) + 3px);
+  width: calc(var(--font-ui-medium) + 3px);
+  margin-left: calc(-0.5 * var(--size-4-1));
+  margin-right: calc(var(--size-4-2) - 3px);
+  transition: transform 0.1s;
+  vertical-align: text-top;
+  margin-right: 0;
+}
+.setting-item:is([data-id*=anuppuccin-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
+  display: none;
+}
+
+.setting-item:is([data-id*=anuppuccin-theme-settings-extended]) > .setting-item-info > .setting-item-name {
+  margin-left: -3px;
+}
+.setting-item:is([data-id*=anuppuccin-theme-settings-extended]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
+}
+.setting-item:is([data-id*=anuppuccin-theme-settings-extended]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  background-color: var(--color-accent);
+  content: " ";
+  display: inline-flex;
+  flex-shrink: 0;
+  height: calc(var(--font-ui-medium) + 3px);
+  width: calc(var(--font-ui-medium) + 3px);
+  margin-left: calc(-0.5 * var(--size-4-1));
+  margin-right: calc(var(--size-4-2) - 3px);
+  transition: transform 0.1s;
+  vertical-align: text-top;
+  margin-right: 0;
+}
+.setting-item:is([data-id*=anuppuccin-theme-settings-extended]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
+  display: none;
+}
+
+.setting-item:is([data-id*=anp-colors-section-header]) > .setting-item-info > .setting-item-name {
+  margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-colors-section-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
+}
+.setting-item:is([data-id*=anp-colors-section-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  background-color: var(--color-accent);
+  content: " ";
+  display: inline-flex;
+  flex-shrink: 0;
+  height: calc(var(--font-ui-medium) + 3px);
+  width: calc(var(--font-ui-medium) + 3px);
+  margin-left: calc(-0.5 * var(--size-4-1));
+  margin-right: calc(var(--size-4-2) - 3px);
+  transition: transform 0.1s;
+  vertical-align: text-top;
+  margin-right: 0;
+}
+.setting-item:is([data-id*=anp-colors-section-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
+  display: none;
+}
+
+.setting-item:is([data-id*=anp-editor-header]) > .setting-item-info > .setting-item-name {
+  margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-editor-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
+}
+.setting-item:is([data-id*=anp-editor-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  background-color: var(--color-accent);
+  content: " ";
+  display: inline-flex;
+  flex-shrink: 0;
+  height: calc(var(--font-ui-medium) + 3px);
+  width: calc(var(--font-ui-medium) + 3px);
+  margin-left: calc(-0.5 * var(--size-4-1));
+  margin-right: calc(var(--size-4-2) - 3px);
+  transition: transform 0.1s;
+  vertical-align: text-top;
+  margin-right: 0;
+}
+.setting-item:is([data-id*=anp-editor-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
+  display: none;
+}
+
+.setting-item:is([data-id*=anp-preview-header]) > .setting-item-info > .setting-item-name {
+  margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-preview-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
+}
+.setting-item:is([data-id*=anp-preview-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  background-color: var(--color-accent);
+  content: " ";
+  display: inline-flex;
+  flex-shrink: 0;
+  height: calc(var(--font-ui-medium) + 3px);
+  width: calc(var(--font-ui-medium) + 3px);
+  margin-left: calc(-0.5 * var(--size-4-1));
+  margin-right: calc(var(--size-4-2) - 3px);
+  transition: transform 0.1s;
+  vertical-align: text-top;
+  margin-right: 0;
+}
+.setting-item:is([data-id*=anp-preview-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
+  display: none;
+}
+
+.setting-item:is([data-id*=anp-plugin-header]) > .setting-item-info > .setting-item-name {
+  margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-plugin-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
+}
+.setting-item:is([data-id*=anp-plugin-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  background-color: var(--color-accent);
+  content: " ";
+  display: inline-flex;
+  flex-shrink: 0;
+  height: calc(var(--font-ui-medium) + 3px);
+  width: calc(var(--font-ui-medium) + 3px);
+  margin-left: calc(-0.5 * var(--size-4-1));
+  margin-right: calc(var(--size-4-2) - 3px);
+  transition: transform 0.1s;
+  vertical-align: text-top;
+  margin-right: 0;
+}
+.setting-item:is([data-id*=anp-plugin-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
+  display: none;
+}
+
+.setting-item:is([data-id*=anp-misc-element-header]) > .setting-item-info > .setting-item-name {
+  margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-misc-element-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
+}
+.setting-item:is([data-id*=anp-misc-element-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  background-color: var(--color-accent);
+  content: " ";
+  display: inline-flex;
+  flex-shrink: 0;
+  height: calc(var(--font-ui-medium) + 3px);
+  width: calc(var(--font-ui-medium) + 3px);
+  margin-left: calc(-0.5 * var(--size-4-1));
+  margin-right: calc(var(--size-4-2) - 3px);
+  transition: transform 0.1s;
+  vertical-align: text-top;
+  margin-right: 0;
+}
+.setting-item:is([data-id*=anp-misc-element-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
+  display: none;
+}
+
+.setting-item:is([data-id*=anp-show-hide-elements-header]) > .setting-item-info > .setting-item-name {
+  margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-show-hide-elements-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
+}
+.setting-item:is([data-id*=anp-show-hide-elements-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  background-color: var(--color-accent);
+  content: " ";
+  display: inline-flex;
+  flex-shrink: 0;
+  height: calc(var(--font-ui-medium) + 3px);
+  width: calc(var(--font-ui-medium) + 3px);
+  margin-left: calc(-0.5 * var(--size-4-1));
+  margin-right: calc(var(--size-4-2) - 3px);
+  transition: transform 0.1s;
+  vertical-align: text-top;
+  margin-right: 0;
+}
+.setting-item:is([data-id*=anp-show-hide-elements-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
+  display: none;
+}
+
+.setting-item:is([data-id*=anp-typography-header]) > .setting-item-info > .setting-item-name {
+  margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-typography-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
+}
+.setting-item:is([data-id*=anp-typography-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  background-color: var(--color-accent);
+  content: " ";
+  display: inline-flex;
+  flex-shrink: 0;
+  height: calc(var(--font-ui-medium) + 3px);
+  width: calc(var(--font-ui-medium) + 3px);
+  margin-left: calc(-0.5 * var(--size-4-1));
+  margin-right: calc(var(--size-4-2) - 3px);
+  transition: transform 0.1s;
+  vertical-align: text-top;
+  margin-right: 0;
+}
+.setting-item:is([data-id*=anp-typography-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
+  display: none;
+}
+
+.setting-item:is([data-id*=anp-workspace-header]) > .setting-item-info > .setting-item-name {
+  margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-workspace-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
+}
+.setting-item:is([data-id*=anp-workspace-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  background-color: var(--color-accent);
+  content: " ";
+  display: inline-flex;
+  flex-shrink: 0;
+  height: calc(var(--font-ui-medium) + 3px);
+  width: calc(var(--font-ui-medium) + 3px);
+  margin-left: calc(-0.5 * var(--size-4-1));
+  margin-right: calc(var(--size-4-2) - 3px);
+  transition: transform 0.1s;
+  vertical-align: text-top;
+  margin-right: 0;
+}
+.setting-item:is([data-id*=anp-workspace-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
+  display: none;
+}
+
+.setting-item:is([data-id*=anuppuccin-support]) > .setting-item-info > .setting-item-name {
+  margin-left: -3px;
+}
+.setting-item:is([data-id*=anuppuccin-support]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
+}
+.setting-item:is([data-id*=anuppuccin-support]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  background-color: var(--color-accent);
+  content: " ";
+  display: inline-flex;
+  flex-shrink: 0;
+  height: calc(var(--font-ui-medium) + 3px);
+  width: calc(var(--font-ui-medium) + 3px);
+  margin-left: calc(-0.5 * var(--size-4-1));
+  margin-right: calc(var(--size-4-2) - 3px);
+  transition: transform 0.1s;
+  vertical-align: text-top;
+  margin-right: 0;
+}
+.setting-item:is([data-id*=anuppuccin-support]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
+  display: none;
+}
+
+.setting-item:is([data-id*=anp-custom-rainbow-colors]) > .setting-item-info > .setting-item-name {
+  margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-custom-rainbow-colors]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
+}
+.setting-item:is([data-id*=anp-custom-rainbow-colors]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  background-color: var(--color-accent);
+  content: " ";
+  display: inline-flex;
+  flex-shrink: 0;
+  height: calc(var(--font-ui-medium) + 3px);
+  width: calc(var(--font-ui-medium) + 3px);
+  margin-left: calc(-0.5 * var(--size-4-1));
+  margin-right: calc(var(--size-4-2) - 3px);
+  transition: transform 0.1s;
+  vertical-align: text-top;
+  margin-right: 0;
+}
+.setting-item:is([data-id*=anp-custom-rainbow-colors]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
+  display: none;
+}
+
+.setting-item:is([data-id*=anp-custom-rainbow-colors]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  background: linear-gradient(to right, rgb(var(--ctp-rosewater)) 7%, rgb(var(--ctp-flamingo)) 7%, rgb(var(--ctp-flamingo)) 14%, rgb(var(--ctp-mauve)) 14%, rgb(var(--ctp-mauve)) 21%, rgb(var(--ctp-pink)) 21%, rgb(var(--ctp-pink)) 28%, rgb(var(--ctp-red)) 28%, rgb(var(--ctp-red)) 35%, rgb(var(--ctp-maroon)) 35%, rgb(var(--ctp-maroon)) 42%, rgb(var(--ctp-peach)) 42%, rgb(var(--ctp-peach)) 49%, rgb(var(--ctp-yellow)) 49%, rgb(var(--ctp-yellow)) 56%, rgb(var(--ctp-green)) 56%, rgb(var(--ctp-green)) 63%, rgb(var(--ctp-teal)) 63%, rgb(var(--ctp-teal)) 70%, rgb(var(--ctp-sky)) 70%, rgb(var(--ctp-sky)) 77%, rgb(var(--ctp-sapphire)) 77%, rgb(var(--ctp-sapphire)) 85%, rgb(var(--ctp-blue)) 85%, rgb(var(--ctp-blue)) 92%, rgb(var(--ctp-lavender)));
+}
+
+.setting-item:is([data-id=anuppuccin-theme-settings],
+[data-id=anp-colors-section-header],
+[data-id=anp-editor-header],
+[data-id=anp-misc-element-header],
+[data-id=anp-show-hide-elements-header],
+[data-id=anp-typography-header],
+[data-id=anp-plugin-header],
+[data-id=anp-workspace-header],
+[data-id=anuppuccin-support],
+[data-id=anp-custom-rainbow-colors]):not(.is-collapsed) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  transform: rotate(90deg);
+  transition: transform 0.1s;
+}
+
+.setting-item:is([data-id=anuppuccin-theme-settings-extended],
+[data-id=anp-preview-header]):not(.is-collapsed) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  transform: rotate(-90deg);
+  transition: transform 0.1s;
+}
+
+.setting-item:is([data-id=anuppuccin-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' data-darkreader-inline-stroke='' style='--darkreader-inline-stroke:currentColor;'%3E%3Ccircle cx='13.5' cy='6.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='17.5' cy='10.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='8.5' cy='7.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='6.5' cy='12.5' r='.5'%3E%3C/circle%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.setting-item:is([data-id=anuppuccin-theme-settings-extended]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3Z'%3E%3C/path%3E%3Cpath d='M9 8c-2 3-4 3.5-7 4l8 10c2-1 6-5 6-7'%3E%3C/path%3E%3Cpath d='M14.5 17.5 4.5 15'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.setting-item:is([data-id=anp-colors-section-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08'%3E%3C/path%3E%3Cpath d='M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.setting-item:is([data-id=anp-editor-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15.5 3H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V8.5L15.5 3Z'%3E%3C/path%3E%3Cpath d='M15 3v6h6'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.setting-item:is([data-id=anp-preview-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7'%3E%3C/path%3E%3Cpath d='M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.setting-item:is([data-id=anp-plugin-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22v-5'%3E%3C/path%3E%3Cpath d='M9 7V2'%3E%3C/path%3E%3Cpath d='M15 7V2'%3E%3C/path%3E%3Cpath d='M6 13V8h12v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4Z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.setting-item:is([data-id=anp-misc-element-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='9' y1='18' x2='15' y2='18'%3E%3C/line%3E%3Cline x1='10' y1='22' x2='14' y2='22'%3E%3C/line%3E%3Cpath d='M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.setting-item:is([data-id=anp-show-hide-elements-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72Z'%3E%3C/path%3E%3Cpath d='m14 7 3 3'%3E%3C/path%3E%3Cpath d='M5 6v4'%3E%3C/path%3E%3Cpath d='M19 14v4'%3E%3C/path%3E%3Cpath d='M10 2v2'%3E%3C/path%3E%3Cpath d='M7 8H3'%3E%3C/path%3E%3Cpath d='M21 16h-4'%3E%3C/path%3E%3Cpath d='M11 3H9'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.setting-item:is([data-id=anp-typography-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='4 7 4 4 20 4 20 7'%3E%3C/polyline%3E%3Cline x1='9' y1='20' x2='15' y2='20'%3E%3C/line%3E%3Cline x1='12' y1='4' x2='12' y2='20'%3E%3C/line%3E%3C/svg%3E");
+}
+
+.setting-item:is([data-id=anp-workspace-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='4' width='20' height='5' rx='2'%3E%3C/rect%3E%3Cpath d='M4 9v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9'%3E%3C/path%3E%3Cpath d='M10 13h4'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.setting-item:is([data-id=anuppuccin-support]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.setting-item:is([data-id=anp-custom-rainbow-colors]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 19.9V16h3a2 2 0 0 0 2-2v-2H5v2c0 1.1.9 2 2 2h3v3.9a2 2 0 1 0 4 0Z'%3E%3C/path%3E%3Cpath d='M6 12V2h12v10'%3E%3C/path%3E%3Cpath d='M14 2v4'%3E%3C/path%3E%3Cpath d='M10 2v2'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.excalibrain-searchinput,
+.multiselect-wrapper {
+  --background-modifier-form-field: rgb(var(--ctp-crust));
 }
 
 .multiselect-wrapper {
@@ -2901,8 +5787,107 @@ None of the original code was used and the feature was implemented from scratch.
   margin-left: -1px;
 }
 
+.excalidraw-dirty {
+  color: rgb(var(--ctp-red));
+}
+
+.excalibrain-button.on {
+  background-color: rgb(var(--ctp-base));
+  border-color: var(--color-accent);
+  --input-shadow: inset 0 0 0 2px var(--color-accent);
+  --input-shadow-hover: inset 0 0 0 2px var(--color-accent);
+}
+
+.excalibrain-button.off {
+  background-color: rgb(var(--ctp-crust));
+}
+
+/*-Fix dataview table header size-*/
+.table-view-table > thead > tr > th {
+  font-size: medium;
+  color: var(--text-muted);
+}
+
+.dataview.inline-field-standalone-value,
+.dataview.inline-field-key,
+.dataview.inline-field-value {
+  padding-left: 0px;
+  padding-right: 0px;
+  font-family: inherit;
+  background-color: transparent;
+  color: var(--text-normal);
+}
+
+.dataview.inline-field-standalone-value,
+.dataview.inline-field-value {
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-color: rgba(var(--ctp-yellow), 0.4);
+}
+
+.dataview.inline-field-key {
+  font-weight: bold;
+  color: var(--bold-color);
+  padding-right: 0;
+}
+.dataview.inline-field-key::after {
+  content: ":";
+  height: inherit;
+  width: fit-content;
+}
+
+.dataview.inline-field-value {
+  padding-left: 8px;
+}
+
+/* Extremely WIP excalidraw support
+ * Excalidraw, quite frankly, has extremely inconsistent styling and theming.
+ * This file will be removed if it's determined that excalidraw is not capable of being consistently themed.
+**/
+.excalidraw.theme--dark {
+  --island-bg-color: rgb(var(--ctp-base));
+  --color-primary-darkest: rgb(var(--ctp-accent));
+  --color-surface-high: rgba(var(--ctp-surface2), 0.4);
+  --color-surface-low: rgb(var(--ctp-base));
+  --color-on-surface: rgb(var(--ctp-text));
+  --color-brand-hover: rgb(var(--ctp-base));
+  --color-surface-primary-container: rgb(var(--ctp-accent));
+  --color-on-primary-container: rgb(var(--ctp-base));
+  --color-gray-50: rgb(var(--ctp-mantle));
+}
+
+.excalidraw .buttonList .zIndexButton.active,
+.excalidraw .buttonList button.active,
+.excalidraw .buttonList label.active {
+  --icon-fill-color: rgb(var(--ctp-base));
+}
+
+.excalidraw.theme--dark.excalidraw .App-menu__left {
+  --button-hover-bg: rgba(var(--ctp-surface2), 0.6) !important;
+}
+
+.excalidraw .HintViewer {
+  display: none;
+}
+
+.excalidraw .ExcTextField__input input::placeholder {
+  color: rgb(var(--ctp-subtext1));
+}
+
+.excalidraw-container.theme--dark {
+  color: rgb(var(--ctp-text));
+}
+
+.excalidraw .layer-ui__result-item b {
+  color: rgb(var(--ctp-accent));
+}
+
 .obsidian-icon-folder-icon {
   margin-top: -5px;
+}
+
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-icon-folder-toggle .obsidian-icon-folder-icon {
+  color: rgb(var(--rainbow-folder-color));
 }
 
 .obsidian-icon-folder-modal.prompt-results .suggestion-item {
@@ -2933,6 +5918,31 @@ None of the original code was used and the feature was implemented from scratch.
 
 #cMenuModalBar button.cMenuCommandItem:hover {
   background-color: rgba(var(--ctp-mantle), 0.6);
+}
+
+.status-bar-item.plugin-obsidian-discordrpc {
+  width: 0px;
+  height: 0px;
+  text-overflow: clip;
+  overflow: hidden;
+  margin-right: 20px;
+  padding: 0px;
+}
+
+.status-bar-item.plugin-obsidian-discordrpc:after {
+  position: absolute;
+  margin-top: 18px;
+  content: " ";
+  height: 18px;
+  width: 20px;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'%3E%3Cpath d='M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'%3E%3Cpath d='M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repea;
+  background-color: var(--status-bar-text-color);
+}
+.status-bar-item.plugin-obsidian-discordrpc:hover:after {
+  filter: brightness(60%);
 }
 
 #calendar-container h3 {

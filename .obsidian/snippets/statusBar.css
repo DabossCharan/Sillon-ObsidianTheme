@@ -1,22 +1,43 @@
-/* Status Bar Variables */
-body {
-  /* Add to Style Settings */
-  --status-bar-radius: var(--radius-m);
-  --status-bar-border-width: 2px;
-  --status-bar-background: var(--background-secondary);
-  --status-bar-border-color: var(--divider-color);
-  --status-bar-font-size: var(--font-ui-smaller);
-  --status-bar-text-color: var(--text-muted);
-  
-  
-  --status-bar-scroll-padding: calc(var(--status-bar-font-size) + 18px);
-  --status-bar-floating-opacity: 0.5;
-  --status-bar-floating-opacity-hover: 1;
-  --status-bar-floating-offset: var(--size-2-2);
+.status-bar{
+  --status-bar-border-width: 0;
+  --status-bar-background: transparent;
+  --status-bar-border-color: transparent;
+  --status-bar-background: var(--card-background-color);
 }
 
-.status-bar {
-    bottom: 10px;
-    right: 10px;
-    box-shadow: 2px 2px 1px 0px rgba(126, 28, 196, 0.789);
+/* AGPLv3 License
+Floating Status Bar
+Author: AnubisNekhet
+Note: If you decide to implement it in your theme or redistribute it, please keep this comment (Especially for *certain* individuals who may try to rebrand it as their own :))
+Support me: https://buymeacoffee.com/AnubisNekhet
+*/
+.anp-floating-status-bar {
+  --status-bar-position: absolute;
+  --status-bar-radius: var(--radius-m);
+  --status-bar-border-width: 1px;
+}
+.anp-floating-status-bar .status-bar {
+  transform: translateX(calc(100% + 5px));
+  transition: transform 300ms 150ms;
+  bottom: 5px;
+  right: 5px;
+  box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 0.05);
+}
+.anp-floating-status-bar .status-bar::before {
+  width: 100%;
+  min-height: 100%;
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+}
+.anp-floating-status-bar .status-bar:hover {
+  transform: none;
+  transition: transform 300ms 150ms;
+}
+
+.anp-fixed-status-bar .status-bar {
+  --status-bar-position: relative;
+  --status-bar-radius: 0;
 }
